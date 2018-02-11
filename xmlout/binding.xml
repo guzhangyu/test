@@ -1,0 +1,14 @@
+<binding xmlns:ns1="http://phei.com/netty/xml/pojo" name="binding" package="com.phei.netty.xml.pojo">
+  <namespace uri="http://phei.com/netty/xml/pojo" default="elements"/>
+  <mapping abstract="true" type-name="ns1:customer" class="com.phei.netty.xml.pojo.Customer">
+    <value style="attribute" name="customerNumber" field="customerNumber" usage="optional"/>
+    <value style="element" name="firstName" field="firstName" usage="optional"/>
+    <value style="element" name="lastName" field="lastName" usage="optional"/>
+    <collection field="middleNames" usage="optional" create-type="java.util.ArrayList">
+      <value name="middleName" type="java.lang.String"/>
+    </collection>
+  </mapping>
+  <mapping class="com.phei.netty.xml.pojo.Customer" name="customer">
+    <structure map-as="ns1:customer"/>
+  </mapping>
+</binding>
