@@ -16,12 +16,26 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         return newNode;
     }
 
+    /**
+     * 更换为至多单儿子的节点，并进行移除
+     * @param node
+     */
+    public void changeAndRemove(TreeNode<T> node){
+        if(true){//如果节点至多只有一个儿子
+            node = replaceToRemoveNode(node);
+            //处理叶子节点
+        }else{
+
+        }
+    }
+
     public void remove(TreeNode<T> tree,T v){
         TreeNode<T> toRemove=find(tree,v);
         if(toRemove==null){
             return;
         }
-        if(toRemove.isLeaf()){
+        //TreeNode<T> pre=toRemove.getPre();
+        if(toRemove.isLeaf()){ // && (pre==null || pre.getLeft()==null || pre.getRight()==null)
             replace(toRemove, null);
             return;
         }
@@ -29,14 +43,14 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         if(toRemove.isRed()){//肯定不是根
             if(toRemove.getLeft()==null){
                 replace(toRemove,toRemove.getRight());
-                toRemove.getRight().setLeft(toRemove.getLeft());
                 return;
             }
             if(toRemove.getRight()==null){
                 replace(toRemove,toRemove.getLeft());
-                toRemove.getLeft().setRight(toRemove.getRight());
+                //toRemove.getLeft().setRight(toRemove.getRight());
                 return;
             }
+
             if(toRemove.getLeft().isLeaf()){
                 TreeNode<T> child=toRemove.getLeft();
                 child.setRed(true);
@@ -44,11 +58,45 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
                 child.setRight(toRemove.getRight());
                 return;
             }
+            if(toRemove.getRight().isLeaf()){
+                TreeNode<T> child=toRemove.getRight();
+                child.setRed(true);
+                replace(toRemove,child);
+                child.setLeft(toRemove.getLeft());
+                return;
+            }
             toRemove = replaceToRemoveNode(toRemove);
 
 
-        }else{
+        }else{//如果要移除的节点为黑色
+            //假设下面只有一枝
+            if(toRemove.getLeft()==null){
+                if(toRemove.getRight().isRed()){
+                    toRemove.getRight().setRed(false);
+                    replace(toRemove,toRemove.getRight());
+                    return;
+                }
 
+                TreeNode<T> newNode=toRemove.getRight();
+                replace(toRemove,toRemove.getRight());
+                if(toRemove.getPre()==null){//如果toRemove为根，结束
+                    return;
+                }
+
+                TreeNode<T> right=toRemove.getPre().getRight();
+                if(right.isRed()){
+                    toRemove.getPre().setRight(right.getLeft());
+                    right.setLeft(toRemove.getPre());
+                    replace(toRemove.getPre(),right);
+                }
+            }
+            if(toRemove.getRight()==null){
+                if(toRemove.getLeft().isRed()){
+                    toRemove.getLeft().setRed(false);
+                    replace(toRemove,toRemove.getLeft());
+                    return;
+                }
+            }
         }
 
         //如果不是有两个非叶子节点的儿子的情况
@@ -62,6 +110,8 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         }
 
     }
+
+
 
     private void backAndChangeRed(TreeNode<T> node){
         TreeNode<T> son=null;
