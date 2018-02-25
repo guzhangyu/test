@@ -70,22 +70,27 @@ public class BinarySearchTree<T extends Comparable> {
     }
 
     public TreeNode<T> insert(T v) {
-        TreeNode<T> cur=tree;
-        while(needLeft(v, cur) || needRight(v, cur)){
-            while(needRight(v, cur)){
-                cur=cur.getRight();
+        TreeNode<T> node=new TreeNode<T>(v);
+        if(tree==null){
+            tree=node;
+        }else{
+            TreeNode<T> cur=tree;
+            while(needLeft(v, cur) || needRight(v, cur)){
+                while(needRight(v, cur)){
+                    cur=cur.getRight();
+                }
+                while(needLeft(v, cur)){
+                    cur=cur.getLeft();
+                }
             }
-            while(needLeft(v, cur)){
-                cur=cur.getLeft();
+
+            if(v.compareTo(cur.getValue())>0){
+                cur.setRight(node);
+            }else{
+                cur.setLeft(node);
             }
         }
 
-        TreeNode<T> node=new TreeNode<T>(v);
-        if(v.compareTo(cur.getValue())>0){
-            cur.setRight(node);
-        }else{
-            cur.setLeft(node);
-        }
         return node;
     }
 

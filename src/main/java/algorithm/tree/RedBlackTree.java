@@ -12,7 +12,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         newNode.setRed(false);
         TreeNode<T> cur=newNode.getPre();
 
-        if(cur.getPre()!=null){//如果父节点不为根节点  &&!(cur.getLeft()!=null && cur.getRight()!=null)
+        if(cur!=null && cur.getPre()!=null){//如果父节点不为根节点
             cur.setRed(true);
             adjust(cur);
         }
@@ -37,8 +37,6 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
                             ub_ll(father, grandFather);
                         }else{
                             //父节点逆旋
-//                            father.setRight(cur.getLeft());
-//                            cur.setRight(father);
                             leftDown(father,cur);
 
                             ub_ll(cur,grandFather);
@@ -52,8 +50,6 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
                         if(father.getRight()==cur){
                             ub_rr(father,grandFather);
                         }else{
-//                            father.setLeft(cur.getRight());
-//                            cur.setLeft(father);
                             rightDown(father,cur);
 
                             ub_rr(cur,grandFather);
@@ -99,8 +95,6 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 
         //祖父节点顺旋
         rightDown(grandFather,father);
-//        grandFather.setLeft(father.getRight());
-//        father.setRight(grandFather);
     }
 
     private void ub_rr(TreeNode<T> father, TreeNode<T> grandFather) {
@@ -111,8 +105,6 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 
         //祖父节点顺旋
         leftDown(grandFather,father);
-//        grandFather.setRight(father.getLeft());
-//        father.setLeft(grandFather);
     }
 
 
@@ -129,21 +121,27 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         }
 
         if(toRemove.getPre()==null){//此时直接返回即可
-//            tree.setValue(toRemove.getValue());
-//            tree.setColor(toRemove.getColor());
-//            tree.setLeft(toRemove.getLeft());
-//            tree.setRight(toRemove.getRight());
             replaceRoot(toRemove);
             return;
         }
 
+
         TreeNode<T> newNode=toRemove.getLeft()==null?toRemove.getRight():toRemove.getLeft();
         replace(toRemove,newNode);
         if(newNode==null){
-            newNode=toRemove.getPre();//肯定不为空
+//            newNode=toRemove.getPre();//肯定不为空
+//            if(newNode.isRed()){
+//                return;
+//            }
+            if(toRemove.getPre()==null){
+                tree=null;
+            }else if(toRemove.getPre().isLeaf()){
+                toRemove.getPre().setRed(false);
+            }
+            return;
         }
 
-        if(newNode.isRed()){//肯定不是根
+        if(toRemove.isRed()){//肯定不是根
             return ;
         }
         //如果要移除的节点为黑色
@@ -287,12 +285,10 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     }
 
     public static void main(String[] args) {
-        TreeNode<Integer> treeNode=new TreeNode<Integer>(1);
-        treeNode.setRed(false);
         TreePrinter<Integer> treePrinter=new TreePrinter<Integer>();
 
         RedBlackTree<Integer> tree=new RedBlackTree<Integer>();
-        tree.tree=treeNode;
+        tree.insert(1);
         tree.insert(4);
        //
         tree.insert(7);
@@ -302,20 +298,33 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         tree.insert(5);
         treePrinter.printTree(tree.tree);
         tree.insert(12);
-        treePrinter.printTree(tree.tree);
-        tree.insert(44);
-        treePrinter.printTree(tree.tree);
-        tree.insert(43);
-        treePrinter.printTree(tree.tree);
-        tree.insert(8);
-        treePrinter.printTree(tree.tree);
-        tree.insert(9);
-        tree.insert(10);
-        tree.insert(11);
+//        treePrinter.printTree(tree.tree);
+//        tree.insert(44);
+//        treePrinter.printTree(tree.tree);
+//        tree.insert(43);
+//        treePrinter.printTree(tree.tree);
+//        tree.insert(8);
+//        treePrinter.printTree(tree.tree);
+//        tree.insert(9);
+//        tree.insert(10);
+//        tree.insert(11);
         tree.insert(42);
 
-
         treePrinter.printTree(tree.tree);
+
+        tree.remove(42);
+        treePrinter.printTree(tree.tree);
+
+        tree.remove(4);
+        treePrinter.printTree(tree.tree);
+
+        tree.remove(6);
+        treePrinter.printTree(tree.tree);
+
+        tree.remove(5);
+        treePrinter.printTree(tree.tree);
+
+
     }
 
 }
