@@ -18,8 +18,9 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
 
         TreeNode<T> root=new TreeNode<T>(arr[0]);
         for(int i=1;i<arr.length;i++){
-            insert(root, arr[i]);
+            insert(arr[i]);
         }
+        this.tree=root;
         return root;
     }
 
@@ -32,7 +33,9 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
     public TreeNode<T> createBalanceTree(T[]arr){
         //Object[] sortedArr=new Object[arr.length];
         sort(arr);
-        return arrToNode(arr,0,arr.length-1);
+        TreeNode<T> t= arrToNode(arr,0,arr.length-1);
+        this.tree=t;
+        return t;
     }
 
     public TreeNode<T> balance(TreeNode<T> tree){

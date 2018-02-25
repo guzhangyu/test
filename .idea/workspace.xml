@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="184" column="38" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
+              <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -37,31 +37,38 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding />
+              <caret line="86" column="23" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="23" />
+              <folding>
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreePrinter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TreePrinter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-              <folding />
+            <state vertical-scroll-proportion="0.044378698">
+              <caret line="150" column="113" selection-start-line="150" selection-start-column="93" selection-end-line="150" selection-end-column="113" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedBlackTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedBlackTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4108527">
-              <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
+            <state vertical-scroll-proportion="-8.185185">
+              <caret line="248" column="26" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
               <folding>
-                <element signature="e#7769#7778#0" expanded="true" />
-                <element signature="e#7867#7876#0" expanded="true" />
-                <element signature="e#8036#8045#0" expanded="true" />
+                <element signature="e#8366#8375#0" expanded="true" />
+                <element signature="e#8468#8477#0" expanded="true" />
+                <element signature="e#8533#8542#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -331,14 +338,18 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="14" />
+              <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
               <folding>
                 <element signature="e#463#464#0" expanded="true" />
                 <element signature="e#502#503#0" expanded="true" />
                 <element signature="e#685#686#0" expanded="true" />
                 <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
                 <element signature="e#1135#1136#0" expanded="true" />
                 <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#3312#3313#0" expanded="true" />
+                <element signature="e#3390#3391#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -407,11 +418,11 @@
         <option value="$PROJECT_DIR$/src/main/java/concurrent/Taxi.java" />
         <option value="$PROJECT_DIR$/src/main/java/jmm/Sync.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNodeDealer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrinter.java" />
       </list>
     </option>
   </component>
@@ -1057,12 +1068,12 @@
       <workItem from="1496807813083" duration="4096000" />
       <workItem from="1516767890020" duration="94710000" />
       <workItem from="1517878886631" duration="59655000" />
-      <workItem from="1519458921249" duration="12030000" />
+      <workItem from="1519458921249" duration="21025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211016000" />
+    <option name="totallyTimeSpent" value="220011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="0" />
@@ -1071,14 +1082,14 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.6534733" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.64943457" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.45799676" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.44830373" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27559054" sideWeight="0.7180937" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30393702" sideWeight="0.1914378" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46141732" sideWeight="0.68497574" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42362204" sideWeight="0.23990306" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24717286" sideWeight="0.2106383" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1088,7 +1099,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2180937" sideWeight="0.7893617" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30393702" sideWeight="0.8085622" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42362204" sideWeight="0.7600969" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1232,19 +1243,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java</url>
-          <line>186</line>
+          <line>189</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java</url>
-          <line>184</line>
+          <line>187</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java</url>
-          <line>181</line>
+          <line>184</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -1254,41 +1265,59 @@
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
-          <line>272</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
-          <line>13</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
-          <line>18</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
-          <line>26</line>
+          <line>10</line>
           <properties />
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
-          <line>48</line>
+          <line>311</line>
           <properties />
-          <option name="timeStamp" value="54" />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
+          <line>309</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
+          <line>307</line>
+          <properties />
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="55" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1398,6 +1427,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding>
+            <element signature="e#1754#2381#0" expanded="false" />
+            <element signature="e#2380#2381#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1539,6 +1572,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1700,14 +1738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNodeDealer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1833,14 +1863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1852,7 +1874,28 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="38" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
+          <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="23" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNodeDealer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1860,34 +1903,40 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="14" />
+          <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
           <folding>
             <element signature="e#463#464#0" expanded="true" />
             <element signature="e#502#503#0" expanded="true" />
             <element signature="e#685#686#0" expanded="true" />
             <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
             <element signature="e#1135#1136#0" expanded="true" />
             <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#3312#3313#0" expanded="true" />
+            <element signature="e#3390#3391#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4108527">
-          <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
+        <state vertical-scroll-proportion="-8.185185">
+          <caret line="248" column="26" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
           <folding>
-            <element signature="e#7769#7778#0" expanded="true" />
-            <element signature="e#7867#7876#0" expanded="true" />
-            <element signature="e#8036#8045#0" expanded="true" />
+            <element signature="e#8366#8375#0" expanded="true" />
+            <element signature="e#8468#8477#0" expanded="true" />
+            <element signature="e#8533#8542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044378698">
+          <caret line="150" column="113" selection-start-line="150" selection-start-column="93" selection-end-line="150" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

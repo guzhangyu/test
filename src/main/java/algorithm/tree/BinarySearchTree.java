@@ -6,32 +6,45 @@ package algorithm.tree;
  */
 public class BinarySearchTree<T extends Comparable> {
 
+    TreeNode<T> tree;
+
+
     /**
      * 查找某个节点
+     *
+     * @param v
+     * @return
+     */
+    public TreeNode<T> find(T v) {
+        return find(tree, v);
+    }
+
+    /**
+     * 查找某个节点
+     *
      * @param tree
      * @param v
      * @return
      */
-    public TreeNode<T> find(TreeNode<T> tree,T v){
-        if(tree==null){
+    private TreeNode<T> find(TreeNode<T> tree, T v) {
+        if (tree == null) {
             return null;
         }
-        if(tree.getValue().equals(v)){
+        if (tree.getValue().equals(v)) {
             return tree;
         }
-        if(tree.getValue().compareTo(v)>0){
-            return find(tree.getLeft(),v);
-        }else {
-            return find(tree.getRight(),v);
+        if (tree.getValue().compareTo(v) > 0) {
+            return find(tree.getLeft(), v);
+        } else {
+            return find(tree.getRight(), v);
         }
     }
 
     /**
      * 删除树上的某个节点
-     * @param tree
      * @param v
      */
-    public void remove(TreeNode<T> tree,T v){
+    public void remove(T v){
         TreeNode<T> node=find(tree,v);
         if(node==null){
             return;
@@ -56,8 +69,8 @@ public class BinarySearchTree<T extends Comparable> {
         }
     }
 
-    public TreeNode<T> insert(TreeNode<T> root, T v) {
-        TreeNode<T> cur=root;
+    public TreeNode<T> insert(T v) {
+        TreeNode<T> cur=tree;
         while(needLeft(v, cur) || needRight(v, cur)){
             while(needRight(v, cur)){
                 cur=cur.getRight();

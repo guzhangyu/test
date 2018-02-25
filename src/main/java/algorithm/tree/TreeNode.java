@@ -182,6 +182,7 @@ public class TreeNode<T> implements Cloneable{
         if(this.getRight()!=null){
             newNode.setRight(this.getRight().clone());
         }
+        newNode.setColor(this.getColor());
         return newNode;
     }
 

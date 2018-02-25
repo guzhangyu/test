@@ -6,12 +6,13 @@ package algorithm.tree;
  */
 public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 
-    public TreeNode<T> insert(TreeNode<T> tree,T v){
-        TreeNode<T> newNode=super.insert(tree, v);
+    @Override
+    public TreeNode<T> insert(T v){
+        TreeNode<T> newNode=super.insert(v);
         newNode.setRed(false);
         TreeNode<T> cur=newNode.getPre();
 
-        if(cur.getPre()!=null){//如果父节点不为根节点
+        if(cur.getPre()!=null){//如果父节点不为根节点  &&!(cur.getLeft()!=null && cur.getRight()!=null)
             cur.setRed(true);
             adjust(cur);
         }
@@ -55,7 +56,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 //                            cur.setLeft(father);
                             rightDown(father,cur);
 
-                            ub_rr(father,grandFather);
+                            ub_rr(cur,grandFather);
                         }
                     }else{
                         ur(father, grandFather, uncle);
@@ -75,7 +76,9 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     private void ur(TreeNode<T> father, TreeNode<T> grandFather, TreeNode<T> uncle) {
         father.setRed(false);
         uncle.setRed(false);
-        grandFather.setRed(true);
+        if(grandFather.getPre()!=null){
+            grandFather.setRed(true);
+        }
 
         TreeNode<T> newFather=grandFather.getPre();
         if(newFather!=null && newFather.isRed()){
@@ -90,7 +93,9 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
      */
     private void ub_ll(TreeNode<T> father, TreeNode<T> grandFather) {
         father.setRed(false);
-        grandFather.setRed(true);
+//        if(grandFather.getPre()!=null){
+            grandFather.setRed(true);
+//        }
 
         //祖父节点顺旋
         rightDown(grandFather,father);
@@ -100,7 +105,9 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 
     private void ub_rr(TreeNode<T> father, TreeNode<T> grandFather) {
         father.setRed(false);
-        grandFather.setRed(true);
+//        if(grandFather.getPre()!=null){
+            grandFather.setRed(true);
+//        }
 
         //祖父节点顺旋
         leftDown(grandFather,father);
@@ -109,8 +116,9 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     }
 
 
-    public void remove(TreeNode<T> tree,T v){
-        TreeNode<T> toRemove=find(tree,v);
+    @Override
+    public void remove(T v){
+        TreeNode<T> toRemove=find(v);
         if(toRemove==null){//找不到，直接返回
             return ;
         }
@@ -121,10 +129,11 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         }
 
         if(toRemove.getPre()==null){//此时直接返回即可
-            tree.setValue(toRemove.getValue());
-            tree.setColor(toRemove.getColor());
-            tree.setLeft(toRemove.getLeft());
-            tree.setRight(toRemove.getRight());
+//            tree.setValue(toRemove.getValue());
+//            tree.setColor(toRemove.getColor());
+//            tree.setLeft(toRemove.getLeft());
+//            tree.setRight(toRemove.getRight());
+            replaceRoot(toRemove);
             return;
         }
 
@@ -219,10 +228,15 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     private void rightDown(TreeNode<T> toMove, TreeNode<T> left) {
         if(toMove.getPre()!=null){
             replace(toMove,left);
+        }else{
+            replaceRoot(left);
         }
         TreeNode<T> lr=left.getRight();
         left.setRight(toMove);
         toMove.setLeft(lr);
+        if(toMove.isLeaf()){
+            toMove.setRed(false);
+        }
     }
 
     /**
@@ -232,12 +246,23 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
      */
     private void leftDown(TreeNode<T> toMove, TreeNode<T> right) {
         if(toMove.getPre()!=null){
-            replace(toMove.getPre(),right);
+            replace(toMove,right);
+        }else{
+            replaceRoot(right);
         }
 
         TreeNode<T> brotherL=right.getLeft();
         right.setLeft(toMove);
         toMove.setRight(brotherL);
+        if(toMove.isLeaf()){
+            toMove.setRed(false);
+        }
+    }
+
+    private void replaceRoot(TreeNode<T> right) {
+        tree=right;
+        tree.setPre(null);
+        tree.setRed(false);
     }
 
     /**
@@ -264,14 +289,33 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     public static void main(String[] args) {
         TreeNode<Integer> treeNode=new TreeNode<Integer>(1);
         treeNode.setRed(false);
+        TreePrinter<Integer> treePrinter=new TreePrinter<Integer>();
 
         RedBlackTree<Integer> tree=new RedBlackTree<Integer>();
-        tree.insert(treeNode,4);
-        tree.insert(treeNode,7);
-        tree.insert(treeNode,6);
+        tree.tree=treeNode;
+        tree.insert(4);
+       //
+        tree.insert(7);
+        treePrinter.printTree(tree.tree);
+        tree.insert(6);
+        treePrinter.printTree(tree.tree);
+        tree.insert(5);
+        treePrinter.printTree(tree.tree);
+        tree.insert(12);
+        treePrinter.printTree(tree.tree);
+        tree.insert(44);
+        treePrinter.printTree(tree.tree);
+        tree.insert(43);
+        treePrinter.printTree(tree.tree);
+        tree.insert(8);
+        treePrinter.printTree(tree.tree);
+        tree.insert(9);
+        tree.insert(10);
+        tree.insert(11);
+        tree.insert(42);
 
-        TreePrinter<Integer> treePrinter=new TreePrinter<Integer>();
-        treePrinter.printTree(treeNode);
+
+        treePrinter.printTree(tree.tree);
     }
 
 }

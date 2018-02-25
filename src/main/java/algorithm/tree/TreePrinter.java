@@ -59,7 +59,7 @@ public class TreePrinter<T> {
 
             int maxSize=0;
         });
-        System.out.println(maxSize);
+        System.out.println(String.format("maxSize:%d",maxSize));
         for(int i=0;i<(maxSize-1)/2;i++){
             BLOCK+=" ";
         }
@@ -148,7 +148,7 @@ public class TreePrinter<T> {
 //            for(int i=0;i<(size-1)/2;i++){
 //                sb.delete(0,1);
 //            }
-            sb.append(fillStrLen(trimPat.matcher(node.getValue().toString()).replaceFirst(""), maxSize));
+            sb.append(fillStrLen(trimPat.matcher(node.getValue().toString()).replaceFirst("")+" "+node.getColor(), maxSize));
             if(!right){
                 sb.append(BLOCK);
             }
