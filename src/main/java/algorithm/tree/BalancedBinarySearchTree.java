@@ -16,12 +16,10 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
             return null;
         }
 
-        TreeNode<T> root=new TreeNode<T>(arr[0]);
-        for(int i=1;i<arr.length;i++){
+        for(int i=0;i<arr.length;i++){
             insert(arr[i]);
         }
-        this.tree=root;
-        return root;
+        return this.tree;
     }
 
 
@@ -164,6 +162,17 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
 
 
 
+//                new TreeNode<Double>(1d)
+//                    .setLeft(new TreeNode<Double>(2d)
+//                            .setLeft(new TreeNode<Double>(3d)
+//                                        .setLeft(new TreeNode<Double>(5d))
+//                                        .setRight(new TreeNode(6D)))
+//                            .setRight(new TreeNode<Double>(4D)))
+//                    .setRight(new TreeNode<Double>(7d)
+//                            .setLeft(new TreeNode<Double>(3d))
+//                            .setRight(new TreeNode<Double>(4D)));
+
+
 //        new TreeNode<Double>(6d)
 //                .setLeft(new TreeNode<Double>(2d)
 //                        .setLeft(new TreeNode(1d)
@@ -176,17 +185,17 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
 //                .setRight(new TreeNode(7d));
 
                 searchTree.createSequencely(new Double[]{13d, 4d, 5d,2d,7d,1.1d,5.3d,6.7d,7.7d,});//
-//                new TreeNode<Double>(2);
+
 //        root.setLeft(new TreeNode<Double>(1).setLeft(new TreeNode<Double>(0).setRight(
 //                new TreeNode<Double>(5).setRight(new TreeNode<Double>(5)))));
 //        root.setRight(new TreeNode<Double>(3));
 
-        TreePrinter<Double> treePrinter=new TreePrinter<Double>();
+        TreePrintTool<Double> treePrinter=new TreePrintTool<Double>();
         treePrinter.printTree(root);
 
         //searchTree.remove(root, 7);
-        root=searchTree.balance(root);
-        root.setPre(null);
-        treePrinter.printTree(root);
+//        root=searchTree.balance(root);
+//        root.setPre(null);
+//        treePrinter.printTree(root);
     }
 }

@@ -285,11 +285,19 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
     }
 
     public static void main(String[] args) {
-        TreePrinter<Integer> treePrinter=new TreePrinter<Integer>();
+        TreePrintTool<Integer> treePrinter=new TreePrintTool<Integer>();
+
+        RedBlackTree<Integer> tree1=new RedBlackTree<Integer>();
+        tree1.insert(3);
+
 
         RedBlackTree<Integer> tree=new RedBlackTree<Integer>();
+
         tree.insert(1);
+       // treePrinter.printTree(tree.tree);
         tree.insert(4);
+        treePrinter.printTree(tree.tree);
+        tree.insert(3);
        //
         tree.insert(7);
         treePrinter.printTree(tree.tree);

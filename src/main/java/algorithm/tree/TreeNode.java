@@ -1,6 +1,7 @@
 package algorithm.tree;
 
 /**
+ * 树节点
  * Created by guzy on 18/2/7.
  */
 public class TreeNode<T> implements Cloneable{
@@ -11,12 +12,12 @@ public class TreeNode<T> implements Cloneable{
 
     private TreeNode<T> pre;
 
-    //final static T EMPTY_V=new Object();
-
     private T value;
 
+    //用于打印
     private int level;
 
+    //用于打印以及平衡二叉树的维护
     private int leftDepth=0;
 
     private int rightDepth=0;
@@ -25,6 +26,93 @@ public class TreeNode<T> implements Cloneable{
 
     private static final int COLOR_RED=0,COLOR_BLACK=1;
 
+    /**
+     * 这个建立在原有的数据正确的基础上
+     * @param right
+     * @return
+     */
+    public TreeNode setRight(TreeNode<T> right) {
+        this.right = right;
+        if(right!=null){
+            right.setPre(this);
+            rightDepth= getHigherDepth(right);
+        }else{
+            rightDepth=0;
+        }
+        updateParentDepth();
+        return this;
+    }
+
+    public TreeNode setLeft(TreeNode<T> left) {
+        this.left = left;
+        if(left!=null){
+            left.setPre(this);
+            leftDepth= getHigherDepth(left);
+        }else{
+            leftDepth=0;
+        }
+        updateParentDepth();
+        return this;
+    }
+
+    /**
+     * 依次向上更新层级，直到根节点，或者节点重复之前
+     */
+    private void updateParentDepth() {
+        TreeNode<T> now=this;
+        TreeNode<T> curPre=pre;
+        while(curPre!=null && curPre!=this){
+            int newDepth= getHigherDepth(now);
+            if(curPre.getLeft()==now){
+                if(curPre.getLeftDepth()==newDepth){
+                    break;
+                }
+                curPre.setLeftDepth(newDepth);
+            }else{
+                if(curPre.getRightDepth()==newDepth){
+                    break;
+                }
+                curPre.setRightDepth(newDepth);
+            }
+            now=curPre;
+            curPre=curPre.getPre();
+        }
+    }
+
+    public static int getHigherDepth(TreeNode right) {
+        return Math.max(right.getLeftDepth(), right.getRightDepth())+1;
+    }
+
+    @Override
+    protected TreeNode<T> clone() {
+        TreeNode<T> newNode=new TreeNode<T>(this.getValue());
+        if(this.getLeft()!=null){
+            newNode.setLeft(this.getLeft().clone());
+        }
+        if(this.getRight()!=null){
+            newNode.setRight(this.getRight().clone());
+        }
+        newNode.setColor(this.getColor());
+        return newNode;
+    }
+
+    /**
+     * Created by guzy on 18/2/8.
+     */
+    public interface TreeNodeDealer<T,V> {
+        V deal(TreeNode<T> node);
+    }
+
+    public <V> V iterate(TreeNodeDealer<T,V> dealer){
+        V v= dealer.deal(this);
+        if(this.left!=null){
+            v=this.left.iterate(dealer);
+        }
+        if(this.right!=null){
+            v=this.right.iterate(dealer);
+        }
+        return v;
+    }
 
     public boolean isRed(){
         return color==COLOR_RED;
@@ -96,73 +184,8 @@ public class TreeNode<T> implements Cloneable{
         return left==null && right==null;
     }
 
-    public TreeNode setLeft(TreeNode<T> left) {
-        this.left = left;
-        if(left!=null){
-            left.setPre(this);
-            leftDepth= getHigherDepth(left);
-        }else{
-            leftDepth=0;
-        }
-        updateParentDepth();
-        return this;
-    }
-
-    /**
-     * 依次向上更新层级，直到根节点，或者节点重复之前
-     */
-    private void updateParentDepth() {
-        TreeNode<T> now=this;
-        TreeNode<T> curPre=pre;
-        while(curPre!=null && curPre!=this){
-            int newDepth= getHigherDepth(now);
-            if(curPre.getLeft()==now){
-                if(curPre.getLeftDepth()==newDepth){
-                    break;
-                }
-                curPre.setLeftDepth(newDepth);
-            }else{
-                if(curPre.getRightDepth()==newDepth){
-                    break;
-                }
-                curPre.setRightDepth(newDepth);
-            }
-            now=curPre;
-            curPre=curPre.getPre();
-        }
-    }
-
-    public TreeNode<T> addLeft(T v){
-        return setLeft(new TreeNode<T>(v));
-    }
-
-    public TreeNode<T> addRight(T v){
-        return setRight(new TreeNode<T>(v));
-    }
-
     public TreeNode<T> getRight() {
         return right;
-    }
-
-    /**
-     * 这个建立在原有的数据正确的基础上
-     * @param right
-     * @return
-     */
-    public TreeNode setRight(TreeNode<T> right) {
-        this.right = right;
-        if(right!=null){
-            right.setPre(this);
-            rightDepth= getHigherDepth(right);
-        }else{
-            rightDepth=0;
-        }
-        updateParentDepth();
-        return this;
-    }
-
-    private int getHigherDepth(TreeNode<T> right) {
-        return Math.max(right.getLeftDepth(), right.getRightDepth())+1;
     }
 
     public T getValue() {
@@ -171,29 +194,5 @@ public class TreeNode<T> implements Cloneable{
 
     public void setValue(T value) {
         this.value = value;
-    }
-
-    @Override
-    protected TreeNode<T> clone() {
-        TreeNode<T> newNode=new TreeNode<T>(this.getValue());
-        if(this.getLeft()!=null){
-            newNode.setLeft(this.getLeft().clone());
-        }
-        if(this.getRight()!=null){
-            newNode.setRight(this.getRight().clone());
-        }
-        newNode.setColor(this.getColor());
-        return newNode;
-    }
-
-    public <V> V iterate(TreeNodeDealer<T,V> dealer){
-        V v= dealer.deal(this);
-        if(this.left!=null){
-            v=this.left.iterate(dealer);
-        }
-        if(this.right!=null){
-            v=this.right.iterate(dealer);
-        }
-        return v;
     }
 }
