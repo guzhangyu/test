@@ -1,5 +1,7 @@
 package algorithm.tree;
 
+import java.util.regex.Pattern;
+
 /**
  * 树节点
  * Created by guzy on 18/2/7.
@@ -124,6 +126,13 @@ public class TreeNode<T> implements Cloneable{
         }else{
             setColor(COLOR_BLACK);
         }
+    }
+
+
+    final static Pattern trimPat=Pattern.compile("\\.0$");
+
+    public String toString(){
+        return String.format("%s,%s",trimPat.matcher(getValue().toString()).replaceFirst(""),isRed()?"r":"b");
     }
 
     public int getColor() {
