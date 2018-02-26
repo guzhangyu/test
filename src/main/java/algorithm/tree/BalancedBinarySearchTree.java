@@ -25,13 +25,13 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
     @Override
     public void remove(T v) {
         super.remove(v);
-        tree=balance(tree);
+        balance(tree);
     }
 
     @Override
     public TreeNode<T> insert(T v) {
         TreeNode<T> result= super.insert(v);
-        tree=balance(tree);
+        balance(tree);
         return result;
     }
 
@@ -48,9 +48,9 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
         return t;
     }
 
-    private TreeNode<T> balance(TreeNode<T> tree){
+    private void balance(TreeNode<T> tree){
         if(tree==null){
-            return null;
+            return;
         }
         while(tree.getLeftDepth()-tree.getRightDepth()>1){
             if(tree.getLeft().getLeftDepth()-tree.getLeft().getRightDepth()>0){
@@ -69,37 +69,43 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
         }
 
         if(tree.getLeft()!=null){
-            tree.setLeft(balance(tree.getLeft()));
+            balance(tree.getLeft());
         }
         if(tree.getRight()!=null){
-            tree.setRight(balance(tree.getRight()));
+            balance(tree.getRight());
         }
-        return tree;
     }
 
     private TreeNode<T> balanceLL(TreeNode<T> node){
         TreeNode<T> newRoot=node.getLeft();
-        newRoot.setPre(null);
+       // replace(node, newRoot);
 
-        node.setLeft(newRoot.getRight());
-        newRoot.setRight(node);
+        rightDown(node,newRoot);
+//        node.setLeft(newRoot.getRight());
+//        newRoot.setRight(node);
 
         return newRoot;
     }
 
     private TreeNode<T> balanceRR(TreeNode<T> node){
         TreeNode<T> newRoot=node.getRight();
-        newRoot.setPre(null);
+        //replace(node, newRoot);
 
-        node.setRight(newRoot.getLeft());
-        newRoot.setLeft(node);
+        leftDown(node,newRoot);
+//        node.setRight(newRoot.getLeft());
+//        newRoot.setLeft(node);
 
         return newRoot;
     }
 
+    /**
+     * 用根节点的右子树的最左节点，来替代跟节点
+     * @param node
+     * @return
+     */
     private TreeNode<T> balanceRL(TreeNode<T> node){
         TreeNode<T> newRoot=node.getRight().getLeft();
-        newRoot.setPre(null);
+        replace(node,newRoot);
 
         node.getRight().setLeft(newRoot.getRight());
         newRoot.setRight(node.getRight());
@@ -111,7 +117,7 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
 
     private TreeNode<T> balanceLR(TreeNode<T> node){
         TreeNode<T> newRoot=node.getLeft().getRight();
-        newRoot.setPre(null);
+        replace(node, newRoot);
 
         node.getLeft().setRight(newRoot.getLeft());
         newRoot.setLeft(node.getLeft());

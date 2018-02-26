@@ -98,6 +98,38 @@ public class BinarySearchTree<T extends Comparable> {
         return node;
     }
 
+    /**
+     * 右下旋转
+     * @param toMove
+     * @param left
+     */
+    protected void rightDown(TreeNode<T> toMove, TreeNode<T> left) {
+        replace(toMove,left);
+
+        TreeNode<T> lr=left.getRight();
+        left.setRight(toMove);
+        toMove.setLeft(lr);
+        if(toMove.isLeaf()){
+            toMove.setRed(false);
+        }
+    }
+
+    /**
+     * 左下旋转
+     * @param toMove
+     * @param right
+     */
+    protected void leftDown(TreeNode<T> toMove, TreeNode<T> right) {
+        replace(toMove,right);
+
+        TreeNode<T> brotherL=right.getLeft();
+        right.setLeft(toMove);
+        toMove.setRight(brotherL);
+        if(toMove.isLeaf()){
+            toMove.setRed(false);
+        }
+    }
+
     protected void replaceRoot(TreeNode<T> newRoot) {
         tree=newRoot;
         if(tree!=null){
