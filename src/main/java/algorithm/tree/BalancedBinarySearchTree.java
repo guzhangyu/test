@@ -17,11 +17,23 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
         }
 
         for(int i=0;i<arr.length;i++){
-            insert(arr[i]);
+            super.insert(arr[i]);
         }
         return this.tree;
     }
 
+    @Override
+    public void remove(T v) {
+        super.remove(v);
+        tree=balance(tree);
+    }
+
+    @Override
+    public TreeNode<T> insert(T v) {
+        TreeNode<T> result= super.insert(v);
+        tree=balance(tree);
+        return result;
+    }
 
     /**
      * 先排序，后构造二叉平衡查找树
@@ -36,7 +48,7 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
         return t;
     }
 
-    public TreeNode<T> balance(TreeNode<T> tree){
+    private TreeNode<T> balance(TreeNode<T> tree){
         if(tree==null){
             return null;
         }

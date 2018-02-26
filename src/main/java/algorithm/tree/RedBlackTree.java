@@ -12,9 +12,10 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         newNode.setRed(false);
         TreeNode<T> cur=newNode.getPre();
 
-        if(cur!=null && cur.getPre()!=null){//如果父节点不为根节点
+        if(cur!=null && cur.getPre()!=null && (cur.getLeft()==null || cur.getRight()==null) ){//如果父节点不为根节点
             cur.setRed(true);
-            adjust(cur);
+
+            adjust4Insert(cur);
         }
 
         return newNode;
@@ -24,7 +25,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
      * 调节红黑
      * @param cur
      */
-    private void adjust(TreeNode<T> cur) {
+    private void adjust4Insert(TreeNode<T> cur) {
         TreeNode<T> father=cur.getPre();
         if(father!=null){
             if(father.isRed()){//父节点为红色,必有祖父节点
@@ -78,7 +79,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
 
         TreeNode<T> newFather=grandFather.getPre();
         if(newFather!=null && newFather.isRed()){
-            adjust(grandFather);
+            adjust4Insert(grandFather);
         }
     }
 
@@ -129,16 +130,15 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         TreeNode<T> newNode=toRemove.getLeft()==null?toRemove.getRight():toRemove.getLeft();
         replace(toRemove,newNode);
         if(newNode==null){
-//            newNode=toRemove.getPre();//肯定不为空
-//            if(newNode.isRed()){
-//                return;
-//            }
-            if(toRemove.getPre()==null){
-                tree=null;
-            }else if(toRemove.getPre().isLeaf()){
-                toRemove.getPre().setRed(false);
+            newNode=toRemove.getPre();//肯定不为空
+            boolean isRed=newNode.isRed();
+            if(newNode.isLeaf()){
+                newNode.setRed(false);
             }
-            return;
+
+            if(isRed){
+                return;
+            }//否则，继续处理
         }
 
         if(toRemove.isRed()){//肯定不是根
@@ -179,7 +179,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
                 brother = pre.getRight();
             }
             if (brother.getRight() != null && brother.getRight().isRed()) {//如果兄弟右儿子为红色，更换颜色并左下旋转
-                brother.setRed(false);
+                brother.getRight().setRed(false);
                 int preColor = pre.getColor();
                 pre.setRed(false);
                 brother.setColor(preColor);
@@ -224,11 +224,8 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
      * @param left
      */
     private void rightDown(TreeNode<T> toMove, TreeNode<T> left) {
-        if(toMove.getPre()!=null){
-            replace(toMove,left);
-        }else{
-            replaceRoot(left);
-        }
+        replace(toMove,left);
+
         TreeNode<T> lr=left.getRight();
         left.setRight(toMove);
         toMove.setLeft(lr);
@@ -243,11 +240,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
      * @param right
      */
     private void leftDown(TreeNode<T> toMove, TreeNode<T> right) {
-        if(toMove.getPre()!=null){
-            replace(toMove,right);
-        }else{
-            replaceRoot(right);
-        }
+        replace(toMove,right);
 
         TreeNode<T> brotherL=right.getLeft();
         right.setLeft(toMove);
@@ -255,12 +248,6 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         if(toMove.isLeaf()){
             toMove.setRed(false);
         }
-    }
-
-    private void replaceRoot(TreeNode<T> right) {
-        tree=right;
-        tree.setPre(null);
-        tree.setRed(false);
     }
 
     /**
@@ -306,6 +293,7 @@ public class RedBlackTree<T extends Comparable> extends BinarySearchTree<T>{
         tree.insert(5);
         treePrinter.printTree(tree.tree);
         tree.insert(12);
+        treePrinter.printTree(tree.tree);
 //        treePrinter.printTree(tree.tree);
 //        tree.insert(44);
 //        treePrinter.printTree(tree.tree);

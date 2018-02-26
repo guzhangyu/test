@@ -11,7 +11,6 @@ public class BinarySearchTree<T extends Comparable> {
 
     /**
      * 查找某个节点
-     *
      * @param v
      * @return
      */
@@ -20,8 +19,7 @@ public class BinarySearchTree<T extends Comparable> {
     }
 
     /**
-     * 查找某个节点
-     *
+     * 递归查找某个节点
      * @param tree
      * @param v
      * @return
@@ -50,24 +48,30 @@ public class BinarySearchTree<T extends Comparable> {
             return;
         }
 
-        if(node.getLeft()==null && node.getRight()==null){
+        if(node.getLeft()==null && node.getRight()==null){//如果为叶子节点
             replace(node,null);
         }else if(node.getLeft()==null){
             replace(node,node.getRight());
         }else if(node.getRight()==null){
-            replace(node,node.getLeft());
+            replace(node, node.getLeft());
         }else{//用后继节点替代
+
+            //找到右子树中的最左节点
             TreeNode<T> rightNext=node.getRight();
             while(rightNext.getLeft()!=null){
                 rightNext=rightNext.getLeft();
             }
+
+            //将替代节点的右子树挂到父节点的左子树下
             if(rightNext!=node.getRight()){
                 rightNext.getPre().setLeft(rightNext.getRight());
             }
+            //用后继节点替代
             rightNext.setLeft(node.getLeft());
             replace(node,rightNext);
         }
     }
+
 
     public TreeNode<T> insert(T v) {
         TreeNode<T> node=new TreeNode<T>(v);
@@ -94,6 +98,20 @@ public class BinarySearchTree<T extends Comparable> {
         return node;
     }
 
+    protected void replaceRoot(TreeNode<T> newRoot) {
+        tree=newRoot;
+        if(tree!=null){
+            tree.setPre(null);
+            tree.setRed(false);
+        }
+    }
+
+    /**
+     * 根据中序遍历的规则判断
+     * @param v
+     * @param cur
+     * @return
+     */
     protected boolean needLeft(T v, TreeNode<T> cur) {
         return v.compareTo(cur.getValue())<0 && cur.getLeft()!=null;
     }
@@ -103,6 +121,11 @@ public class BinarySearchTree<T extends Comparable> {
     }
 
 
+    /**
+     * 替换节点
+     * @param node
+     * @param newNode
+     */
     protected void replace(TreeNode<T> node,TreeNode<T> newNode) {
         TreeNode pre=node.getPre();
         if(pre!=null){
@@ -111,6 +134,8 @@ public class BinarySearchTree<T extends Comparable> {
             }else{
                 pre.setRight(newNode);
             }
+        }else{
+            replaceRoot(newNode);
         }
     }
 }
