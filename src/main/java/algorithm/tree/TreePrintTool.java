@@ -1,5 +1,7 @@
 package algorithm.tree;
 
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +25,7 @@ public class TreePrintTool<T> {
         List<String> strs=new ArrayList<String>();
     }
 
-    public void printTree(TreeNode<T> tree){
+    protected void printTree(TreeNode<T> tree,OutputStream out){
         this.maxSize=tree.iterate(new TreeNode.TreeNodeDealer<T,Integer>() {
 
             @Override
@@ -37,9 +39,17 @@ public class TreePrintTool<T> {
 
         Node4Print node4Print=toPrintNode(tree);
 
-        for(String str:node4Print.strs){
-            System.out.println(str);
+        for(String str:node4Print.strs) {
+            try {
+                out.write((str+"\n").getBytes());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    public void printTree(TreeNode<T> tree){
+        printTree(tree,System.out);
     }
 
     /**

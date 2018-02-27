@@ -2,7 +2,11 @@ package algorithm.tree;
 
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * Created by guzy on 18/2/26.
@@ -10,20 +14,28 @@ import java.util.Random;
 public class TreeTest {
 
     BinarySearchTree tree;
+    TreePrintTool printTool=new TreePrintTool();
 
-    static int len=10800;
-    static int arr[]=new int[len];
+    static int len=100;
+    static Integer[]arr=new Integer[len];
     static{
+        Set<Integer> s=new HashSet<Integer>();
         for(int i=0;i<len;i++){
-            arr[i]=new Random(len).nextInt();
+            while(!s.add(new Random().nextInt(len*100)));
         }
+        arr=s.toArray(new Integer[len]);
     }
 
     public void test(){
 
         long begin=System.currentTimeMillis();
-        for(int i:arr){
+        for(Integer i:arr){
             tree.insert(i);
+        }
+        try {
+            printTool.printTree(tree.tree,new FileOutputStream("/Users/guzy/Desktop/"+tree.getClass().getSimpleName()));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
         System.out.println(String.format("init use time:%d",(System.currentTimeMillis()-begin)));
 
@@ -31,8 +43,11 @@ public class TreeTest {
 
         for(int i=0;i<len;i++){
             int j=new Random().nextInt(len);
-            tree.find(arr[j]);
+            System.out.println(String.format("begin find:%d",arr[j]));
+            TreeNode<Integer> t=tree.find(arr[j]);
+            System.out.println(String.format("i:%d,v:%d,find:%s",i,arr[j],t));
             tree.remove(arr[j]);
+
         }
         System.out.println(String.format("remove use time:%d",(System.currentTimeMillis()-begin)));
     }

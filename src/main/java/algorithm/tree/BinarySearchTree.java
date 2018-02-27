@@ -15,7 +15,18 @@ public class BinarySearchTree<T extends Comparable> {
      * @return
      */
     public TreeNode<T> find(T v) {
-        return find(tree, v);
+        TreeNode<T> node=tree;
+        while (node!=null){
+            if(node.getValue().compareTo(v)==0){
+                return node;
+            }else if(node.getValue().compareTo(v)>0){
+                node=node.getLeft();
+            }else{
+                node=node.getRight();
+            }
+        }
+        return null;
+        //return find(tree, v);
     }
 
     /**
@@ -24,26 +35,26 @@ public class BinarySearchTree<T extends Comparable> {
      * @param v
      * @return
      */
-    private TreeNode<T> find(TreeNode<T> tree, T v) {
-        if (tree == null) {
-            return null;
-        }
-        if (tree.getValue().equals(v)) {
-            return tree;
-        }
-        if (tree.getValue().compareTo(v) > 0) {
-            return find(tree.getLeft(), v);
-        } else {
-            return find(tree.getRight(), v);
-        }
-    }
+//    private TreeNode<T> find(TreeNode<T> tree, T v) {
+//        if (tree == null) {
+//            return null;
+//        }
+//        if (tree.getValue().equals(v)) {
+//            return tree;
+//        }
+//        if (tree.getValue().compareTo(v) > 0) {
+//            return find(tree.getLeft(), v);
+//        } else {
+//            return find(tree.getRight(), v);
+//        }
+//    }
 
     /**
      * 删除树上的某个节点
      * @param v
      */
     public void remove(T v){
-        TreeNode<T> node=find(tree,v);
+        TreeNode<T> node=find(v);
         if(node==null){
             return;
         }
