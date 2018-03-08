@@ -1,9 +1,10 @@
 package algorithm.tree.b;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class BNode<K> {
+public class BNode<K extends Comparable> {
 
     private BNode<K> parent;
 
@@ -35,8 +36,40 @@ public class BNode<K> {
         this.points = points;
     }
 
+    public BNode<K> getPoint(int index){
+        if(index<points.size()){
+            return points.get(index);
+        }
+        return null;
+    }
+
     public BNode<K> addPoint(BNode<K> point){
         this.points.add(point);
+        if(point!=null){
+            point.setParent(this);
+        }
+        return this;
+    }
+
+    public BNode<K> addPoint(int index,BNode<K> point){
+        this.points.add(index,point);
+        if(point!=null){
+            point.setParent(this);
+        }
+        return this;
+    }
+
+    public void addKey(K k){
+        keys.add(k);
+        Collections.sort(keys);
+    }
+
+    public BNode<K> setPoint(int index,BNode<K> point){
+        if(index<this.points.size()){
+            this.points.set(index,point);
+        }else{
+            this.points.add(index,point);
+        }
         if(point!=null){
             point.setParent(this);
         }
