@@ -1,5 +1,7 @@
 package algorithm.tree.b;
 
+import org.apache.commons.collections.CollectionUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -36,11 +38,39 @@ public class BNode<K extends Comparable> {
         this.points = points;
     }
 
+    public Boolean isLeaf(){
+        if(CollectionUtils.isEmpty(points)){
+            return true;
+        }
+        for(BNode node:points){
+            if(node!=null){
+                return false;
+            }
+        }
+        points.clear();
+        return true;
+    }
+
     public BNode<K> getPoint(int index){
         if(index<points.size()){
             return points.get(index);
         }
         return null;
+    }
+
+    public void removePoint(BNode<K> node){
+        int index=points.indexOf(node);
+        if(index>=0){
+            points.set(index,null);
+
+            //如果全为null，则直接清空
+            for(BNode n:points){
+                if(n!=null){
+                    return;
+                }
+            }
+            points.clear();
+        }
     }
 
     public BNode<K> addPoint(BNode<K> point){
@@ -52,6 +82,9 @@ public class BNode<K extends Comparable> {
     }
 
     public BNode<K> addPoint(int index,BNode<K> point){
+        if(index>=this.points.size()){
+            this.points.add(null);
+        }
         this.points.add(index,point);
         if(point!=null){
             point.setParent(this);
@@ -68,6 +101,7 @@ public class BNode<K extends Comparable> {
         if(index<this.points.size()){
             this.points.set(index,point);
         }else{
+            this.points.add(null);
             this.points.add(index,point);
         }
         if(point!=null){

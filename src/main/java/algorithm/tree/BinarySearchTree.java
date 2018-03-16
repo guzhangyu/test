@@ -4,7 +4,7 @@ package algorithm.tree;
  * 二叉查找树
  * Created by guzy on 18/2/7.
  */
-public class BinarySearchTree<T extends Comparable> {
+public class BinarySearchTree<T  extends Comparable> implements Tree<TreeNode,T> {
 
     TreeNode<T> tree;
 

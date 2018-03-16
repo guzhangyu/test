@@ -1,5 +1,6 @@
 package algorithm.tree;
 
+import algorithm.tree.b.BMinusTree;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -13,10 +14,10 @@ import java.util.Set;
  */
 public class TreeTest {
 
-    BinarySearchTree tree;
+    Tree tree;
     TreePrintTool printTool=new TreePrintTool();
 
-    static int len=100;
+    static int len=10;
     static Integer[]arr=new Integer[len];
     static{
         Set<Integer> s=new HashSet<Integer>();
@@ -32,20 +33,20 @@ public class TreeTest {
         for(Integer i:arr){
             tree.insert(i);
         }
-        try {
-            printTool.printTree(tree.tree,new FileOutputStream("/Users/guzy/Desktop/"+tree.getClass().getSimpleName()));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            printTool.printTree(tree.tree,new FileOutputStream("/Users/guzy/Desktop/"+tree.getClass().getSimpleName()));
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
         System.out.println(String.format("init use time:%d",(System.currentTimeMillis()-begin)));
 
         begin=System.currentTimeMillis();
 
         for(int i=0;i<len;i++){
             int j=new Random().nextInt(len);
-            System.out.println(String.format("begin find:%d",arr[j]));
-            TreeNode<Integer> t=tree.find(arr[j]);
-            System.out.println(String.format("i:%d,v:%d,find:%s",i,arr[j],t));
+            //System.out.println(String.format("begin find:%d",arr[j]));
+            //tree.find(arr[j]);
+            System.out.println(String.format("i:%d,v:%d,find:%s",i,arr[j],tree.find(arr[j])));
             tree.remove(arr[j]);
 
         }
@@ -59,6 +60,13 @@ public class TreeTest {
         test();
     }
 
+
+    @Test
+    public void testBMinusTree(){
+        tree=new BMinusTree(3);
+        System.out.println("testBMinusTree");
+        test();
+    }
 
     @Test
      public void testBalancedBinarySearchTree(){
