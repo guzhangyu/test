@@ -37,4 +37,13 @@ public class BoundedHashSet<T> {
             semaphore.release();
         }
     }
+
+
+    public static void main(String[] args) {
+        BoundedHashSet set=new BoundedHashSet();
+        for(int i=0;i<=10;i++){
+            set.add(i);
+            System.out.println(i);
+        }
+    }
 }

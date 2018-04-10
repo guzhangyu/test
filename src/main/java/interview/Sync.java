@@ -38,5 +38,6 @@ public class Sync {
 //        }).start();
 //        s.a();
 
+        System.out.println( InnerClassTest.StaticInnerClass.b);
     }
 }

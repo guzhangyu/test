@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
  * 因为system.in的读入是阻塞的，所以只有等该操作结束后，才会执行channelRead方法
  * Created by guzy on 16/8/1.
  */
-public class TimeClient {
+public class  TimeClient {
 
     private static String CR=System.getProperty("line.separator");
 
