@@ -1,5 +1,6 @@
 package concurrent;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
@@ -65,5 +66,11 @@ public class ReadWriteMap<K,V> {
         }finally {
             r.unlock();
         }
+    }
+
+    public static void main(String[] args) {
+        ReadWriteMap<Integer,Integer> map=new ReadWriteMap<>(new HashMap<>());
+        map.put(3,5);
+        System.out.println(map.get(3));
     }
 }

@@ -34,12 +34,7 @@ public class HttpXmlServerHandler1 extends SimpleChannelInboundHandler<HttpXmlRe
         ChannelFuture future=ctx.writeAndFlush(new HttpXmlResponse(null,customer));
 
         if(!isKeepAlive(request)){
-            future.addListener(new GenericFutureListener<Future<? super java.lang.Void>>() {
-                @Override
-                public void operationComplete(Future<? super Void> future) throws Exception {
-                    ctx.close();
-                }
-            });
+            future.addListener(ChannelFutureListener.CLOSE);
         }
     }
 

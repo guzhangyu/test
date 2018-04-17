@@ -1,5 +1,6 @@
 package com.phei.netty.xml;
 
+import com.phei.netty.xml.codec.HttpXmlRequestEncoder;
 import com.phei.netty.xml.handler.HttpXmlClientHandler;
 import com.phei.netty.xml.codec.HttpXmlResponseDecoder;
 import io.netty.bootstrap.Bootstrap;
@@ -12,6 +13,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpRequestEncoder;
+import io.netty.handler.codec.http.HttpResponseDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
@@ -34,14 +36,31 @@ public class XmlClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast("http-decoder", new HttpResponseEncoder())
+                            ch.pipeline()
+                                    //                                    .addLast(new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer("\n".getBytes())))
+//                                 //   .addLast(new StringDecoder())
+//                                    .addLast(new ChannelHandlerAdapter() {
+//                                        @Override
+//                                        public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+//                                            System.out.println(msg);
+//                                            super.channelRead(ctx, msg);
+//                                        }
+//
+//                                        @Override
+//                                        public void channelActive(ChannelHandlerContext ctx) throws Exception {
+//                                            super.channelActive(ctx);
+//                                        }
+//                                    })
+
+                                    .addLast("http-decoder", new HttpResponseDecoder())
                                     .addLast("http-aggregator", new HttpObjectAggregator(65535))
                                     .addLast("xml-decoder", new HttpXmlResponseDecoder())
 
+                                    .addLast("http-encoder", new HttpRequestEncoder())
+                                    .addLast("xml-encoder", new HttpXmlRequestEncoder())
+
                                     .addLast("xmlClientHandler", new HttpXmlClientHandler())
 
-                                    .addLast("http-encoder", new HttpRequestEncoder())
-                                    .addLast("xml-encoder", new HttpXmlResponseDecoder())
                             ;
                         }
                     });

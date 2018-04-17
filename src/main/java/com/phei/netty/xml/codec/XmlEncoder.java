@@ -30,7 +30,7 @@ public abstract class XmlEncoder<T> extends MessageToMessageEncoder<T> {
         mctx.marshalDocument(msg,"utf-8",null,writer);
         writer.close();
 
-        return Unpooled.copiedBuffer(msg.getClass().toString()+";;;"+writer.toString(), Charset.forName("UTF-8"));
+        return Unpooled.copiedBuffer(msg.getClass().getName()+";;;"+writer.toString(), Charset.forName("UTF-8"));
     }
 
 

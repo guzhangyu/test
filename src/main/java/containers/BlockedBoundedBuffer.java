@@ -19,8 +19,9 @@ public class BlockedBoundedBuffer<V> extends BaseBoundedBuffer<V> {
     }
 
     public void put(V v){
+        lock.lock();
         try {
-            synchronized (notEmptyCon){
+            synchronized (notFullCon){
                 while(isFull()){
                     notFullCon.await();
                 }
@@ -29,6 +30,8 @@ public class BlockedBoundedBuffer<V> extends BaseBoundedBuffer<V> {
         } catch (InterruptedException e) {
             e.printStackTrace();
             put(v);
+        }finally {
+            lock.unlock();
         }
     }
 
@@ -41,6 +44,7 @@ public class BlockedBoundedBuffer<V> extends BaseBoundedBuffer<V> {
     }
 
     public V take(){
+        lock.lock();
         try{
            synchronized (notEmptyCon){
                while(isEmpty()){
@@ -51,6 +55,8 @@ public class BlockedBoundedBuffer<V> extends BaseBoundedBuffer<V> {
         }catch (InterruptedException e){
             e.printStackTrace();
             return take();
+        }finally {
+            lock.unlock();
         }
     }
 
@@ -64,6 +70,13 @@ public class BlockedBoundedBuffer<V> extends BaseBoundedBuffer<V> {
 
     public static void main(String[] args) {
         BlockedBoundedBuffer<Integer> buffer=new BlockedBoundedBuffer<Integer>(10);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                buffer.take();
+            }
+        }).start();
+        buffer.put(3);
 
     }
 }

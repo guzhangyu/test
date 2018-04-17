@@ -8,7 +8,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public class StripedMap {
 
-    private final int N_LOCKS=16;
+    private final int N_LOCKS=16;//锁定数量小于桶数，但是没有必要
 
     private final Node[] nodes;
 
@@ -97,8 +97,17 @@ public class StripedMap {
         int hash=hash(key);
         synchronized (locks[hash%N_LOCKS]){
             Node n=nodes[hash];
+            Node pre=null;
             while(n!=null){
                 if(n.key.equals(key)){
+
+                    //移除元素
+                    if(pre!=null){
+                        pre.next=null;
+                    }else{
+                        nodes[hash]=null;
+                        size--;
+                    }
                     return n.value;
                 }
                 n=n.next;
@@ -140,14 +149,16 @@ public class StripedMap {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    synchronized (map){
+                   // synchronized (map){
                         map.set(1,1);
                         map.set(2,1);
                         map.set(1,3);
-                        System.out.println(String.format("curThread:%s,after set:%d",Thread.currentThread().getId(),map.size()));
+                        System.out.println(String.format("curThread:%s,after set:%d", Thread.currentThread().getId(), map.size()));
+                        map.remove(1);
+                        System.out.println(String.format("curThread:%s,after remove:%d",Thread.currentThread().getId(),map.size()));
                         map.clear();
                         System.out.println(String.format("curThread:%s,after clear:%d", Thread.currentThread().getId(), map.size()));
-                    }
+                   // }
 
                 }
             }).start();

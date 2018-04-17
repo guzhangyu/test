@@ -8,7 +8,7 @@ public class NotifyableBoundedBuffer<V> extends BaseBoundedBuffer<V> {
         super(capacity);
     }
 
-    public void put(V v) throws InterruptedException {
+    public synchronized void put(V v) throws InterruptedException {
         while(isFull()){
             wait();
         }
@@ -16,12 +16,27 @@ public class NotifyableBoundedBuffer<V> extends BaseBoundedBuffer<V> {
         notifyAll();
     }
 
-    public V take() throws InterruptedException {
+    public synchronized V take() throws InterruptedException {
         while(isEmpty()){
             wait();
         }
         V v=doTake();
         notifyAll();
         return v;
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        NotifyableBoundedBuffer<Integer> buffer=new NotifyableBoundedBuffer(3);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    System.out.println(buffer.take());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();;
+        buffer.put(4);
     }
 }

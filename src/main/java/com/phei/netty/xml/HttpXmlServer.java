@@ -4,13 +4,17 @@ import com.phei.netty.xml.codec.HttpXmlRequestDecoder;
 import com.phei.netty.xml.codec.HttpXmlResponseEncoder;
 import com.phei.netty.xml.handler.HttpXmlServerHandler1;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpRequestEncoder;
+import io.netty.handler.codec.http.HttpResponseEncoder;
+import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
@@ -20,6 +24,8 @@ import java.net.InetSocketAddress;
  * Created by guzy on 16/8/12.
  */
 public class HttpXmlServer {
+
+    private static String CR=System.getProperty("line.separator");
 
     public void bind(int port) throws InterruptedException {
         EventLoopGroup bossGroup=new NioEventLoopGroup();
@@ -34,12 +40,25 @@ public class HttpXmlServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast("http-decoder", new HttpRequestDecoder())
+                            ch.pipeline()
+//                                    .addLast(new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer("\n".getBytes())))
+//                            //.addLast(new StringDecoder())
+//                            .addLast(new ChannelHandlerAdapter(){
+//                                @Override
+//                                public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+//                                    System.out.println(msg);
+//                                    super.channelRead(ctx, msg);
+//                                }
+//                            })
+                                    .addLast("http-decoder", new HttpRequestDecoder())
                                     .addLast("object-aggregator", new HttpObjectAggregator(65535))
                                     .addLast("xml-decoder", new HttpXmlRequestDecoder())
-                                    .addLast("http-encoder", new HttpRequestEncoder())
+
+                                    .addLast("http-encoder", new HttpResponseEncoder())
                                     .addLast("xml-encoder", new HttpXmlResponseEncoder())
-                                    .addLast("xmlServerHandler", new HttpXmlServerHandler1());
+
+                                    .addLast("xmlServerHandler", new HttpXmlServerHandler1())
+                            ;
                         }
                     });
 

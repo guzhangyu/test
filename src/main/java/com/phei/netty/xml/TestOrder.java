@@ -15,18 +15,16 @@ public class TestOrder {
 
     private IBindingFactory factory=null;
 
-    private StringWriter writer =null;
-
-    private StringReader reader =null;
-
     private final static String CHARSET_NAME="UTF-8";
 
-    private String encode2Xml(Customer customer)throws JiBXException,IOException{
-        writer=new StringWriter();
-
+    public TestOrder() throws JiBXException {
         factory= BindingDirectory.getFactory(Customer.class);
+    }
+
+    private String encode2Xml(Customer customer)throws JiBXException,IOException{
         IMarshallingContext mctx=factory.createMarshallingContext();
         mctx.setIndent(2);
+        StringWriter writer=new StringWriter();
         mctx.marshalDocument(customer,CHARSET_NAME,null,writer);
 
         String xmlStr=writer.toString();
@@ -38,9 +36,7 @@ public class TestOrder {
 
     private Customer decode2Obj(String xml) throws JiBXException {
         IUnmarshallingContext cutx=factory.createUnmarshallingContext();
-        //org.jibx.binding.generator.BindGen
-        reader=new StringReader(xml);
-        Customer customer=(Customer)cutx.unmarshalDocument(reader);
+        Customer customer=(Customer)cutx.unmarshalDocument(new StringReader(xml));
         return customer;
     }
 

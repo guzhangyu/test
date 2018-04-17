@@ -1,5 +1,6 @@
 package concurrent;
 
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 /**
@@ -23,5 +24,24 @@ public class WorkerThread extends Thread {
                 break;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        BlockingQueue<Runnable> blockingQueue=new ArrayBlockingQueue<Runnable>(3);
+        new WorkerThread(blockingQueue).start();
+
+        blockingQueue.add(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("dd");
+            }
+        });
+
+        blockingQueue.add(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("6dd");
+            }
+        });
     }
 }

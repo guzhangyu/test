@@ -28,6 +28,8 @@ public class HttpXmlClientHandler extends SimpleChannelInboundHandler<HttpXmlRes
         customer.setLastName("l");
         HttpXmlRequest request=new HttpXmlRequest(null,customer);
         ctx.writeAndFlush(request);
+
+        //super.channelActive(ctx);
     }
 
     @Override
