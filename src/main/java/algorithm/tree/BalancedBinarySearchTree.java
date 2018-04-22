@@ -213,7 +213,7 @@ public class BalancedBinarySearchTree<T extends Comparable> extends BinarySearch
 
         //searchTree.remove(root, 7);
 //        root=searchTree.balance(root);
-//        root.setPre(null);
+//        root.setParent(null);
 //        treePrinter.printTree(root);
     }
 }

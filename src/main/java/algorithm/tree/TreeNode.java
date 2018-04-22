@@ -1,5 +1,8 @@
 package algorithm.tree;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
+import java.util.Stack;
 import java.util.regex.Pattern;
 
 /**
@@ -12,7 +15,7 @@ public class TreeNode<T> implements Cloneable{
 
     private TreeNode<T> right;
 
-    private TreeNode<T> pre;
+    private TreeNode<T> parent;
 
     private T value;
 
@@ -28,6 +31,10 @@ public class TreeNode<T> implements Cloneable{
 
     private static final int COLOR_RED=0,COLOR_BLACK=1;
 
+     int lFlag=0;//0 表示正常的左子树/右子树  1 表示前驱/后继
+     int rFlag=0;
+
+
     /**
      * 这个建立在原有的数据正确的基础上
      * @param right
@@ -36,7 +43,7 @@ public class TreeNode<T> implements Cloneable{
     public TreeNode setRight(TreeNode<T> right) {
         this.right = right;
         if(right!=null){
-            right.setPre(this);
+            right.setParent(this);
             rightDepth= getHigherDepth(right);
         }else{
             rightDepth=0;
@@ -48,7 +55,7 @@ public class TreeNode<T> implements Cloneable{
     public TreeNode setLeft(TreeNode<T> left) {
         this.left = left;
         if(left!=null){
-            left.setPre(this);
+            left.setParent(this);
             leftDepth= getHigherDepth(left);
         }else{
             leftDepth=0;
@@ -62,7 +69,7 @@ public class TreeNode<T> implements Cloneable{
      */
     private void updateParentDepth() {
         TreeNode<T> now=this;
-        TreeNode<T> curPre=pre;
+        TreeNode<T> curPre= parent;
         while(curPre!=null && curPre!=this){
             int newDepth= getHigherDepth(now);
             if(curPre.getLeft()==now){
@@ -77,7 +84,7 @@ public class TreeNode<T> implements Cloneable{
                 curPre.setRightDepth(newDepth);
             }
             now=curPre;
-            curPre=curPre.getPre();
+            curPre=curPre.getParent();
         }
     }
 
@@ -105,15 +112,140 @@ public class TreeNode<T> implements Cloneable{
         V deal(TreeNode<T> node);
     }
 
-    public <V> V iterate(TreeNodeDealer<T,V> dealer){
-        V v= dealer.deal(this);
-        if(this.left!=null){
-            v=this.left.iterate(dealer);
+    private  <V> V traverseByFlag(TreeNode<T> head,TreeNode.TreeNodeDealer<T, V> dealer) {
+        V v = null;
+        TreeNode<T> p=head.getLeft();
+
+        while(p!=head.getRight()){
+            while(p!=null && p.lFlag==0){
+                v=dealer.deal(p);
+                p=p.getLeft();
+            }
+            p=p.getRight();
         }
-        if(this.right!=null){
-            v=this.right.iterate(dealer);
+
+        return v;
+    }
+
+    private TreeNode<T> createTracedTree(){
+        TreeNode<T> head=new TreeNode<>(null);
+        head.left=this;
+
+        TreeNode<T> p=null;
+        Stack<TreeNode<T>> stack=new Stack<>();
+        stack.push(this);
+        TreeNode<T> pre=this;
+        while(!stack.isEmpty()){
+            while((p=stack.peek())!=null){
+                if(p.left==null){
+                    p.left=pre;
+                    p.lFlag=1;
+
+                }
+
+                if(pre.right==null){
+                    pre.rFlag=1;
+                    pre.right=p;
+                }
+
+                stack.push(p.left);
+                pre=stack.peek();
+            }
+            stack.pop();
+            if(!stack.isEmpty()){//如果根节点已去
+                pre=stack.pop();
+                stack.push(pre.right);
+            }
+        }
+        head.right=pre;
+        head.lFlag=1;
+        head.rFlag=1;
+        return head;
+    }
+
+
+
+    public <V> V iterate(TreeNodeDealer<T,V> dealer){
+        TreeNode<T> head=createTracedTree();
+        return traverseByFlag(head,dealer);
+        //先序
+//        V v= dealer.deal(this);
+//        if(this.left!=null){
+//            v=this.left.iterate(dealer);
+//        }
+//        if(this.right!=null){
+//            v=this.right.iterate(dealer);
+//        }
+//        return v;
+        //return preOrderTraverse(dealer);
+
+        //中序
+//        V v=null;
+//        if(this.left!=null){
+//            v=this.left.iterate(dealer);
+//        }
+//        v= dealer.deal(this);
+//
+//        if(this.right!=null){
+//            v=this.right.iterate(dealer);
+//        }
+//        return v;
+
+//        Stack<TreeNode<T>> s=new Stack<>();
+//        s.push(this);
+//        TreeNode<T> p=null;
+//        V v=null;
+//
+//        while(!s.empty()){
+//            while((p=s.peek())!=null){//
+//                s.push(p.getLeft());
+//            }
+//            s.pop();//这两处是巧妙的关键
+//
+//            if(!s.empty()){
+//                p=s.pop();
+//                v=dealer.deal(p);
+//                s.push(p.getRight());
+//            }
+//        }
+//        return v;
+    }
+
+    private <V> V preOrderTraverse(TreeNodeDealer<T, V> dealer) {
+        V v=null;
+        TreeNode<T> p=null;
+        Stack<TreeNode<T>> stack=new Stack<>();
+        stack.push(this);
+        while(!stack.isEmpty()){
+            while((p=stack.peek())!=null){
+                v=dealer.deal(p);
+                stack.push(p.left);
+            }
+            stack.pop();
+            if(!stack.isEmpty()){//如果根节点已去
+                stack.push(stack.pop().right);
+            }
         }
         return v;
+    }
+
+    private <V> V preOrderTraverseByFlag(TreeNodeDealer<T, V> dealer) {
+        V v = null;
+        TreeNode<T> p=this;
+
+        while(p!=this.right){
+            while(p!=null && p.lFlag==0){
+                v=dealer.deal(p);
+                p=p.left;
+            }
+            p=p.right;
+        }
+
+        return v;
+    }
+
+    public <V> V iterateNoCur(TreeNodeDealer<T,V> dealer){
+       return null;
     }
 
     public boolean isRed(){
@@ -132,7 +264,7 @@ public class TreeNode<T> implements Cloneable{
     final static Pattern trimPat=Pattern.compile("\\.0$");
 
     public String toString(){
-        return String.format("%s,%s",trimPat.matcher(getValue().toString()).replaceFirst(""),isRed()?"r":"b");
+        return String.format("%s,%s",trimPat.matcher(getValue()+"").replaceFirst(""),isRed()?"r":"b");
     }
 
     public int getColor() {
@@ -159,12 +291,12 @@ public class TreeNode<T> implements Cloneable{
         this.leftDepth = leftDepth;
     }
 
-    public TreeNode<T> getPre() {
-        return pre;
+    public TreeNode<T> getParent() {
+        return parent;
     }
 
-    public TreeNode setPre(TreeNode<T> pre) {
-        this.pre = pre;
+    public TreeNode setParent(TreeNode<T> parent) {
+        this.parent = parent;
         return this;
     }
 
@@ -203,5 +335,25 @@ public class TreeNode<T> implements Cloneable{
 
     public void setValue(T value) {
         this.value = value;
+    }
+
+    public int getLFlag() {
+        return lFlag;
+    }
+
+    public void setLFlag(int lFlag) {
+        this.lFlag = lFlag;
+    }
+
+    public int getRFlag() {
+        return rFlag;
+    }
+
+    public void setRFlag(int rFlag) {
+        this.rFlag = rFlag;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(StringUtils.capitalize("lFlag"));
     }
 }

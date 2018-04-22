@@ -192,7 +192,7 @@ public class TreePrinter<T> {
      */
     private int getParentDiff(TreeNode<T> node){
         int diff=0;
-        TreeNode<T> pre=node.getPre();
+        TreeNode<T> pre=node.getParent();
         while(pre!=null){
             if(pre.getLeft()==node){
                 diff-=1;
@@ -200,7 +200,7 @@ public class TreePrinter<T> {
                 diff+=1;
             }
             node=pre;
-            pre=node.getPre();
+            pre=node.getParent();
         }
         return diff;
     }

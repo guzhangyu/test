@@ -75,7 +75,7 @@ public class BinarySearchTree<T  extends Comparable> implements Tree<TreeNode,T>
 
             //将替代节点的右子树挂到父节点的左子树下
             if(rightNext!=node.getRight()){
-                rightNext.getPre().setLeft(rightNext.getRight());
+                rightNext.getParent().setLeft(rightNext.getRight());
             }
             //用后继节点替代
             rightNext.setLeft(node.getLeft());
@@ -144,7 +144,7 @@ public class BinarySearchTree<T  extends Comparable> implements Tree<TreeNode,T>
     protected void replaceRoot(TreeNode<T> newRoot) {
         tree=newRoot;
         if(tree!=null){
-            tree.setPre(null);
+            tree.setParent(null);
             tree.setRed(false);
         }
     }
@@ -170,7 +170,7 @@ public class BinarySearchTree<T  extends Comparable> implements Tree<TreeNode,T>
      * @param newNode
      */
     protected void replace(TreeNode<T> node,TreeNode<T> newNode) {
-        TreeNode pre=node.getPre();
+        TreeNode pre=node.getParent();
         if(pre!=null){
             if(pre.getLeft()==node){
                 pre.setLeft(newNode);
