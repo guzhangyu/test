@@ -33,7 +33,6 @@ public class NioTimeServer implements Runnable {
 
     volatile boolean  stop;
 
-
     public NioTimeServer(int port){
         try {
             selector=Selector.open();
@@ -93,12 +92,11 @@ public class NioTimeServer implements Runnable {
                 //accept the new connection
                 ServerSocketChannel ssc=(ServerSocketChannel)key.channel();
                 SocketChannel sc=ssc.accept();
-                sc.configureBlocking(false);
-                //add the new connection to the selector
+                //sc.configureBlocking(false);
+
                 sc.register(selector,SelectionKey.OP_READ);
             }
             if(key.isReadable()){
-                //read the data
                 SocketChannel sc=(SocketChannel)key.channel();
                 ByteBuffer readBuffer=ByteBuffer.allocate(1024);
                 int readBytes=sc.read(readBuffer);

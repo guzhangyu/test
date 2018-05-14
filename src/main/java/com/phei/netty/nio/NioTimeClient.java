@@ -37,12 +37,11 @@ public class NioTimeClient implements Runnable {
             selector=Selector.open();
             clientChannel=SocketChannel.open();
             clientChannel.configureBlocking(false);
-
-            this.port=port;
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(11);
         }
+        this.port=port;
     }
 
     private void doConnect() throws IOException {
@@ -93,7 +92,7 @@ public class NioTimeClient implements Runnable {
     }
 
     private void doWrite(SocketChannel sc) throws IOException {
-        byte[] req="QUERY TIME ORDER".getBytes();
+        byte[] req="QUERY TIME ORDER\n".getBytes();
         ByteBuffer writeBuffer=ByteBuffer.allocate(req.length);
         writeBuffer.put(req);
         writeBuffer.flip();
