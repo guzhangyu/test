@@ -13,7 +13,7 @@ public class NumberRange {
 
     private final AtomicInteger upper = new AtomicInteger(0);
 
-    //final Object lock=new Object();
+    //final Object concurrent.lock=new Object();
 
     ReentrantLock lock=new ReentrantLock();
 
@@ -40,11 +40,11 @@ public class NumberRange {
 
        // ArrayBlockingQueue a=null;
 
-//        synchronized (lock){
+//        synchronized (concurrent.lock){
 //            try {
-//                lock.wait();
+//                concurrent.lock.wait();
 //
-//                lock.notify();
+//                concurrent.lock.notify();
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
@@ -63,11 +63,11 @@ public class NumberRange {
     }
 
     public void setUpper(int i){
-//        synchronized (lock){
+//        synchronized (concurrent.lock){
 //            try {
-//                lock.wait();
+//                concurrent.lock.wait();
 //                i
-//                lock.notify();
+//                concurrent.lock.notify();
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }

@@ -26,9 +26,9 @@
 //        long randMod = getRandomDelayModulesNanos(timeout,unit);
 //        long stopTime = System.nanoTime()+unit.toNanos(timeout);
 //        while(true){
-//            if(fromAcct.lock.tryLock()){
+//            if(fromAcct.concurrent.lock.tryLock()){
 //                try{
-//                    if(toAcct.lock.tryLock()){
+//                    if(toAcct.concurrent.lock.tryLock()){
 //                        try{
 //                            if(fromAcct.getBalance().compareTo(amount)<0){
 //                                throw new InsufficientFundsException();
@@ -38,11 +38,11 @@
 //                                return true;
 //                            }
 //                        }finally {
-//                            toAcct.lock.unlock();
+//                            toAcct.concurrent.lock.unlock();
 //                        }
 //                    }
 //                }finally {
-//                    fromAcct.lock.unlock();
+//                    fromAcct.concurrent.lock.unlock();
 //                }
 //            }
 //            if(System.nanoTime()>stopTime){

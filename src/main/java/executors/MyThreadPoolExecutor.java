@@ -5,6 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
+ * 自定义类型的线程池（fixed single reject）
  * Created by guzy on 16/7/10.
  */
 public class MyThreadPoolExecutor extends ThreadPoolExecutor {
@@ -35,11 +36,16 @@ public class MyThreadPoolExecutor extends ThreadPoolExecutor {
      */
     public static ExecutorService newSingleMTPool(int nThreads,Thread.UncaughtExceptionHandler exceptionHandler,RejectedExecutionHandler handler){
         ThreadFactory threadFactory=new ExceptionHandleThreadFactory(exceptionHandler);
-        return new FinalizeDelegateExecutorService(new MyThreadPoolExecutor(nThreads,nThreads,0,TimeUnit.MILLISECONDS,new LinkedBlockingDeque<Runnable>(1),threadFactory,handler));
+        return new MyThreadPoolExecutor(nThreads,nThreads,0,TimeUnit.MILLISECONDS,new LinkedBlockingDeque<Runnable>(1),threadFactory,handler);
     }
 
-    public MyThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue<Runnable> workQueue) {
-        super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
+    /**
+     * 带有拒绝策略（原线程忽略）的线程池
+     * @param nThreads
+     * @return
+     */
+    public static ExecutorService newFixedCRRejectMTPool(int nThreads){
+        return new ThreadPoolExecutor(nThreads,nThreads,0,TimeUnit.MILLISECONDS,new LinkedBlockingDeque<Runnable>(1),new ThreadPoolExecutor.DiscardPolicy());
     }
 
     ThreadLocal<Long> begin=new ThreadLocal<Long>();
@@ -67,15 +73,6 @@ public class MyThreadPoolExecutor extends ThreadPoolExecutor {
         this.useTime.getAndAdd(useTime);
         System.out.println("use time:"+useTime);
         super.afterExecute(r, t);
-    }
-
-    /**
-     * 带有拒绝策略（原线程忽略）的线程池
-     * @param nThreads
-     * @return
-     */
-    public static ExecutorService newFixedCRRejectMTPool(int nThreads){
-        return new ThreadPoolExecutor(nThreads,nThreads,0,TimeUnit.MILLISECONDS,new LinkedBlockingDeque<Runnable>(1),new ThreadPoolExecutor.DiscardPolicy());
     }
 
     static class ExceptionHandleThreadFactory implements ThreadFactory {

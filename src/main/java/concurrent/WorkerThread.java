@@ -27,6 +27,7 @@ public class WorkerThread extends Thread {
     }
 
     public static void main(String[] args) {
+
         BlockingQueue<Runnable> blockingQueue=new ArrayBlockingQueue<Runnable>(3);
         new WorkerThread(blockingQueue).start();
 

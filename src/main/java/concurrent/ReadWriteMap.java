@@ -64,12 +64,30 @@ public class ReadWriteMap<K,V> {
         try{
             return map.get(k);
         }finally {
-            r.unlock();
+           // r.unlock();
         }
     }
 
-    public static void main(String[] args) {
-        ReadWriteMap<Integer,Integer> map=new ReadWriteMap<>(new HashMap<>());
+    public static void main(String[] args) throws InterruptedException {
+        final ReadWriteMap<Integer,Integer> map=new ReadWriteMap<>(new HashMap<>());
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ;
+                System.out.println(map.get(4));
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(map.get(4));
+            }
+        }).start();
+
+
+        Thread.sleep(1000l);
+
         map.put(3,5);
         System.out.println(map.get(3));
     }
