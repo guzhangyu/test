@@ -8,9 +8,9 @@ import java.util.List;
 /**
  * Created by guzy on 16/10/10.
  */
-public class Test<T> {
+public class GetGenericType<T> {
 
-    public Test(){
+    public GetGenericType(){
     }
 
     public void test(){
@@ -26,21 +26,34 @@ public class Test<T> {
 
     }
 
-    public void test1(List<T> list){
+    public T test1(List<T> list){
+        return null;
+    }
 
+    //get
+    public void test2(List<Object> list){
+    }
+
+    public <T2> T2 test3(T2 t){
+        return null;
     }
 
     public static void main(String[] args) throws NoSuchMethodException {
-        Test<String> test=new Test<String>();
-        Method method=Test.class.getDeclaredMethod("test1",List.class);
+        GetGenericType<String> getGenericType =new GetGenericType<String>();
+        Method method=GetGenericType.class.getDeclaredMethod("test3",Object.class);
         System.out.println(getGenericTypeFromMethod(method));
     }
 
+
+    /**
+     * 获取方法的泛型结果
+     * @param method
+     * @return
+     */
     private static Class getGenericTypeFromMethod(Method method){
         Type type=method.getGenericParameterTypes()[0];
         if(type instanceof  ParameterizedType) {
-            ParameterizedType pt = (ParameterizedType) type;
-            Type actualType=pt.getActualTypeArguments()[0];
+            Type actualType=((ParameterizedType) type).getActualTypeArguments()[0];
             if(actualType instanceof Class){
                 return (Class)actualType;
             }
@@ -48,8 +61,8 @@ public class Test<T> {
         return null;
     }
 
-    private static Class getGenericType(Object o) {
-        Type type=o.getClass().getGenericSuperclass();
+    private static Class getGenericTypeFromClass(Class cls) {
+        Type type=cls.getGenericSuperclass();
         //.getGenericInterfaces()[0];
         //.getGenericSuperclass();
 

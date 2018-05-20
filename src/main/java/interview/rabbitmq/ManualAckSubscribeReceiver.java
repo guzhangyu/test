@@ -9,11 +9,11 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
-public class ManualSubscribeReceiver extends RabbitResourceManage{
+public class ManualAckSubscribeReceiver extends RabbitResourceManage{
 
     public static void main(String[] args) {
 
-        new ManualSubscribeReceiver().receive();
+        new ManualAckSubscribeReceiver().operateRabbit();
     }
 
     @Override
@@ -22,9 +22,9 @@ public class ManualSubscribeReceiver extends RabbitResourceManage{
         //这是异步处理的方法，所以后面要wait
         channel.basicConsume(QUEUE_NAME,false,new ManualAckConsumer(channel));
 
-        synchronized (ManualSubscribeReceiver.class){
+        synchronized (ManualAckSubscribeReceiver.class){
             try {
-                ManualSubscribeReceiver.class.wait();
+                ManualAckSubscribeReceiver.class.wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

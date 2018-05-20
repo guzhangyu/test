@@ -49,7 +49,7 @@ public class SubReqClientHandler1 extends ChannelHandlerAdapter{
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         SubscribeRespProto.SubscribeResp resp=(SubscribeRespProto.SubscribeResp)msg;
-        System.out.println("receive from server:"+resp.toString());
+        System.out.println("operateRabbit from server:"+resp.toString());
     }
 
     @Override

@@ -28,7 +28,7 @@ public class TimeServerHandler implements Runnable {
             String currentTime=null;
             String body=in.readLine();
             while(body!=null){
-                System.out.println("The time server receive order:"+body);
+                System.out.println("The time server operateRabbit order:"+body);
                 currentTime="QUERY TIME ORDER".equalsIgnoreCase(body)?new Date().toString():"BAD ORDER";
                 out.println(currentTime);
                 out.println("EOF");

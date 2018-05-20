@@ -1,9 +1,10 @@
-package jmm;
+package concurrent;
 
 /**
+ * 不可能的情况 0,0
  * Created by guzy on 16/7/26.
  */
-public class PossibleRecording {
+public class UnPossibleRecording {
 
     static int x=0,y=0;
     static int a=0,b=0;

@@ -18,7 +18,7 @@ public abstract  class RabbitResourceManage {
         factory.setHost("localhost");
     }
 
-    public void receive() {
+    public void operateRabbit() {
         try{
             initChannel();
             operate();

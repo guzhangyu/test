@@ -1,60 +1,34 @@
 package interview.rabbitmq;
 
-import com.rabbitmq.client.*;
+import com.rabbitmq.client.AMQP;
+import com.rabbitmq.client.DefaultConsumer;
+import com.rabbitmq.client.Envelope;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class SubscribeReceiver {
-
-    final static String QUEUE_NAME="MyQueue";
+public class SubscribeReceiver extends RabbitResourceManage{
 
     public static void main(String[] args) {
-        receive();
+        new SubscribeReceiver().operateRabbit();
     }
 
-    private static void receive() {
-        Connection connection=null;
-        Channel channel=null;
-        try{
-            ConnectionFactory factory=new ConnectionFactory();
-            factory.setHost("localhost");
-            connection=factory.newConnection();
-            channel=connection.createChannel();
-            channel.queueDeclare(QUEUE_NAME,false,false,false,null);
-
-            //这是异步处理的方法，所以后面要wait
-            channel.basicConsume(QUEUE_NAME,true,new DefaultConsumer(channel){
-                @Override
-                public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
-                    System.out.println(String.format("收到消息.....%s",new String(body,"UTF-8")));
-                }
-            });
-
-            synchronized (SubscribeReceiver.class){
-                try {
-                    SubscribeReceiver.class.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+    @Override
+    protected void operate() throws IOException, TimeoutException {
+        //这是异步处理的方法，所以后面要wait
+        channel.basicConsume(QUEUE_NAME,true,new DefaultConsumer(channel){
+            @Override
+            public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
+                System.out.println(String.format("收到消息.....%s",new String(body,"UTF-8")));
             }
-        } catch (TimeoutException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            if(channel!=null){
-                try {
-                    channel.close();
-                    connection.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                }
+        });
+
+        synchronized (SubscribeReceiver.class){
+            try {
+                SubscribeReceiver.class.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
-
-
 }

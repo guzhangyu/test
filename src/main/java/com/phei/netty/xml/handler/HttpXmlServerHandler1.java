@@ -29,7 +29,7 @@ public class HttpXmlServerHandler1 extends SimpleChannelInboundHandler<HttpXmlRe
     protected void messageReceived(final ChannelHandlerContext ctx, HttpXmlRequest msg) throws Exception {
         HttpRequest request=msg.getRequest();
         Customer customer=(Customer)msg.getBody();
-        System.out.println("Http Server receive request:"+customer);
+        System.out.println("Http Server operateRabbit request:"+customer);
 
         ChannelFuture future=ctx.writeAndFlush(new HttpXmlResponse(null,customer));
 

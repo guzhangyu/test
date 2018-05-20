@@ -1,11 +1,8 @@
-package concurrent;
+package concurrent.myimpl;
 
 import sun.misc.Unsafe;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class MyAtomicInteger {
 

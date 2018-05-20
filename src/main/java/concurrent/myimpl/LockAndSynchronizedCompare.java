@@ -1,4 +1,4 @@
-package concurrent;
+package concurrent.myimpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockAndSynchronizedCompare {
-
-    static int i=0;
     static int j=0;
     static CountDownLatch latch=new CountDownLatch(10);
 
@@ -16,7 +14,7 @@ public class LockAndSynchronizedCompare {
         Lock lock=new ReentrantLock();
 
         List<Thread> threads=new ArrayList<>();
-        for(;i<10000;i++){
+        for(int i=0;i<10000;i++){
             threads.add(new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -32,7 +30,7 @@ public class LockAndSynchronizedCompare {
 
         threads.clear();
         latch=new CountDownLatch(10);
-        for(;i<20000;i++){
+        for(int i=0;i<10000;i++){
             threads.add(new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -49,12 +47,13 @@ public class LockAndSynchronizedCompare {
         System.out.println(String.format("concurrent.lock:%d,synchronized:%d",end,syncEnd));
     }
 
+
     private static long execute(CountDownLatch latch, List<Thread> threads) throws InterruptedException {
         long start=System.currentTimeMillis();
         for(Thread thread:threads){
             thread.start();
         }
-        latch.await();
+        latch.await();//等到所有结果得到
         return System.currentTimeMillis()-start;
     }
 }

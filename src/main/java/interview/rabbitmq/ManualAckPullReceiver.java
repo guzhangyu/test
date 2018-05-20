@@ -6,12 +6,11 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
-public class ManualPullReceiver extends RabbitResourceManage{
+public class ManualAckPullReceiver extends RabbitResourceManage{
 
     public static void main(String[] args) {
-        new ManualPullReceiver().receive();
+        new ManualAckPullReceiver().operateRabbit();
     }
-
 
     @Override
     protected void operate() throws IOException, TimeoutException {

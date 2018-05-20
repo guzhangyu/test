@@ -19,10 +19,11 @@ public class JedisTest {
 
     public static void testPipeline() throws IOException {
         Jedis jedis=jedisPool.getResource();
+        System.out.println(jedis.get("1"));
         Pipeline pipeline=jedis.pipelined();
+
         jedis.watch("1");
         pipeline.multi();
-        pipeline.get("1");
         pipeline.incr("2");
         pipeline.incr("1");
 
@@ -31,10 +32,11 @@ public class JedisTest {
         jedis1.incr("1");
 
         pipeline.exec();
-        System.out.println(pipeline.syncAndReturnAll());//.get(3)==null
+        System.out.println(pipeline.syncAndReturnAll());
         jedis.unwatch();
         pipeline.close();
         System.out.println(jedis.get("2"));
+        System.out.println(jedis.get("1"));
     }
 
     public static void main(String[] args) throws IOException {

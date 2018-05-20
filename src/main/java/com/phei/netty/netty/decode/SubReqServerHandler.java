@@ -12,7 +12,7 @@ public class SubReqServerHandler extends ChannelHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         SubscribeReq sr=(SubscribeReq) msg;
-        System.out.println("receive request["+msg+"]");
+        System.out.println("operateRabbit request["+msg+"]");
         ctx.writeAndFlush(getRespById(sr.getSubReqID()));
     }
 

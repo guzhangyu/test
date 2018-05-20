@@ -13,7 +13,7 @@ public class Sender extends RabbitResourceManage{
 
 
     public static void main(String[] args) {
-        new Sender().receive();
+        new Sender().operateRabbit();
     }
 
     @Override

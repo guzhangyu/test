@@ -34,6 +34,6 @@ public class HttpXmlServerHandler extends ChannelHandlerAdapter {
         //super.channelRead(ctx, msg);
         HttpXmlRequest request=(HttpXmlRequest)msg;
         System.out.println("received headers:"+request.getRequest().headers().names());
-        System.out.println("receive from client:"+request.getBody());
+        System.out.println("operateRabbit from client:"+request.getBody());
     }
 }

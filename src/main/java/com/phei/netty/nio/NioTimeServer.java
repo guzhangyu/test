@@ -105,7 +105,7 @@ public class NioTimeServer implements Runnable {
                     byte[] bytes=new byte[readBuffer.remaining()];
                     readBuffer.get(bytes);
                     String body=new String(bytes,"UTF-8");
-                    System.out.println("The time server receive order : "+body);
+                    System.out.println("The time server operateRabbit order : "+body);
                     String currentTime="QUERY TIME ORDER".equalsIgnoreCase(body)?new Date().toString():"BAD ORDER";
                     doWrite(sc,currentTime);
                 }else if(readBytes<0){

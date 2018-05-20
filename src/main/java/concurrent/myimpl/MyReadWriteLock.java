@@ -1,4 +1,4 @@
-package concurrent;
+package concurrent.myimpl;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -10,39 +10,59 @@ public class MyReadWriteLock {
 
     class Sync extends AbstractQueuedSynchronizer{
 
-//        volatile int write;
-//
-//        long writeOffset;
+        AtomicInteger read=new AtomicInteger(0);
 
-        AtomicInteger write=new AtomicInteger(0);
-
-        public Sync(){
-            //writeOffset=super
-        }
-
+        /**
+         * 写锁前要判断读锁是否有
+         * 并且在加锁的过程中可能有读锁产生，此时要回滚
+         * @param arg
+         * @return
+         */
         @Override
         protected boolean tryAcquire(int arg) {
-            return compareAndSetState(0,1) &&
-                    write.compareAndSet(0,1);
+            if(read.get()==0 && compareAndSetState(0,1)){
+                if(read.get()>0){
+                    boolean result=compareAndSetState(1,0);//此时没有竞争
+                    assert result:"出异常啦！";
+                    return false;
+                }
+                return true;
+            }
+            return false;
+            //return write.get()==0 && compareAndSetState(0,1) &&  write.compareAndSet(0,1);
+            //return super.getExclusiveQueuedThreads().size()==0 && compareAndSetState(0,1);
         }
 
+        /**
+         * 写锁释放就是普通的释放锁
+         * @param arg
+         * @return
+         */
         @Override
         protected boolean tryRelease(int arg) {
-            return true;
+            //return compareAndSetState(1,0) &&  write.compareAndSet(1,0);
+            return compareAndSetState(1,0);
         }
 
+        /**
+         * 获取共享锁的时候，要判断没有写锁以及写意向锁
+         * 之后要将读锁的数量加一
+         * @param arg
+         * @return
+         */
         @Override
         protected int tryAcquireShared(int arg) {
-            if(write.get()==0){
-                return 1;
-            }
-            return -1;
+            return (getState()==0 && this.getExclusiveQueuedThreads().size()==0 && read.incrementAndGet()>0)?1:-1;
         }
 
+        /**
+         * 释放读锁的时候要将读数量减1，第一个判断条件可以不要
+         * @param arg
+         * @return
+         */
         @Override
         protected boolean tryReleaseShared(int arg) {
-           //if(write.get()==)
-            return true;
+            return getState()==0 && read.decrementAndGet()>=0;
         }
     }
 
@@ -50,7 +70,7 @@ public class MyReadWriteLock {
     
     Lock readLock=new MyReadLock(),writeLock=new MyWriteLock();
 
-    public class MyReadLock extends AbstractQueuedSynchronizer implements Lock{
+    public class MyReadLock implements Lock{
 
         @Override
         public void lock() {
@@ -60,8 +80,9 @@ public class MyReadWriteLock {
 
         @Override
         public void lockInterruptibly() throws InterruptedException {
-
+            MyReadWriteLock.this.sync.acquireSharedInterruptibly(1);
         }
+
 
         @Override
         public boolean tryLock() {
@@ -75,40 +96,25 @@ public class MyReadWriteLock {
 
         @Override
         public void unlock() {
-            releaseShared(1);
+            MyReadWriteLock.this.sync.releaseShared(1);
         }
 
         @Override
         public Condition newCondition() {
             return null;
         }
-
-//        public int getState(){
-//            return super.getState();
-//        }
     }
 
-    public class MyWriteLock extends AbstractQueuedSynchronizer implements Lock{
-
-        @Override
-        protected boolean tryAcquire(int arg) {
-            return true;
-           // return readLock;
-        }
-
-        @Override
-        protected boolean tryRelease(int arg) {
-            return super.tryRelease(arg);
-        }
+    public class MyWriteLock implements Lock{
 
         @Override
         public void lock() {
-            acquire(1);
+            MyReadWriteLock.this.sync.acquire(1);
         }
 
         @Override
         public void lockInterruptibly() throws InterruptedException {
-
+            MyReadWriteLock.this.sync.acquireInterruptibly(1);
         }
 
         @Override
@@ -123,7 +129,7 @@ public class MyReadWriteLock {
 
         @Override
         public void unlock() {
-            release(1);
+            MyReadWriteLock.this.sync.release(1);
         }
 
         @Override
@@ -131,7 +137,4 @@ public class MyReadWriteLock {
             return null;
         }
     }
-
-
-
 }
