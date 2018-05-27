@@ -26,6 +26,7 @@ public class MyReadWriteLock {
                     assert result:"出异常啦！";
                     return false;
                 }
+                setExclusiveOwnerThread(Thread.currentThread());
                 return true;
             }
             return false;
@@ -41,7 +42,11 @@ public class MyReadWriteLock {
         @Override
         protected boolean tryRelease(int arg) {
             //return compareAndSetState(1,0) &&  write.compareAndSet(1,0);
-            return compareAndSetState(1,0);
+            if(compareAndSetState(1,0)){
+                setExclusiveOwnerThread(null);
+                return true;
+            }
+            return false;
         }
 
         /**
@@ -52,7 +57,8 @@ public class MyReadWriteLock {
          */
         @Override
         protected int tryAcquireShared(int arg) {
-            return (getState()==0 && this.getExclusiveQueuedThreads().size()==0 && read.incrementAndGet()>0)?1:-1;
+            int result= (getState()==0 && this.getExclusiveQueuedThreads().size()==0 && read.incrementAndGet()>0)?1:-1;
+            return result;
         }
 
         /**

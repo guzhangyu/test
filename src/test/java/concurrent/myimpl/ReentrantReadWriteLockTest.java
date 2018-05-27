@@ -1,16 +1,16 @@
 package concurrent.myimpl;
 
-import concurrent.myimpl.MyReadWriteLock;
 import org.junit.Test;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-public class MyReadWriteLockTest {
+public class ReentrantReadWriteLockTest {
 
-    MyReadWriteLock readWriteLock=new MyReadWriteLock();
-    Lock readLock=readWriteLock.readLock;
-    Lock writeLock=readWriteLock.writeLock;
+    ReentrantReadWriteLock readWriteLock=new ReentrantReadWriteLock();
+    Lock readLock=readWriteLock.readLock();
+    Lock writeLock=readWriteLock.writeLock();
 
     CountDownLatch latch;
     /**
@@ -240,7 +240,7 @@ public class MyReadWriteLockTest {
                 writeLock.unlock();
                 System.out.println("run1 write unlock 4");//4
             }
-        },"run1").start();
+        }).start();
 
         new Thread(new Runnable() {
             @Override
@@ -271,7 +271,7 @@ public class MyReadWriteLockTest {
                 writeLock.unlock();
                 System.out.println("run2 write unlock 6");//5
             }
-        },"run2").start();
+        }).start();
 
         latch.await();
         System.out.println("main read lock begin 2");//3

@@ -7,13 +7,13 @@ import java.util.concurrent.locks.ReentrantLock;
  * 通过锁来实现seed在使用过程中没有被改变
  * Created by guzy on 16/7/26.
  */
-public class ReetrantLockPseudoRandom extends PseudoRandom {
+public class ReentrantLockPseudoRandom extends PseudoRandom {
 
     Lock lock=new ReentrantLock();
 
     int seed;
 
-    public ReetrantLockPseudoRandom(int seed){
+    public ReentrantLockPseudoRandom(int seed){
         this.seed=seed;
     }
 
@@ -33,7 +33,7 @@ public class ReetrantLockPseudoRandom extends PseudoRandom {
     }
 
     public static void main(String[] args) {
-        ReetrantLockPseudoRandom random=new ReetrantLockPseudoRandom(-4);
+        ReentrantLockPseudoRandom random=new ReentrantLockPseudoRandom(-4);
         random.lock.lock();
         new Thread(new Runnable() {
             @Override

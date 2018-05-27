@@ -5,6 +5,7 @@ import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.Semaphore;
 
 /**
+ * 通过semaphore控制的有界线程池
  * Created by guzy on 16/7/11.
  */
 public class BoundedExecutor {
