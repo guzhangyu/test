@@ -8,9 +8,8 @@ import java.util.concurrent.locks.Lock;
 
 public class MyReadWriteLock {
 
-    class Sync extends AbstractQueuedSynchronizer{
-
-        AtomicInteger read=new AtomicInteger(0);
+    AtomicInteger read=new AtomicInteger(0);
+    class WriteSync extends AbstractQueuedSynchronizer{
 
         /**
          * 写锁前要判断读锁是否有
@@ -44,10 +43,26 @@ public class MyReadWriteLock {
             //return compareAndSetState(1,0) &&  write.compareAndSet(1,0);
             if(compareAndSetState(1,0)){
                 setExclusiveOwnerThread(null);
+                if(getExclusiveQueuedThreads().size()==0 && readSync.getQueueLength()>0 && read.get()==0){
+                    if(read.compareAndSet(0,1)) {
+                        readSync.releaseShared(1);
+                    }
+                }
                 return true;
             }
             return false;
         }
+
+        public int getStateI(){
+            return super.getState();
+        }
+
+        public boolean compareAndSetStateI(int pre,int after){
+            return super.compareAndSetState(pre,after);
+        }
+    }
+
+    class ReadSync extends AbstractQueuedSynchronizer{
 
         /**
          * 获取共享锁的时候，要判断没有写锁以及写意向锁
@@ -57,8 +72,9 @@ public class MyReadWriteLock {
          */
         @Override
         protected int tryAcquireShared(int arg) {
-            int result= (getState()==0 && this.getExclusiveQueuedThreads().size()==0 && read.incrementAndGet()>0)?1:-1;
-            return result;
+            return (writeSync.getStateI()==0 && writeSync.getExclusiveQueuedThreads().size()==0
+                    && read.incrementAndGet()>0 //只是为了执行，一定为true
+            )?1:-1;
         }
 
         /**
@@ -68,11 +84,24 @@ public class MyReadWriteLock {
          */
         @Override
         protected boolean tryReleaseShared(int arg) {
-            return getState()==0 && read.decrementAndGet()>=0;
+            boolean result= writeSync.getStateI()==0
+                    && read.decrementAndGet()>=0;
+            if(result){
+                if(read.get()==0 && read.compareAndSet(0,1)//这个地方控制是因为多个读写释放时会有并发
+                        && writeSync.getQueueLength()>0 && writeSync.getStateI()==0){
+                    if(writeSync.compareAndSetStateI(0,1)){
+                        writeSync.release(1);
+                    }
+                    read.decrementAndGet();
+                }
+            }
+            return result;
         }
     }
 
-    Sync sync=new Sync();
+    WriteSync writeSync=new WriteSync();
+
+    ReadSync readSync=new ReadSync();
     
     Lock readLock=new MyReadLock(),writeLock=new MyWriteLock();
 
@@ -81,12 +110,12 @@ public class MyReadWriteLock {
         @Override
         public void lock() {
             //MyReadWriteLock.this.sync
-            MyReadWriteLock.this.sync.acquireShared(1);
+            MyReadWriteLock.this.readSync.acquireShared(1);
         }
 
         @Override
         public void lockInterruptibly() throws InterruptedException {
-            MyReadWriteLock.this.sync.acquireSharedInterruptibly(1);
+            MyReadWriteLock.this.readSync.acquireSharedInterruptibly(1);
         }
 
 
@@ -102,7 +131,7 @@ public class MyReadWriteLock {
 
         @Override
         public void unlock() {
-            MyReadWriteLock.this.sync.releaseShared(1);
+            MyReadWriteLock.this.readSync.releaseShared(1);
         }
 
         @Override
@@ -115,12 +144,12 @@ public class MyReadWriteLock {
 
         @Override
         public void lock() {
-            MyReadWriteLock.this.sync.acquire(1);
+            MyReadWriteLock.this.writeSync.acquire(1);
         }
 
         @Override
         public void lockInterruptibly() throws InterruptedException {
-            MyReadWriteLock.this.sync.acquireInterruptibly(1);
+            MyReadWriteLock.this.writeSync.acquireInterruptibly(1);
         }
 
         @Override
@@ -135,7 +164,7 @@ public class MyReadWriteLock {
 
         @Override
         public void unlock() {
-            MyReadWriteLock.this.sync.release(1);
+            MyReadWriteLock.this.writeSync.release(1);
         }
 
         @Override
