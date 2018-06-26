@@ -69,7 +69,7 @@ public class ReadWriteMap<K,V> {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        final ReadWriteMap<Integer,Integer> map=new ReadWriteMap<>(new HashMap<>());
+        final ReadWriteMap<Integer,Integer> map=new ReadWriteMap<Integer, Integer>(new HashMap<Integer, Integer>());
         new Thread(new Runnable() {
             @Override
             public void run() {

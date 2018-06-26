@@ -1,5 +1,7 @@
 package com.phei.netty.nio;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -47,7 +49,7 @@ public class NioTimeServer implements Runnable {
         }
     }
 
-    @Override
+
     public void run() {
        while(!stop){
            try {
@@ -105,6 +107,12 @@ public class NioTimeServer implements Runnable {
                     byte[] bytes=new byte[readBuffer.remaining()];
                     readBuffer.get(bytes);
                     String body=new String(bytes,"UTF-8");
+
+                    //test json
+                    JSONObject jsonObject=JSONObject.parseObject(body);
+                    System.out.println(jsonObject);
+
+
                     System.out.println("The time server operateRabbit order : "+body);
                     String currentTime="QUERY TIME ORDER".equalsIgnoreCase(body)?new Date().toString():"BAD ORDER";
                     doWrite(sc,currentTime);

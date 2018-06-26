@@ -1,15 +1,12 @@
 package concurrent.myimpl;
 
-import concurrent.myimpl.MyCountDownLatch;
-import concurrent.myimpl.MyCountDownLatchCS;
-import concurrent.myimpl.MyCountDownLatchCondition;
 import org.junit.Test;
 
 public class MyCountDownLatchTest {
 
     @Test
     public void test() throws InterruptedException {
-        final MyCountDownLatchCS countDownLatch=new MyCountDownLatchCS(3);
+        final MyCountDownLatchAqs countDownLatch=new MyCountDownLatchAqs(3);
         testCountDown(countDownLatch);
     }
 
