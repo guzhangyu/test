@@ -1,5 +1,6 @@
 package concurrent.myimpl;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
@@ -8,6 +9,8 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 public class MyCyclicBarrierAqs {
 
     private final int cnt;
+
+    private final AtomicInteger cntA=new AtomicInteger();
 
     public MyCyclicBarrierAqs(int cnt){
         this.cnt=cnt;
@@ -31,15 +34,36 @@ public class MyCyclicBarrierAqs {
         }
 
         protected boolean tryRelease(int arg){
-            int s=getState();
+            while(true){
+                int s=getState();
 
-            boolean success=compareAndSetState(s,s==0?MyCyclicBarrierAqs.this.cnt:s-1);
-            if(success && s==1){
-                conditionObject.signalAll();
-                compareAndSetState(0,MyCyclicBarrierAqs.this.cnt);
+                boolean success=compareAndSetState(s,s==0?MyCyclicBarrierAqs.this.cnt:s-1);
+                if(success){
+                    if(s==1){
+                        compareAndSetState(0,MyCyclicBarrierAqs.this.cnt);
+                        cntA.compareAndSet(0,MyCyclicBarrierAqs.this.cnt);
+                        conditionObject.signalAll();
+                    }
+                    return true;
+                }
             }
+        }
 
+        protected boolean isHeldExclusively(){
             return true;
+        }
+
+        protected boolean tryAcquire(int arg){
+            int s;
+            while((s=cntA.get())>0){
+                if(cntA.compareAndSet(s,s-1)){
+                    if(s>1){
+                        conditionObject.signalAll();
+                    }
+                    return true;
+                }
+            }
+            return false;
         }
     }
 

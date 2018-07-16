@@ -5,8 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.raycloud.dmj</groupId>
     <artifactId>MyTest</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>testCode</module>
+    </modules>
     <name>MyTest</name>
     <!--<modules>-->
         <!--<module>../poet</module>-->
