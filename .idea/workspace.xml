@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" description="if(getHead()==null){" line="101" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatViewServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interview/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interview/JdbcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interview/VedioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interview/VedioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" afterDir="false" />
     </list>
     <ignored path="MyTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +21,6 @@
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/testCode/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,48 +29,56 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1586267828">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="h" value="1" />
+          <entry key="java" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C++" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4013" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4013" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="MyTest" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DruidStatViewServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatViewServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DruidStatFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-boot-starter-data-jpa-1.5.14.RELEASE.pom" pinned="false" current-in-tab="false">
-        <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.14.RELEASE/spring-boot-starter-data-jpa-1.5.14.RELEASE.pom">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="SpringAssembly.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="779">
+              <caret line="119" column="60" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,46 +86,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/resources/hibernate.cfg.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="5310">
+              <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="88" column="19" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testCode/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="480">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pojo.xsd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pojo.xsd">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="2865">
+              <caret line="230" selection-start-line="230" selection-end-line="230" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10380">
+              <caret line="747" selection-start-line="747" selection-end-line="747" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/CasDeque2Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4620">
+              <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/LockSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2115">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
             </state>
           </provider>
         </entry>
@@ -134,18 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getSt</find>
-      <find>doReleaseS</find>
-      <find>doReleaseShared</find>
-      <find>getState</find>
-      <find>run1 read unlock 4</find>
-      <find>Proxy</find>
-      <find>rcvBufAllocator</find>
-      <find>ASHIFT</find>
-      <find>ABASE</find>
-      <find>maxIndex</find>
-      <find>waiter =</find>
-      <find>iterator(</find>
       <find>contextClassLoader</find>
       <find>getContextClassLoader</find>
       <find>security</find>
@@ -164,6 +197,18 @@
       <find>MYSQL</find>
       <find>storage_engine</find>
       <find>druis</find>
+      <find>5</find>
+      <find>size:</find>
+      <find>offer</find>
+      <find>iterator</find>
+      <find>iterate</find>
+      <find>poll(</find>
+      <find>iterator(</find>
+      <find>peek()</find>
+      <find>poll()</find>
+      <find>.set</find>
+      <find>setNext</find>
+      <find>setNext(</find>
     </findStrings>
     <replaceStrings>
       <replace>addPoint(</replace>
@@ -179,9 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/concurrent/MyReadWriteLockTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/MyReadWriteLock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/concurrent/MyCountDownLatchWithCSTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/MyCountDownLatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/MyCountDownLatchCondition.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/MyCountDownLatchCS.java" />
@@ -205,7 +247,6 @@
         <option value="$PROJECT_DIR$/src/test/java/concurrent/myimpl/ReentrantReadWriteLockTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/concurrent/myimpl/MyReadWriteLockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyReadWriteLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interview/VedioTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/ReadWriteMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phei/netty/nio/NioTimeServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/CurlTest.java" />
@@ -218,18 +259,22 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/concurrent/myimpl/MyCyclicBarrierAqsTest1.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyCyclicBarrierAqs.java" />
-        <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" />
         <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/HibernateTest.java" />
         <option value="$PROJECT_DIR$/testCode/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/interview/Sinleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/Singleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/JdbcTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testCode/pom.xml" />
         <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatFilter.java" />
         <option value="$PROJECT_DIR$/testCode/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" />
+        <option value="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interview/VedioTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyConcurrentLinkedQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" />
       </list>
     </option>
   </component>
@@ -242,8 +287,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:\apache-maven-3.3.3" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.3.3\conf\settiings_lkwd.xml" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settiings_lkwd.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -257,16 +301,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="MyTest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="testCode" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="testCode" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -275,14 +315,10 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=E:\apache-maven-3.3.3" />
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -357,7 +393,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -368,25 +404,17 @@
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -394,29 +422,68 @@
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="testCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="myimpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
@@ -427,7 +494,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,6 +509,7 @@
     <property name="SearchEverywhereHistoryKey" value="Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/Lock.java&#10;.xml&#9;FILE&#9;file://D:/Users/guzy/IdeaProjects/practice-Code/pom.xml&#10;Nio&#9;PSI&#9;JAVA://com.phei.netty.nio.NioTimeClient&#10;sort&#9;PSI&#9;JAVA://algorithm.tree.BalancedBinarySearchTree#sort&#10;.html&#9;FILE&#9;file:///Users/guzy/IdeaProjects/raycloud/myTest/src/main/WebSocketServer.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537540204696" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -452,23 +520,21 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.phei.netty.rpc.RpcConstants" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="concurrent.cas.collections" />
       <recent name="concurrent" />
       <recent name="concurrent.myimpl" />
       <recent name="algorithm" />
       <recent name="puzzle" />
-      <recent name="com.phei.netty.bio.simple" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
-      <recent name="D:\Users\guzy\IdeaProjects\practice-Code" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jvm.codecheck" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="concurrent.myimpl" />
@@ -477,8 +543,10 @@
       <recent name="com.phei.netty.rpc" />
       <recent name="com.phei.netty.netty.protobuf" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="jvm.codecheck" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
+      <recent name="D:\Users\guzy\IdeaProjects\practice-Code" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -493,258 +561,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringAssembly">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="BindCompile" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.Compile" />
-      <module name="MyTest" />
-      <option name="PROGRAM_PARAMETERS" value="-v xmlout/binding.xml" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="BindGen" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.generator.BindGen" />
-      <module name="MyTest" />
-      <option name="PROGRAM_PARAMETERS" value="-b bind.xml com.phei.netty.xml.pojo.Customer" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="BindGen1" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.generator.BindGen" />
-      <module name="MyTest" />
-      <option name="PROGRAM_PARAMETERS" value="-w -s src -t xmlout com.phei.netty.xml.pojo.Customer" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jibx.binding.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="CompileTest" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jvm.hotcompile.CompileTest" />
-      <module name="MyTest" />
-      <option name="PROGRAM_PARAMETERS" value="-XX:PrintIdealGraphLevel=2 -XX:PrintIdealGraphFile=ideal.xml" />
-      <option name="VM_PARAMETERS" value="-server -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions " />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jvm.hotcompile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="HibernateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.HibernateTest" />
-      <module name="testCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="JdbcTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.JdbcTest" />
-      <module name="testCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="JdbcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interview.JdbcTest" />
-      <module name="MyTest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="ThreadTest" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThreadTest" />
-      <module name="MyTest" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="VolatileTest" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jvm.VolatileTest" />
-      <module name="MyTest" />
-      <option name="VM_PARAMETERS" value="-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithm.exercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="false" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
-    <configuration name="MyCyclicBarrierAqsTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="concurrent.myimpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="concurrent.myimpl" />
-      <option name="MAIN_CLASS_NAME" value="concurrent.myimpl.MyCyclicBarrierAqsTest1" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MyTest [clean,install]" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="install" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="SpringAssembly" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="testCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.test.SpringAssembly" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
+  <component name="RunManager" selected="Application.MyConcurrentLinkedQueue">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -786,6 +603,225 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BindCompile" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.Compile" />
+      <module name="MyTest" />
+      <option name="PROGRAM_PARAMETERS" value="-v xmlout/binding.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BindGen" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.generator.BindGen" />
+      <module name="MyTest" />
+      <option name="PROGRAM_PARAMETERS" value="-b bind.xml com.phei.netty.xml.pojo.Customer" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BindGen1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.jibx.binding.generator.BindGen" />
+      <module name="MyTest" />
+      <option name="PROGRAM_PARAMETERS" value="-w -s src -t xmlout com.phei.netty.xml.pojo.Customer" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jibx.binding.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompileTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jvm.hotcompile.CompileTest" />
+      <module name="MyTest" />
+      <option name="PROGRAM_PARAMETERS" value="-XX:PrintIdealGraphLevel=2 -XX:PrintIdealGraphFile=ideal.xml" />
+      <option name="VM_PARAMETERS" value="-server -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jvm.hotcompile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.JdbcTest" />
+      <module name="testCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyConcurrentLinkedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrent.cas.collections.MyConcurrentLinkedQueue" />
+      <module name="practice-Code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.cas.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest" />
+      <module name="MyTest" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolatileTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jvm.VolatileTest" />
+      <module name="MyTest" />
+      <option name="VM_PARAMETERS" value="-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MyConcurrentLinkedQueueTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice-Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.cas.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="concurrent.cas.collections" />
+      <option name="MAIN_CLASS_NAME" value="concurrent.cas.collections.MyConcurrentLinkedQueueTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyConcurrentLinkedQueueTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice-Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.cas.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="concurrent.cas.collections" />
+      <option name="MAIN_CLASS_NAME" value="concurrent.cas.collections.MyConcurrentLinkedQueueTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyConcurrentLinkedQueueTest.testOffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice-Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.cas.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="concurrent.cas.collections" />
+      <option name="MAIN_CLASS_NAME" value="concurrent.cas.collections.MyConcurrentLinkedQueueTest" />
+      <option name="METHOD_NAME" value="testOffer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest [clean,install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -793,6 +829,7 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.BindGen" />
@@ -802,19 +839,19 @@
       <item itemvalue="Application.ThreadTest" />
       <item itemvalue="Application.BindGen1" />
       <item itemvalue="Maven.MyTest [clean,install]" />
-      <item itemvalue="JUnit.MyCyclicBarrierAqsTest1.test1" />
-      <item itemvalue="Application.JdbcTest" />
       <item itemvalue="Application.JdbcTest (1)" />
-      <item itemvalue="Application.HibernateTest" />
-      <item itemvalue="Spring Boot.SpringAssembly" />
+      <item itemvalue="Application.MyConcurrentLinkedQueue" />
+      <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.testOffer" />
+      <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test2" />
+      <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringAssembly" />
-        <item itemvalue="Application.JdbcTest" />
-        <item itemvalue="Application.HibernateTest" />
+        <item itemvalue="Application.MyConcurrentLinkedQueue" />
+        <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test1" />
+        <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test2" />
+        <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.testOffer" />
         <item itemvalue="Application.JdbcTest (1)" />
-        <item itemvalue="JUnit.MyCyclicBarrierAqsTest1.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -878,6 +915,12 @@
       <workItem from="1532217511574" duration="1841000" />
       <workItem from="1532677909214" duration="4760000" />
       <workItem from="1532831522258" duration="632000" />
+      <workItem from="1534395724063" duration="1368000" />
+      <workItem from="1535407278828" duration="592000" />
+      <workItem from="1537253286682" duration="9000" />
+      <workItem from="1537253598365" duration="595000" />
+      <workItem from="1537270975495" duration="22694000" />
+      <workItem from="1537519215317" duration="3558000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
@@ -911,85 +954,85 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReentrantReadWriteLockTest_test5 - 2018.06.01 at 18h 55m 59s.xml">
-      <configuration name="ReentrantReadWriteLockTest.test5" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_testOffer - 2018.09.21 at 10h 21m 44s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.testOffer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 07h 55m 53s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_testOffer - 2018.09.21 at 21h 50m 43s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.testOffer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 09m 46s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_testOffer - 2018.09.21 at 21h 51m 43s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.testOffer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 10m 03s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 04m 12s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 11m 26s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 06m 30s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 20m 17s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 09m 24s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 22m 36s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 17m 17s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 23m 36s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 20m 48s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 24m 55s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 21m 41s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyCyclicBarrierAqsTest1_test1 - 2018.06.27 at 08h 25m 23s.xml">
-      <configuration name="MyCyclicBarrierAqsTest1.test1" configurationId="JUnit" />
+    <history-entry file="MyConcurrentLinkedQueueTest_test2 - 2018.09.21 at 22h 24m 21s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="618793000" />
+    <option name="totallyTimeSpent" value="647609000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.22390318" side_tool="true" visible="true" weight="0.19412725" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.21860817" />
-      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Designer" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Structure" order="1" sideWeight="0.1659919" side_tool="true" visible="true" weight="0.3161876" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.22844176" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8423326" visible="true" weight="0.24391988" />
+      <window_info id="Structure" order="1" sideWeight="0.15766738" side_tool="true" visible="true" weight="0.24391988" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.88426626" weight="0.40293637" />
-      <window_info anchor="bottom" id="TODO" order="15" side_tool="true" />
-      <window_info id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.7760968" weight="0.19412725" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49394855" weight="0.0" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Web" order="3" side_tool="true" />
+      <window_info id="JRebel" order="4" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.2106383" side_tool="true" weight="0.24717286" />
+      <window_info id="Palette&#9;" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Image Layers" order="8" />
+      <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5771558" weight="0.35562807" />
-      <window_info id="Persistence" order="8" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8340081" visible="true" weight="0.3161876" />
-      <window_info anchor="right" id="Bean Validation" order="4" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Favorites" order="4" sideWeight="0.2106383" side_tool="true" weight="0.24717286" />
-      <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="IDEtalk" order="7" />
-      <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.39485627" weight="0.47471452" />
-      <window_info anchor="bottom" id="Application Servers" order="5" />
-      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.51226014" weight="0.4238342" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="8" />
       <window_info anchor="bottom" id="JRebel Executor" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.2267525" side_tool="true" visible="true" weight="0.35694444" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49394855" weight="0.0" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.38984263" weight="0.4735376" />
+      <window_info anchor="bottom" id="Application Servers" order="5" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Changes" order="9" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
+      <window_info anchor="bottom" id="Find" order="11" sideWeight="0.5114449" weight="0.15041783" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.7732475" visible="true" weight="0.35694444" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.8769671" weight="0.32871014" />
+      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="18" />
+      <window_info anchor="bottom" id="Database Changes" order="19" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.22844176" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.21816881" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Designer" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="IDEtalk" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1544,11 +1587,40 @@
           <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="228" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1605,129 +1677,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/channel/nio/AbstractNioByteChannel.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="303" column="25" selection-start-line="303" selection-start-column="25" selection-end-line="303" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/channel/AdaptiveRecvByteBufAllocator.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="565" column="51" lean-forward="true" selection-start-line="565" selection-start-column="51" selection-end-line="565" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62453">
-          <caret line="3383" column="17" selection-start-line="3383" selection-start-column="17" selection-end-line="3383" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11495">
-          <caret line="650" column="72" selection-start-line="650" selection-start-column="51" selection-end-line="650" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25745">
-          <caret line="1434" column="50" selection-start-line="1434" selection-start-column="24" selection-end-line="1434" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/SecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3211">
-          <caret line="207" column="29" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/javax/management/MBeanPermission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4636">
-          <caret line="284" column="27" selection-start-line="284" selection-start-column="9" selection-end-line="284" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/jre/lib/rt.jar!/sun/reflect/Reflection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27246">
-          <caret line="1509" selection-start-line="1509" selection-end-line="1509" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interview/CurlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyReadWriteLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="164" column="17" lean-forward="true" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1895#1896#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#3996#3997#0" expanded="true" />
-            <element signature="e#4066#4067#0" expanded="true" />
-            <element signature="e#4263#4264#0" expanded="true" />
-            <element signature="e#4328#4329#0" expanded="true" />
-            <element signature="e#4777#4778#0" expanded="true" />
-            <element signature="e#4842#4843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/ReadWriteMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyCountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/tests/PutTakeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
@@ -1770,13 +1719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/LockSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2679">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/LockSupport.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/myimpl/MyCyclicBarrierAqsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
@@ -1819,21 +1762,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22895">
-          <caret line="1260" selection-start-line="1260" selection-end-line="1260" />
-          <folding>
-            <element signature="e#41392#41393#0" expanded="true" />
-            <element signature="e#41449#41450#0" expanded="true" />
-            <element signature="e#42562#42563#0" expanded="true" />
-            <element signature="e#42619#42620#0" expanded="true" />
-            <element signature="e#46422#46423#0" expanded="true" />
-            <element signature="e#46479#46480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java" />
     <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/HibernateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1865,44 +1794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24-sources.jar!/com/mysql/jdbc/SQLError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16606">
-          <caret line="917" column="31" selection-start-line="917" selection-start-column="31" selection-end-line="917" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10640">
-          <caret line="624" column="29" selection-start-line="624" selection-start-column="29" selection-end-line="624" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24-sources.jar!/com/mysql/jdbc/ConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18924">
-          <caret line="1077" column="38" selection-start-line="1077" selection-start-column="38" selection-end-line="1077" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/SQLError.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24-sources.jar!/com/mysql/jdbc/SQLError.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/ConnectionImpl.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24-sources.jar!/com/mysql/jdbc/ConnectionImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/JdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1910,60 +1805,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pojo.xsd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.14.RELEASE/spring-boot-starter-data-jpa-1.5.14.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCode/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo.xsd" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.14.RELEASE/spring-boot-starter-data-jpa-1.5.14.RELEASE.pom" />
     <entry file="file://$PROJECT_DIR$/testCode/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
+        <state relative-caret-position="780">
           <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatViewServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="165">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DruidStatFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="75">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1971,10 +1838,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testCode/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1671">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HelloWorld.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CellularAutomata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-611">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/VedioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/myimpl/LockAndSynchronizedCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testCode/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="270">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="176" column="18" lean-forward="true" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="199" column="21" selection-start-line="199" selection-start-column="16" selection-end-line="199" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5310">
+          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10380">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/CasDeque2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2115">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="88" column="19" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="119" column="60" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1995,7 +2011,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2030,7 +2046,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MyTest</last-edited>
+          <last-edited>testCode</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
