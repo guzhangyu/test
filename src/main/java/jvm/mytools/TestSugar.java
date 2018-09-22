@@ -2,10 +2,7 @@ package jvm.mytools;
 
 import concurrent.cas.collections.MyConcurrentLinkedQueue;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,32 +15,38 @@ public class TestSugar {
     /**
      * 去掉除了testName以外的test代码
      * @param cls
-     * @param testName
+     * @param testNames
      * @return
      * @throws IOException
      */
-    public String cleanExcept(Class cls,String testName) throws IOException {
+    public String cleanExcept(Class cls,String... testNames) throws IOException {
         String fileName=System.getenv("PWD")+"/src/main/java/"+(cls.getCanonicalName().replaceAll("\\.","/"))+".java";
 
         FileInputStream fis=new FileInputStream(fileName);
+        InputStreamReader isr=new InputStreamReader(fis,"utf-8");
 
         StringBuffer sb=new StringBuffer();
-        byte[] bytes=new byte[1024];
+        char[] bytes=new char[1024];
         int len=0;
-        while((len=fis.read(bytes))>0){
+        while((len=isr.read(bytes))>0){
             sb.append(new String(bytes,0,len));
         }
 
         fis.close();
+        isr.close();
 
         String code=sb.toString();
-        if(testName==null){
-            testName="[^\"]+";
-        }else{
-            testName="((?!"+testName+")[^\"]+)";
+        String testName="[^\\)]+";
+        if(testNames.length>0){
+            for(String s:testNames){
+                testName="(?!"+s+")"+testName;
+            }
+            testName=String.format("(%s)",testName);
         }
-        System.out.println("\\s+//@test\\_s\\(\""+testName+"\"\\)[\\S\\s]+?//@test\\_e\\(\""+testName+"\"\\).*");
-        Pattern testPat=Pattern.compile("\\s+//@test\\_s\\(\""+testName+"\"\\)[\\S\\s]+?//@test\\_e\\(\""+testName+"\"\\).*",Pattern.MULTILINE);
+
+        String pt="\\s+//@test\\_s\\("+testName+"\\)[\\S\\s]+?//@test\\_e\\("+testName+"\\).*";
+        System.out.println(pt);
+        Pattern testPat=Pattern.compile(pt,Pattern.MULTILINE);
         Matcher matcher=testPat.matcher(code);
 
         boolean changed=false;
@@ -78,15 +81,17 @@ public class TestSugar {
             return null;
         }
         FileInputStream fis=new FileInputStream(barkFile);
+        InputStreamReader isr=new InputStreamReader(fis,"utf-8");
 
         StringBuffer sb=new StringBuffer();
-        byte[] bytes=new byte[1024];
+        char[] bytes=new char[1024];
         int len=0;
-        while((len=fis.read(bytes))>0){
+        while((len=isr.read(bytes))>0){
             sb.append(new String(bytes,0,len));
         }
 
         fis.close();
+        isr.close();
 
         String code=sb.toString();
         FileOutputStream fos=new FileOutputStream(fileName);
@@ -103,3 +108,4 @@ public class TestSugar {
         testSugar.revert(MyConcurrentLinkedQueue.class);
     }
 }
+

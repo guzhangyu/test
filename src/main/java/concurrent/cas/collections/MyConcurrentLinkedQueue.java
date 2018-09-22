@@ -69,9 +69,9 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
         if(tail==null){//如果是第一个元素,此处经过cas，所以为null的那个tail肯定是被当前的操作替换
             LogUtils.log(String.format("set head node1"));
             setHead(null,node); //100%
-        }else{//在setNext之前，如果poll掉了之前的tail，此处的node可能丢失 fixed
+        }else{//�������������setNext之前，如果poll掉了之前的tail，此处的node可能丢失 fixed
 
-            //@test_s("test1")
+            //@test_s(test1,common)
             {
                 LogUtils.log("offer time1");
                 try {
@@ -81,7 +81,7 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
                 }
                 LogUtils.log("offer time3");
             }
-            //@test_e("test1")
+            //@test_e(test1,common)
 
             //1、在poll的set tail之前set 了tail，
             //2、在set next之前，原先的head被设置为null了，此时会丢失新添加的元素
@@ -89,11 +89,11 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
                 setHead(null,node); // offer 7 100%
             }
 
-            //@test_s("test1")
+            //@test_s(test1)
             {
                 LogUtils.log("offer time2");
             }
-            //@test_e("test1")
+            //@test_e(test1)
         }
         return true;
     }
@@ -119,41 +119,41 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
             LogUtils.log("last head");
             if(head==tail){
 
-                //@test_s("test2")
+                //@test_s(test2)
                 LogUtils.log("poll0");
                 try {
                     Thread.sleep(1000l);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                //@test_e("test2")
+                //@test_e(test2)
 
                 if(!setTail(tail,null)){//test2
                     LogUtils.log("set tail fail");
 
-                    // 在set tail之前，可能有新元素插入,此时需要设置新head
+                    // 在set tail之前，��能��新��素��入,���时���要设置新head
                     if(head.getNext()!=null){
                         LogUtils.log("poll1");
                         setHead(null,head.getNext()); //100%
                         //offer方法不能改变tail的next，且poll方法不可能再获取元素
                     }else{
 
-                        //@test_s("test2")
+                        //@test_s(test2)
                         System.out.println("t1");
-                        //@test_e("test2")
+                        //@test_e(test2)
 
                         if(!head.setNext(null,REPLACE_NODE)){//offer 7已经完成
                             setHead(null,head.getNext());//100%
                             head.setNext(REPLACE_NODE,null);
-                            //@test_s("test2")
+                            //@test_s(test2)
                             System.out.println("t2");
-                            //@test_e("test2")
+                            //@test_e(test2)
                         }
                     }
                 }
             }else if(head.setNext(null,REPLACE_NODE)){//针对test1
                 setHead(null,tail);//100%
-                head.setNext(REPLACE_NODE,null); //必须，否则offer 7会重复执行，导致多一个head
+                head.setNext(REPLACE_NODE,null); //必须，���则offer 7会重复执行，导致多一个head
                 LogUtils.log(String.format("set head tail1"));
             }
         }
