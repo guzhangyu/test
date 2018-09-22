@@ -1,5 +1,6 @@
 package concurrent.cas.collections;
 
+import base.LogUtils;
 import org.junit.Test;
 
 import java.util.Date;
@@ -33,7 +34,7 @@ public class MyConcurrentLinkedQueueTest {
                 String s=null;
                 while((s=queue.poll())!=null){
                     System.out.println(s);
-                    System.out.println(String.format("poll time1:%s",new Date()));
+                    LogUtils.log("poll time1");
                 }
                 latch.countDown();
             }
@@ -46,7 +47,7 @@ public class MyConcurrentLinkedQueueTest {
                 String s=null;
                 while((s=queue.poll())!=null){
                     System.out.println(s);
-                    System.out.println(String.format("poll time2:%s",new Date()));
+                    LogUtils.log("poll time2");
                 }
             }
         }).start();

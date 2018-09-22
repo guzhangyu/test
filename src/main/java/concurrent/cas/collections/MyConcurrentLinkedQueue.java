@@ -1,5 +1,7 @@
 package concurrent.cas.collections;
 
+import base.LogUtils;
+
 import java.util.AbstractQueue;
 import java.util.Date;
 import java.util.Iterator;
@@ -65,20 +67,33 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
 
         changeTime=System.currentTimeMillis();
         if(tail==null){//如果是第一个元素,此处经过cas，所以为null的那个tail肯定是被当前的操作替换
+            LogUtils.log(String.format("set head node1"));
             setHead(null,node); //100%
         }else{//在setNext之前，如果poll掉了之前的tail，此处的node可能丢失 fixed
-            System.out.println(String.format("offer time1:%s",new Date()));
-            try {
-                Thread.sleep(1000l);//测试
-            } catch (InterruptedException e1) {
-                e1.printStackTrace();
+
+            //@test_s("test1")
+            {
+                LogUtils.log("offer time1");
+                try {
+                    Thread.sleep(1000l);//测试
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+                LogUtils.log("offer time3");
             }
+            //@test_e("test1")
+
             //1、在poll的set tail之前set 了tail，
             //2、在set next之前，原先的head被设置为null了，此时会丢失新添加的元素
             if(!tail.setNext(null,node)){//说明此时原先的tail的tail的next被修改了，不可能通过offer触发，只能通过poll最后一些元素触发，此时说明要设置新的head
                 setHead(null,node); // offer 7 100%
             }
-            System.out.println(String.format("offer time2:%s",new Date()));
+
+            //@test_s("test1")
+            {
+                LogUtils.log("offer time2");
+            }
+            //@test_e("test1")
         }
         return true;
     }
@@ -101,27 +116,45 @@ public class MyConcurrentLinkedQueue<E> extends AbstractQueue<E> {
         //如果把最后一个元素取出来了
         if(getHead()==null){
             Node<E> tail=getTail();
+            LogUtils.log("last head");
             if(head==tail){
+
+                //@test_s("test2")
+                LogUtils.log("poll0");
                 try {
                     Thread.sleep(1000l);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                //@test_e("test2")
+
                 if(!setTail(tail,null)){//test2
+                    LogUtils.log("set tail fail");
+
                     // 在set tail之前，可能有新元素插入,此时需要设置新head
                     if(head.getNext()!=null){
+                        LogUtils.log("poll1");
                         setHead(null,head.getNext()); //100%
                         //offer方法不能改变tail的next，且poll方法不可能再获取元素
                     }else{
+
+                        //@test_s("test2")
                         System.out.println("t1");
+                        //@test_e("test2")
+
                         if(!head.setNext(null,REPLACE_NODE)){//offer 7已经完成
                             setHead(null,head.getNext());//100%
+                            head.setNext(REPLACE_NODE,null);
+                            //@test_s("test2")
                             System.out.println("t2");
+                            //@test_e("test2")
                         }
                     }
                 }
             }else if(head.setNext(null,REPLACE_NODE)){//针对test1
                 setHead(null,tail);//100%
+                head.setNext(REPLACE_NODE,null); //必须，否则offer 7会重复执行，导致多一个head
+                LogUtils.log(String.format("set head tail1"));
             }
         }
         return head.getValue();
