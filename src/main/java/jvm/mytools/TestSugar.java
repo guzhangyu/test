@@ -2,7 +2,10 @@ package jvm.mytools;
 
 import concurrent.cas.collections.MyConcurrentLinkedQueue;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,20 +25,8 @@ public class TestSugar {
     public String cleanExcept(Class cls,String... testNames) throws IOException {
         String fileName=System.getenv("PWD")+"/src/main/java/"+(cls.getCanonicalName().replaceAll("\\.","/"))+".java";
 
-        FileInputStream fis=new FileInputStream(fileName);
-        InputStreamReader isr=new InputStreamReader(fis,"utf-8");
+        String code = getFileContent(fileName),preCode=code;
 
-        StringBuffer sb=new StringBuffer();
-        char[] bytes=new char[1024];
-        int len=0;
-        while((len=isr.read(bytes))>0){
-            sb.append(new String(bytes,0,len));
-        }
-
-        fis.close();
-        isr.close();
-
-        String code=sb.toString();
         String testName="[^\\)]+";
         if(testNames.length>0){
             for(String s:testNames){
@@ -61,10 +52,24 @@ public class TestSugar {
             fos.close();
 
             FileOutputStream barkFos=new FileOutputStream(fileName+".bark");
-            barkFos.write(sb.toString().getBytes());
+            barkFos.write(preCode.getBytes());
             barkFos.close();
         }
         return null;
+    }
+
+    private String getFileContent(String fileName) throws IOException {
+        FileInputStream fis=new FileInputStream(fileName);
+
+        byte[] bytes=new byte[(int)new File(fileName).length()];
+        int len=0;
+        String s=null;
+        while((len=fis.read(bytes))>0){
+            s= new String(bytes,0,len);
+        }
+
+        fis.close();
+        return s;
     }
 
     /**
@@ -80,20 +85,8 @@ public class TestSugar {
         if(!barkFile.exists()){
             return null;
         }
-        FileInputStream fis=new FileInputStream(barkFile);
-        InputStreamReader isr=new InputStreamReader(fis,"utf-8");
+        String code=getFileContent(barkFile.getPath());
 
-        StringBuffer sb=new StringBuffer();
-        char[] bytes=new char[1024];
-        int len=0;
-        while((len=isr.read(bytes))>0){
-            sb.append(new String(bytes,0,len));
-        }
-
-        fis.close();
-        isr.close();
-
-        String code=sb.toString();
         FileOutputStream fos=new FileOutputStream(fileName);
         fos.write(code.getBytes());
         fos.close();

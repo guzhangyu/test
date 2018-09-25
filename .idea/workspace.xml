@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jvm/mytools/TestSugar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jvm/mytools/TestSugar.java" afterDir="false" />
     </list>
     <ignored path="MyTest.iws" />
@@ -38,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="bark" value="6" />
+          <entry key="bark" value="11" />
           <entry key="class" value="3" />
           <entry key="h" value="1" />
           <entry key="java" value="27" />
@@ -49,17 +49,19 @@
           <entry key="C++" value="1" />
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="27" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6019" />
+          <entry key="dummy" value="19" />
+          <entry key="java" value="6234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6019" />
+          <entry key="JAVA" value="6234" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -69,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="140">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5102#5103#0" expanded="true" />
@@ -118,16 +120,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/base/LogUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jvm/mytools/TestSugar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+            <state relative-caret-position="308">
+              <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="149">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -167,15 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/nio/ByteBufferAsCharBufferB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="41" column="38" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -202,7 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new ConditionObject</find>
       <find>jar</find>
       <find>MYSQL</find>
       <find>storage_engine</find>
@@ -226,12 +218,13 @@
       <find>setNext</find>
       <find>\s+//@test\_s\(((?!test1)[^&quot;]+)\)[\S\s]+?//@test\_e\(((?!test1)[^&quot;]+)\)</find>
       <find>@test</find>
-      <find>���</find>
       <find>characters</find>
       <find>chara</find>
       <find>encoding</find>
       <find>encod</find>
+      <find>���</find>
       <find>new S</find>
+      <find>������������</find>
     </findStrings>
     <replaceStrings>
       <replace>addPoint(</replace>
@@ -548,7 +541,7 @@
     <property name="SearchEverywhereHistoryKey" value="Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/Lock.java&#10;.xml&#9;FILE&#9;file://D:/Users/guzy/IdeaProjects/practice-Code/pom.xml&#10;Nio&#9;PSI&#9;JAVA://com.phei.netty.nio.NioTimeClient&#10;sort&#9;PSI&#9;JAVA://algorithm.tree.BalancedBinarySearchTree#sort&#10;.html&#9;FILE&#9;file:///Users/guzy/IdeaProjects/raycloud/myTest/src/main/WebSocketServer.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537610018162" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537862864082" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -887,8 +880,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestSugar" />
         <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test1" />
+        <item itemvalue="Application.TestSugar" />
         <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.test2" />
         <item itemvalue="Application.MyConcurrentLinkedQueue" />
         <item itemvalue="JUnit.MyConcurrentLinkedQueueTest.testOffer" />
@@ -960,7 +953,7 @@
       <workItem from="1537253286682" duration="9000" />
       <workItem from="1537253598365" duration="595000" />
       <workItem from="1537270975495" duration="22694000" />
-      <workItem from="1537519215317" duration="16911000" />
+      <workItem from="1537519215317" duration="19531000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
@@ -994,9 +987,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyConcurrentLinkedQueueTest_test1 - 2018.09.22 at 17h 07m 44s.xml">
-      <configuration name="MyConcurrentLinkedQueueTest.test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyConcurrentLinkedQueueTest_test1 - 2018.09.22 at 17h 08m 01s.xml">
       <configuration name="MyConcurrentLinkedQueueTest.test1" configurationId="JUnit" />
     </history-entry>
@@ -1024,16 +1014,19 @@
     <history-entry file="MyConcurrentLinkedQueueTest_test1 - 2018.09.22 at 17h 28m 22s.xml">
       <configuration name="MyConcurrentLinkedQueueTest.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyConcurrentLinkedQueueTest_test1 - 2018.09.25 at 16h 46m 50s.xml">
+      <configuration name="MyConcurrentLinkedQueueTest.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="660962000" />
+    <option name="totallyTimeSpent" value="663582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84695655" visible="true" weight="0.2353362" />
-      <window_info id="Structure" order="1" sideWeight="0.15304348" side_tool="true" visible="true" weight="0.2353362" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8470363" visible="true" weight="0.2353362" />
+      <window_info id="Structure" order="1" sideWeight="0.15296367" side_tool="true" visible="true" weight="0.2353362" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="JRebel" order="4" side_tool="true" />
@@ -1042,9 +1035,9 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Image Layers" order="8" />
       <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.57439196" weight="0.35" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5736767" weight="0.35" />
       <window_info anchor="bottom" id="JRebel Executor" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.23175965" side_tool="true" visible="true" weight="0.2013889" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.23247497" side_tool="true" visible="true" weight="0.2736111" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49394855" weight="0.0" />
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.38841203" weight="0.4722222" />
       <window_info anchor="bottom" id="Application Servers" order="5" />
@@ -1054,7 +1047,7 @@
       <window_info anchor="bottom" id="Changes" order="9" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
       <window_info anchor="bottom" id="Find" order="11" sideWeight="0.5107296" weight="0.15" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.76824033" visible="true" weight="0.2013889" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.767525" visible="true" weight="0.2736111" />
       <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.8755365" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
@@ -2003,7 +1996,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/base/LogUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -2014,20 +2007,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java.bark">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -2045,10 +2024,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java.bark">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jvm/mytools/TestSugar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/concurrent/cas/collections/MyConcurrentLinkedQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="140">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5102#5103#0" expanded="true" />
@@ -2072,16 +2075,6 @@
             <element signature="e#8134#8135#0" expanded="true" />
             <element signature="e#8171#8172#0" expanded="true" />
             <element signature="e#8205#8206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jvm/mytools/TestSugar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
