@@ -17,11 +17,13 @@ import java.io.ByteArrayOutputStream;
  */
 public class RpcInfoSerializeHandler extends ChannelHandlerAdapter {
 
-    public final static ThreadLocal<String> rpcInfoId=new ThreadLocal<>();
+  //  public final static ThreadLocal<String> rpcInfoId=new ThreadLocal<>();
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        Kryo kryo=new Kryo();
+        String id=null;
+        try{
+            Kryo kryo=new Kryo();
 //        int id=32323223;
 //        Registration registration=new Registration(StackTraceElement.class,new FieldSerializer<StackTraceElement>(kryo,StackTraceElement.class),id);
 //        registration.setInstantiator(new ObjectInstantiator(){
@@ -33,48 +35,70 @@ public class RpcInfoSerializeHandler extends ChannelHandlerAdapter {
 //        });
 //        kryo.register();
 
-        //kryo.register(List.class,new DefaultSerializers.CollectionsSingletonListSerializer());
-        ByteBuf msgBuf=(ByteBuf)msg;
-        byte[] bytes=msgBuf.array();
-        RpcInfo object=kryo.readObject(new Input(bytes), RpcInfo.class);
+            //kryo.register(List.class,new DefaultSerializers.CollectionsSingletonListSerializer());
+            ByteBuf msgBuf=(ByteBuf)msg;
+            byte[] bytes=msgBuf.array();
+            RpcInfo object=kryo.readObject(new Input(bytes), RpcInfo.class);
+            id=object.getId();
 
-        if(object.getSuccess()==null){//说明是从consumer过来的请求
-            rpcInfoId.set(object.getId());
+//        if(object.getSuccess()==null){//说明是从consumer过来的请求(在provider部分发生)
+//            rpcInfoId.set(object.getId());
+//        }
+            super.channelRead(ctx, object);
+        }catch (Exception e){
+            writeExceptionInfo(ctx,e,id);
         }
-        super.channelRead(ctx, object);
     }
 
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        Kryo kryo=new Kryo();
-        Output output=new Output(new ByteArrayOutputStream());
-        kryo.writeObject(output, msg);
+        String id=null;
+        try{
+            Kryo kryo=new Kryo();
+            Output output=new Output(new ByteArrayOutputStream());
+            kryo.writeObject(output, msg);
 
-        byte[] bytes=output.toBytes();
-        ByteBuf byteBuf=Unpooled.buffer(bytes.length+2);
-        byteBuf.writeBytes(bytes);
-        byteBuf.writeBytes(RpcConstants.CR.getBytes());
+            byte[] bytes=output.toBytes();
+            ByteBuf byteBuf=Unpooled.buffer(bytes.length+2);
+            byteBuf.writeBytes(bytes);
+            byteBuf.writeBytes(RpcConstants.CR.getBytes());
 
-        ctx.writeAndFlush(byteBuf);
+            ctx.writeAndFlush(byteBuf);
+        }catch (Exception e){
+            writeExceptionInfo(ctx,e,id);
+        }
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         System.err.println("serialize error");
-        writeExceptionInfo(ctx, cause);
+        writeExceptionInfo(ctx, cause,null);
     }
 
-    protected static void writeExceptionInfo(ChannelHandlerContext ctx, Throwable cause) {
+    protected static void writeExceptionInfo(ChannelHandlerContext ctx, Throwable cause,String id) {
         cause.printStackTrace();
-        String id=rpcInfoId.get();
         if(id!=null){
             RpcInfo rpcResult=new RpcInfo();
             rpcResult.setResult(cause.getMessage());
-           // rpcResult.setStackTrace(cause.getStackTrace());
+            // rpcResult.setStackTrace(cause.getStackTrace());
             rpcResult.setException(cause.getClass().getName());
             rpcResult.setId(id);
             rpcResult.setSuccess(false);
             ctx.writeAndFlush(rpcResult);
         }
     }
+
+//    protected static void writeExceptionInfo(ChannelHandlerContext ctx, Throwable cause) {
+//        cause.printStackTrace();
+//        String id=rpcInfoId.get();
+//        if(id!=null){
+//            RpcInfo rpcResult=new RpcInfo();
+//            rpcResult.setResult(cause.getMessage());
+//           // rpcResult.setStackTrace(cause.getStackTrace());
+//            rpcResult.setException(cause.getClass().getName());
+//            rpcResult.setId(id);
+//            rpcResult.setSuccess(false);
+//            ctx.writeAndFlush(rpcResult);
+//        }
+//    }
 }
