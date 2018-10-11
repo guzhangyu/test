@@ -22,6 +22,13 @@ public class RpcInfoSerializeHandler extends BaseChannelHandlerAdapter {
 
     @Override
     public Object channelReadInner(ChannelHandlerContext ctx, Object msg) throws Exception {
+        ByteBuf msgBuf=(ByteBuf)msg;
+
+        int len=msgBuf.readInt();
+        byte[] idB=new byte[len];
+        msgBuf.readBytes(idB);
+        id=new String(idB);
+
         Kryo kryo=new Kryo();
 //        int id=32323223;
 //        Registration registration=new Registration(StackTraceElement.class,new FieldSerializer<StackTraceElement>(kryo,StackTraceElement.class),id);
@@ -35,10 +42,11 @@ public class RpcInfoSerializeHandler extends BaseChannelHandlerAdapter {
 //        kryo.register();
 
         //kryo.register(List.class,new DefaultSerializers.CollectionsSingletonListSerializer());
-        ByteBuf msgBuf=(ByteBuf)msg;
+
         byte[] bytes=msgBuf.array();
-        RpcInfo object=kryo.readObject(new Input(bytes), RpcInfo.class);
-        id=object.getId();
+        int offset=4+idB.length;
+        RpcInfo object=kryo.readObject(new Input(bytes,offset,bytes.length), RpcInfo.class);
+        //id=object.getId();
 
 //        if(object.getSuccess()==null){//说明是从consumer过来的请求(在provider部分发生)
 //            rpcInfoId.set(object.getId());
@@ -48,12 +56,26 @@ public class RpcInfoSerializeHandler extends BaseChannelHandlerAdapter {
 
     @Override
     public Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        if(msg==null){
+            System.out.println("序列化内容为空！");
+            return null;
+        }
+        RpcInfo rpcInfo=(RpcInfo)msg;
+        if(rpcInfo.getId()==null || rpcInfo.getId().trim().length()==0){
+            System.out.println("序列化内容的id为空！");
+            return null;
+        }
+
         Kryo kryo=new Kryo();
         Output output=new Output(new ByteArrayOutputStream());
         kryo.writeObject(output, msg);
 
+
+        byte[] idB=rpcInfo.getId().getBytes();
         byte[] bytes=output.toBytes();
-        ByteBuf byteBuf=Unpooled.buffer(bytes.length+2);
+        ByteBuf byteBuf=Unpooled.buffer(bytes.length+2+idB.length+4);
+        byteBuf.writeInt(idB.length);
+        byteBuf.writeBytes(idB);
         byteBuf.writeBytes(bytes);
         byteBuf.writeBytes(RpcConstants.CR.getBytes());
 
