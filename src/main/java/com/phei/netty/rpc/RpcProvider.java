@@ -33,7 +33,7 @@ public class RpcProvider {
                             ch.pipeline()
                                     .addLast(new DelimiterBasedFrameDecoder(RpcConstants.LIMIT_BYTES_RPC_INFO, Unpooled.copiedBuffer(RpcConstants.CR.getBytes())))
                                     .addLast(new RpcInfoSerializeHandler())
-                            .addLast(new RpcProviderHandler());
+                                    .addLast(new RpcProviderHandler());
                         }
                     })
                     .bind(port).sync();

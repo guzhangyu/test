@@ -39,7 +39,7 @@ public class RpcConsumer {
                             ch.pipeline()
                                     .addLast(new DelimiterBasedFrameDecoder(RpcConstants.LIMIT_BYTES_RPC_INFO, Unpooled.copiedBuffer(RpcConstants.CR.getBytes())))
                                     .addLast(new RpcInfoSerializeHandler())
-                            .addLast(new RpcConsumerHandler());
+                                    .addLast(new RpcConsumerHandler());
                         }
                     })
                     .connect(host, port).sync();
@@ -49,6 +49,27 @@ public class RpcConsumer {
         }finally {
             group.shutdownGracefully();
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+        final RpcConsumer consumer=new RpcConsumer();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    consumer.start();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+        RpcInfo rpcInfo=new RpcInfo();
+        rpcInfo.setService("com.phei.netty.rpcs.test.A");
+        rpcInfo.setMethod("B");
+        rpcInfo.setArgs(new Object[]{"C"});
+        consumer.invoke(rpcInfo);
+        System.out.println(rpcInfo);
     }
 
     public Object invoke(RpcInfo rpcInfo) throws Exception {
@@ -85,24 +106,5 @@ public class RpcConsumer {
         return new Exception("错误信息实例化失败！");
     }
 
-    public static void main(String[] args) throws Exception {
-        final RpcConsumer consumer=new RpcConsumer();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    consumer.start();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
 
-        RpcInfo rpcInfo=new RpcInfo();
-        rpcInfo.setService("com.phei.netty.rpcs.test.A");
-        rpcInfo.setMethod("B");
-        rpcInfo.setArgs(new Object[]{"C"});
-        consumer.invoke(rpcInfo);
-        System.out.println(rpcInfo);
-    }
 }

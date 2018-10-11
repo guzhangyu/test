@@ -30,11 +30,6 @@ public class RpcProviderHandler extends BaseChannelHandlerAdapter {
         return rpcInfo;
     }
 
-    @Override
-    Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        return msg;
-    }
-
     /**
      * 调用rpcInfo中的方法
      * @param rpcInfo
@@ -55,4 +50,11 @@ public class RpcProviderHandler extends BaseChannelHandlerAdapter {
         Method method=invoker.getMethod(rpcInfo.getMethod(),argClasses);
         return method.invoke(invoker.newInstance(), rpcInfo.getArgs());
     }
+
+    @Override
+    Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        return msg;
+    }
+
+
 }

@@ -37,19 +37,6 @@ public abstract class BaseChannelHandlerAdapter extends ChannelHandlerAdapter {
         id=null;
     }
 
-//    abstract void channelReadCompleteInner(ChannelHandlerContext ctx) throws Exception;
-//
-//    @Override
-//    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
-//        try{
-//            this.channelReadCompleteInner(ctx);
-//        }catch (Exception e){
-//            writeExceptionInfo(ctx,e,id);
-//        }
-//        id=null;
-//        super.channelReadComplete(ctx);
-//    }
-
     //传递给下一个handler的任务就交给base处理了，所以要返回对象
     abstract Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception;
 
@@ -93,4 +80,17 @@ public abstract class BaseChannelHandlerAdapter extends ChannelHandlerAdapter {
             //如果在执行过程中出错了，就不重试了
         }
     }
+
+    //    abstract void channelReadCompleteInner(ChannelHandlerContext ctx) throws Exception;
+//
+//    @Override
+//    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+//        try{
+//            this.channelReadCompleteInner(ctx);
+//        }catch (Exception e){
+//            writeExceptionInfo(ctx,e,id);
+//        }
+//        id=null;
+//        super.channelReadComplete(ctx);
+//    }
 }
