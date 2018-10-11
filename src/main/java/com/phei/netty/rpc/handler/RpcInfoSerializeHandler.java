@@ -15,15 +15,14 @@ import java.io.ByteArrayOutputStream;
 /**
  * Created by guzy on 2018-04-10.
  */
-public class RpcInfoSerializeHandler extends ChannelHandlerAdapter {
+public class RpcInfoSerializeHandler extends BaseChannelHandlerAdapter {
 
   //  public final static ThreadLocal<String> rpcInfoId=new ThreadLocal<>();
+    String id=null;
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        String id=null;
-        try{
-            Kryo kryo=new Kryo();
+    public Object channelReadInner(ChannelHandlerContext ctx, Object msg) throws Exception {
+        Kryo kryo=new Kryo();
 //        int id=32323223;
 //        Registration registration=new Registration(StackTraceElement.class,new FieldSerializer<StackTraceElement>(kryo,StackTraceElement.class),id);
 //        registration.setInstantiator(new ObjectInstantiator(){
@@ -35,58 +34,40 @@ public class RpcInfoSerializeHandler extends ChannelHandlerAdapter {
 //        });
 //        kryo.register();
 
-            //kryo.register(List.class,new DefaultSerializers.CollectionsSingletonListSerializer());
-            ByteBuf msgBuf=(ByteBuf)msg;
-            byte[] bytes=msgBuf.array();
-            RpcInfo object=kryo.readObject(new Input(bytes), RpcInfo.class);
-            id=object.getId();
+        //kryo.register(List.class,new DefaultSerializers.CollectionsSingletonListSerializer());
+        ByteBuf msgBuf=(ByteBuf)msg;
+        byte[] bytes=msgBuf.array();
+        RpcInfo object=kryo.readObject(new Input(bytes), RpcInfo.class);
+        id=object.getId();
 
 //        if(object.getSuccess()==null){//说明是从consumer过来的请求(在provider部分发生)
 //            rpcInfoId.set(object.getId());
 //        }
-            super.channelRead(ctx, object);
-        }catch (Exception e){
-            writeExceptionInfo(ctx,e,id);
-        }
+        return object;
     }
 
     @Override
-    public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        String id=null;
-        try{
-            Kryo kryo=new Kryo();
-            Output output=new Output(new ByteArrayOutputStream());
-            kryo.writeObject(output, msg);
+    public Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        Kryo kryo=new Kryo();
+        Output output=new Output(new ByteArrayOutputStream());
+        kryo.writeObject(output, msg);
 
-            byte[] bytes=output.toBytes();
-            ByteBuf byteBuf=Unpooled.buffer(bytes.length+2);
-            byteBuf.writeBytes(bytes);
-            byteBuf.writeBytes(RpcConstants.CR.getBytes());
+        byte[] bytes=output.toBytes();
+        ByteBuf byteBuf=Unpooled.buffer(bytes.length+2);
+        byteBuf.writeBytes(bytes);
+        byteBuf.writeBytes(RpcConstants.CR.getBytes());
 
-            ctx.writeAndFlush(byteBuf);
-        }catch (Exception e){
-            writeExceptionInfo(ctx,e,id);
-        }
+        ctx.writeAndFlush(byteBuf);
+
+        return null;
     }
 
     @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+    public void exceptionCaughtInner(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         System.err.println("serialize error");
-        writeExceptionInfo(ctx, cause,null);
     }
 
-    protected static void writeExceptionInfo(ChannelHandlerContext ctx, Throwable cause,String id) {
-        cause.printStackTrace();
-        if(id!=null){
-            RpcInfo rpcResult=new RpcInfo();
-            rpcResult.setResult(cause.getMessage());
-            // rpcResult.setStackTrace(cause.getStackTrace());
-            rpcResult.setException(cause.getClass().getName());
-            rpcResult.setId(id);
-            rpcResult.setSuccess(false);
-            ctx.writeAndFlush(rpcResult);
-        }
-    }
+
 
 //    protected static void writeExceptionInfo(ChannelHandlerContext ctx, Throwable cause) {
 //        cause.printStackTrace();

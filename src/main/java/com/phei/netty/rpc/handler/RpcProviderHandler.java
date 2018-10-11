@@ -1,7 +1,7 @@
 package com.phei.netty.rpc.handler;
 
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -9,42 +9,50 @@ import java.lang.reflect.Method;
 /**
  * Created by guzy on 2018-04-10.
  */
-public class RpcProviderHandler extends ChannelHandlerAdapter {
+public class RpcProviderHandler extends BaseChannelHandlerAdapter {
 
     @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+    public void exceptionCaughtInner(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         System.err.println("rpc method invoke error");
-        RpcInfoSerializeHandler.writeExceptionInfo(ctx,cause,null);
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        String id=null;
-        try{
-            RpcInfo rpcInfo=(RpcInfo)msg;
-            id=rpcInfo.getId();
+    public Object channelReadInner(ChannelHandlerContext ctx, Object msg) throws Exception {
+        RpcInfo rpcInfo=(RpcInfo)msg;
+        id=rpcInfo.getId();
 
-            RpcInfo rpcResult=new RpcInfo();
-            try{
-                Class invoker=Class.forName(rpcInfo.getService());
+        RpcInfo rpcResult=new RpcInfo();
 
-                Class[] argClasses=new Class[rpcInfo.getArgs().length];
-                for(int i=0;i<rpcInfo.getArgs().length;i++){
-                    argClasses[i]=rpcInfo.getArgs()[i].getClass();
-                }
-                Method method=invoker.getMethod(rpcInfo.getMethod(),argClasses);
-                Object result=method.invoke(invoker.newInstance(), rpcInfo.getArgs());
-                rpcResult.setResult(result);
-            }catch (InvocationTargetException e){
-                this.exceptionCaught(ctx,e.getTargetException());
-                return;
-            }
-            rpcResult.setId(rpcInfo.getId());
-            rpcResult.setSuccess(true);
-            ctx.writeAndFlush(rpcResult);
-            super.channelRead(ctx, msg);
-        }catch (Exception e){
-            RpcInfoSerializeHandler.writeExceptionInfo(ctx,e,id);
+        rpcResult.setResult(invoke(rpcInfo));
+        rpcResult.setId(rpcInfo.getId());
+        rpcResult.setSuccess(true);
+        //ctx.writeAndFlush(rpcResult);
+        return rpcInfo;
+    }
+
+    @Override
+    Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        return msg;
+    }
+
+    /**
+     * 调用rpcInfo中的方法
+     * @param rpcInfo
+     * @return
+     * @throws ClassNotFoundException
+     * @throws NoSuchMethodException
+     * @throws IllegalAccessException
+     * @throws InvocationTargetException
+     * @throws InstantiationException
+     */
+    private Object invoke(RpcInfo rpcInfo) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Class invoker=Class.forName(rpcInfo.getService());
+
+        Class[] argClasses=new Class[rpcInfo.getArgs().length];
+        for(int i=0;i<rpcInfo.getArgs().length;i++){
+            argClasses[i]=rpcInfo.getArgs()[i].getClass();
         }
+        Method method=invoker.getMethod(rpcInfo.getMethod(),argClasses);
+        return method.invoke(invoker.newInstance(), rpcInfo.getArgs());
     }
 }
