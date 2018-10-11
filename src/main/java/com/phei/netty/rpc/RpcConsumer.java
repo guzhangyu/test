@@ -64,6 +64,7 @@ public class RpcConsumer {
                 e.printStackTrace();
             }
         }
+
         if(rpcInfo.getSuccess()){
             return rpcInfo.getResult();
         }
@@ -98,7 +99,7 @@ public class RpcConsumer {
         }).start();
 
         RpcInfo rpcInfo=new RpcInfo();
-        rpcInfo.setService("com.phei.netty.rpc.test.A");
+        rpcInfo.setService("com.phei.netty.rpcs.test.A");
         rpcInfo.setMethod("B");
         rpcInfo.setArgs(new Object[]{"C"});
         consumer.invoke(rpcInfo);

@@ -4,6 +4,8 @@ import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
 
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * ChannelHandlerAdapter 基类
  */
@@ -48,6 +50,7 @@ public abstract class BaseChannelHandlerAdapter extends ChannelHandlerAdapter {
 //        super.channelReadComplete(ctx);
 //    }
 
+    //传递给下一个handler的任务就交给base处理了，所以要返回对象
     abstract Object writeInner(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception;
 
     @Override
@@ -74,8 +77,12 @@ public abstract class BaseChannelHandlerAdapter extends ChannelHandlerAdapter {
             cause.printStackTrace();
             if(id!=null){
                 RpcInfo rpcResult=new RpcInfo();
-                rpcResult.setResult(cause.getMessage());
+
                 // rpcResult.setStackTrace(cause.getStackTrace());
+                if(cause instanceof InvocationTargetException){
+                    cause=((InvocationTargetException)cause).getTargetException();
+                }
+                rpcResult.setResult(cause.getMessage());
                 rpcResult.setException(cause.getClass().getName());
                 rpcResult.setId(id);
                 rpcResult.setSuccess(false);
