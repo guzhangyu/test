@@ -4,13 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java" description="if(getHead()==null){" line="112" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/BaseChannelHandlerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/BaseChannelHandlerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcProviderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcProviderHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="" />
     <ignored path="MyTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+            <state relative-caret-position="442">
+              <caret line="52" column="11" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="52" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -554,7 +548,7 @@
     <property name="SearchEverywhereHistoryKey" value="Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/Lock.java&#10;.xml&#9;FILE&#9;file://D:/Users/guzy/IdeaProjects/practice-Code/pom.xml&#10;Nio&#9;PSI&#9;JAVA://com.phei.netty.nio.NioTimeClient&#10;sort&#9;PSI&#9;JAVA://algorithm.tree.BalancedBinarySearchTree#sort&#10;.html&#9;FILE&#9;file:///Users/guzy/IdeaProjects/raycloud/myTest/src/main/WebSocketServer.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539264333597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539407980543" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1039,14 +1033,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="706481000" />
+    <option name="totallyTimeSpent" value="707577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7942387" visible="true" weight="0.22103004" />
-      <window_info id="Structure" order="1" sideWeight="0.20576131" side_tool="true" visible="true" weight="0.22103004" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7934509" visible="true" weight="0.22103004" />
+      <window_info id="Structure" order="1" sideWeight="0.20654912" side_tool="true" visible="true" weight="0.22103004" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="JRebel" order="4" side_tool="true" />
@@ -1055,10 +1048,10 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Image Layers" order="8" />
       <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5693848" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.56866956" weight="0.32921812" />
       <window_info anchor="bottom" id="JRebel Executor" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.43061516" side_tool="true" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49394855" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.13233191" side_tool="true" visible="true" weight="0.45541838" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49356222" weight="0.32921812" />
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.38841203" weight="0.4722222" />
       <window_info anchor="bottom" id="Application Servers" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -1068,7 +1061,7 @@
       <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
       <window_info anchor="bottom" id="Find" order="11" sideWeight="0.509299" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="12" sideWeight="0.7560801" weight="0.47325101" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.8683834" weight="0.45541838" />
+      <window_info active="true" anchor="bottom" id="Debug" order="13" sideWeight="0.8676681" visible="true" weight="0.45541838" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
@@ -1684,19 +1677,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
-          <line>33</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
-          <line>35</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
-          <line>57</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="255" />
         </line-breakpoint>
@@ -2186,8 +2179,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        <state relative-caret-position="442">
+          <caret line="52" column="11" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="52" selection-end-column="11" />
         </state>
       </provider>
     </entry>
