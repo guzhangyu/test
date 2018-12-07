@@ -219,7 +219,7 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpR
                 || uri.endsWith(".") || INSECURE_URI.matcher(uri).matches()){
             return null;
         }
-        return "/Users/guzy/IdeaProjects/raycloud/myTest/src/main/java"+File.separator+uri;
+        return "/Users/guzy/IdeaProjects/myTest/src/main/java"+File.separator+uri;
         //return System.getProperty("user.dir")+"/../myTest"+File.separator+uri;
     }
 

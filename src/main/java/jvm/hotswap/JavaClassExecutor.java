@@ -41,7 +41,7 @@ public class JavaClassExecutor {
     }
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, IOException {
-        FileInputStream fi=new FileInputStream("/Users/guzy/IdeaProjects/raycloud/myTest/target/classes/jvm/hotswap/interview.reflect.Test.class");
+        FileInputStream fi=new FileInputStream("/Users/guzy/IdeaProjects/myTest/target/classes/jvm/hotswap/interview.reflect.Test.class");
         //BufferedReader br=new BufferedReader(new InputStreamReader(fi));
         int len=fi.available();
         byte[]b=new byte[len];
