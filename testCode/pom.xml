@@ -48,6 +48,30 @@
             <version>1.0.25</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hadoop</groupId>-->
+            <!--<artifactId>hadoop-core</artifactId>-->
+            <!--<version>1.2.1</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>com.atlassian.hibernate</groupId>-->
             <!--<artifactId>atlassian-hibernate-extras</artifactId>-->

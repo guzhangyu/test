@@ -9,6 +9,8 @@
     <version>1.0</version>
     <modules>
         <module>testCode</module>
+        <module>hadoop_test</module>
+        <module>spark-test</module>
     </modules>
     <name>MyTest</name>
     <!--<modules>-->
