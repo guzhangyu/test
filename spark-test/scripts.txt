@@ -1,0 +1,5 @@
+bin/spark-submit --class leftjoin.LeftJoinSparkDriver  /Users/zhangyugu/IdeaProjects/practice-Code/spark-test/target/spark-test-1.0.jar
+
+bin/spark-class org.apache.spark.deploy.yarn.Client  --class leftjoin.LeftJoinSparkDriver  /Users/zhangyugu/IdeaProjects/practice-Code/spark-test/target/spark-test-1.0.jar --args yarn-standalone
+
+hadoop dfsadmin -safemode leave

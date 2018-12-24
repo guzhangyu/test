@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 *.jar
 *hadoop_mylog.txt
+*spark_mylog.txt
