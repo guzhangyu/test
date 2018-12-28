@@ -1,6 +1,7 @@
 package hadoop.top10.array;
 
-import hadoop.top10.Tuple;
+import hadoop.common.TupleArray;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.ArrayWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;

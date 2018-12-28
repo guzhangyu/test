@@ -1,9 +1,9 @@
-package hadoop.leftjoin;
+package hadoop.moving_average;
 
-import hadoop.common.Tuple;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
@@ -12,10 +12,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class LeftJoinDriver extends Configured implements Tool {
+public class MovingAverageDriver extends Configured implements Tool {
 
     public static void main(String[] args) throws Exception {
-        int res= ToolRunner.run(new Configuration(),new LeftJoinDriver(),args);
+        int res= ToolRunner.run(new Configuration(),new MovingAverageDriver(),args);
         System.exit(res);
     }
 
@@ -28,16 +28,15 @@ public class LeftJoinDriver extends Configured implements Tool {
 
         Job job=new Job(conf);
 
-        MultipleInputs.addInputPath(job,new Path(preffix+args[0]), TextInputFormat.class, LeftJoin1Mapper.class);
-        MultipleInputs.addInputPath(job,new Path(preffix+args[1]), TextInputFormat.class, LeftJoin2Mapper.class);
+//        MultipleInputs.addInputPath(job,new Path(preffix+args[0]), TextInputFormat.class, LeftJoin1Mapper.class);
+        MultipleInputs.addInputPath(job,new Path(preffix+args[1]), TextInputFormat.class, MovingAverageMapper.class);
         FileOutputFormat.setOutputPath(job,new Path(preffix+args[2]));
 
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(Tuple.class);
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(Text.class);
+        job.setMapOutputValueClass(DoubleWritable.class);
+        job.setGroupingComparatorClass(MovingAverageGroupingComparator.class);
 
-        job.setReducerClass(LeftJoinReducer.class);
+        job.setReducerClass(MovingAverageQueueReducer.class);
 //        job.setNumReduceTasks(4);
         return job.waitForCompletion(true)?1:0;
     }

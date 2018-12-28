@@ -1,4 +1,4 @@
-package hadoop.top10;
+package hadoop.common;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -11,8 +11,8 @@ import java.io.IOException;
 
 public class Tuple implements Writable, WritableComparable<Tuple> {
 
-    Text t1=new Text();
-    IntWritable t2=new IntWritable();
+    public Text t1=new Text();
+    public IntWritable t2=new IntWritable();
 
     public Tuple(){
 

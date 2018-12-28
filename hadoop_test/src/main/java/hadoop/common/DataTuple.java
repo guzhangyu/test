@@ -1,4 +1,4 @@
-package hadoop.top10_1;
+package hadoop.common;
 
 public class DataTuple implements Comparable<DataTuple> {
 

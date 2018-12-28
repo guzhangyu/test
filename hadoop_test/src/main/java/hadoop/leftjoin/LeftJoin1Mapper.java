@@ -1,6 +1,6 @@
 package hadoop.leftjoin;
 
-import hadoop.top10.Tuple;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

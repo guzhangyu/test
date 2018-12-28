@@ -1,6 +1,7 @@
 package hadoop.top10_1;
 
-import hadoop.top10.Tuple;
+import hadoop.common.DataTuple;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

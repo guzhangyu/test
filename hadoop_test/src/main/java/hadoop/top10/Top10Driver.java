@@ -1,5 +1,6 @@
 package hadoop.top10;
 
+import hadoop.common.Tuple;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;

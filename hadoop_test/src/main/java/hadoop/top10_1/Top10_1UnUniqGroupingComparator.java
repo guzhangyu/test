@@ -1,6 +1,6 @@
 package hadoop.top10_1;
 
-import hadoop.top10.Tuple;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 

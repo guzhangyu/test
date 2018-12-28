@@ -1,6 +1,6 @@
 package hadoop.top10;
 
-import org.apache.hadoop.io.ArrayWritable;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.slf4j.Logger;
