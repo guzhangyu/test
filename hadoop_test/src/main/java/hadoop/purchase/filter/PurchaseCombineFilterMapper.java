@@ -1,6 +1,6 @@
 //package hadoop.purchase.filter;
 //
-//import hadoop.purchase.DataTuples;
+//import hadoop.common.DataTuples;
 //import org.apache.commons.lang.StringUtils;
 //import org.apache.hadoop.io.IntWritable;
 //import org.apache.hadoop.io.LongWritable;

@@ -8,6 +8,10 @@ public class TupleArray extends ArrayWritable {
         super(Tuple.class);
     }
 
+    public TupleArray( Tuple[] values) {
+        super(Tuple.class, values);
+    }
+
     @Override
     public String toString() {
         return "["+StringUtils.join(super.toStrings(),",")+"]";

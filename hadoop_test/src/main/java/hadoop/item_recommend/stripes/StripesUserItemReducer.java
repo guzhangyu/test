@@ -1,15 +1,16 @@
-package hadoop.item_recommend;
+package hadoop.item_recommend.stripes;
 
-import org.apache.commons.lang.StringUtils;
+import hadoop.common.Tuple;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class UserItemReducer extends Reducer<Text,Text,Text,Text> {
-
+public class StripesUserItemReducer extends Reducer<Text,Text,Text,Tuple> {
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
         super.setup(context);
@@ -26,12 +27,22 @@ public class UserItemReducer extends Reducer<Text,Text,Text,Text> {
 //        for(String i:list){
 //            context.write(new Text(i),key);
 //        }
+
+        Map<String,Integer> map=new HashMap<>();
         for(String s:list){
-            for(String s1:list){
-                if(!s.equals(s1)){
-                    context.write(new Text(s),new Text(s1));
-//                    context.write(new Text(s1),new Text(s));
+            Integer v=map.get(s);
+            if(v==null){
+                v=0;
+            }
+            map.put(s,v+1);
+        }
+
+        for(String s:list){
+            for(Map.Entry<String,Integer> entry:map.entrySet()){
+                if(entry.getKey().equals(s)){
+                    continue;
                 }
+                context.write(new Text(s),new Tuple(entry.getKey(),entry.getValue()));
             }
         }
     }

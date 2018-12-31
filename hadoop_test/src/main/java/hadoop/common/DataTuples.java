@@ -1,4 +1,4 @@
-package hadoop.purchase;
+package hadoop.common;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -5,3 +5,6 @@ bin/spark-class org.apache.spark.deploy.yarn.Client  --class leftjoin.LeftJoinSp
 hadoop dfsadmin -safemode leave
 
 bin/spark-submit --class purchase_combine_filter.PurchaseCombineFilterSparkDriver /Users/zhangyugu/IdeaProjects/practice-Code/spark-test/target/spark-test-1.0.jar
+
+bin/spark-submit --class taobao_item_recommend.TaobaoItemRecommendDriver /Users/zhangyugu/IdeaProjects/practice-Code/spark-test/target/spark-test-1.0.jar
+

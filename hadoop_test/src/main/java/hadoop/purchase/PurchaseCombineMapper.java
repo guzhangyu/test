@@ -1,6 +1,6 @@
 package hadoop.purchase;
 
-import com.nimbusds.jose.util.ArrayUtils;
+import hadoop.common.DataTuples;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
