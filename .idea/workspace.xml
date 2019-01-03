@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TextPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/UseableArrayWritable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesItemItemDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesItemItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesItemItemReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesUserItemDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesUserItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/stripes/StripesUserItemReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/CommonFriends1Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/CommonFriends1Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/CommonFriends1Reducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/item_recommend/user_recommend/UserRecommendSparkDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommender.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TextPair2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/Tuple1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TupleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TupleArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/UserItemReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/UserItemReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/DataTuples.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/DataTuples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/PurchaseCombineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/PurchaseCombineMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter/PurchaseCombineFilterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter/PurchaseCombineFilterMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test/scripts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/scripts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala" afterDir="false" />
     </list>
     <ignored path="MyTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +41,7 @@
     <session id="1586267828">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -63,62 +56,63 @@
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.89" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bark" value="11" />
-          <entry key="class" value="204" />
+          <entry key="class" value="220" />
           <entry key="gitignore" value="2" />
           <entry key="h" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="534" />
+          <entry key="java" value="593" />
           <entry key="pom" value="2" />
           <entry key="properties" value="9" />
-          <entry key="scala" value="37" />
-          <entry key="txt" value="12" />
-          <entry key="xml" value="20" />
+          <entry key="scala" value="45" />
+          <entry key="txt" value="13" />
+          <entry key="xml" value="21" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
-          <entry key="CLASS" value="204" />
+          <entry key="CLASS" value="220" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="534" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="JAVA" value="593" />
+          <entry key="PLAIN_TEXT" value="26" />
           <entry key="Properties" value="9" />
-          <entry key="Scala" value="37" />
-          <entry key="XML" value="22" />
+          <entry key="Scala" value="45" />
+          <entry key="XML" value="23" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="16" />
-          <entry key="dummy" value="91" />
+          <entry key="dummy" value="128" />
           <entry key="gitignore" value="8" />
-          <entry key="java" value="36396" />
+          <entry key="java" value="44178" />
           <entry key="pom" value="1" />
           <entry key="properties" value="112" />
           <entry key="scala" value="799" />
-          <entry key="txt" value="103" />
+          <entry key="txt" value="104" />
           <entry key="xml" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="16" />
-          <entry key="JAVA" value="36396" />
-          <entry key="PLAIN_TEXT" value="202" />
+          <entry key="JAVA" value="44178" />
+          <entry key="PLAIN_TEXT" value="240" />
           <entry key="Properties" value="112" />
           <entry key="Scala" value="799" />
           <entry key="XML" value="89" />
@@ -132,10 +126,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java">
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/leftjoin/LeftJoinDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="89">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,75 +147,98 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommender.scala">
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/Function1.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="403">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="23" />
               <folding>
-                <element signature="e#31#47#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/IndexedSeqOptimized.scala">
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+            <state relative-caret-position="131">
+              <caret line="30" column="45" selection-start-line="28" selection-start-column="7" selection-end-line="30" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/IndexedSeqLike.scala">
+        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+            <state relative-caret-position="285">
+              <caret line="25" selection-start-line="21" selection-start-column="8" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/TraversableOnce.scala">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/mutable/ArrayBuffer.scala">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/BufferedReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+            <state relative-caret-position="142">
+              <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+              <folding>
+                <element signature="e#3011#3012#0" expanded="true" />
+                <element signature="e#3058#3059#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/package.scala">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="1035" column="28" selection-start-line="1035" selection-start-column="28" selection-end-line="1035" selection-end-column="28" />
+              <folding>
+                <element signature="e#27270#27271#0" expanded="true" />
+                <element signature="e#27291#27292#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/Iterable.scala">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemItemDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -222,25 +248,13 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="yet_unknown" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>elapsedMi</find>
-      <find>reduce(</find>
-      <find>count:</find>
-      <find>compare</find>
-      <find>v1:10</find>
-      <find>Format</find>
-      <find>write(</find>
-      <find>toString(</find>
-      <find>getValues</find>
-      <find>buffer =</find>
-      <find>Top10Partitioner</find>
-      <find>iterable =</find>
-      <find>comparator</find>
       <find>iterable</find>
       <find>this.input =</find>
       <find>this.input</find>
@@ -258,6 +272,19 @@
       <find>count-</find>
       <find>flatMap</find>
       <find>add(</find>
+      <find>CONF</find>
+      <find>LocalFSFileInputStream</find>
+      <find>conf</find>
+      <find>compare</find>
+      <find>sortBy</find>
+      <find>groupByKey</find>
+      <find>Add(</find>
+      <find>SL,SL</find>
+      <find>SL</find>
+      <find>result:</find>
+      <find>distance</find>
+      <find>distance:</find>
+      <find>getLinesByPath</find>
     </findStrings>
     <replaceStrings>
       <replace>addPoint(</replace>
@@ -279,21 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter/PurchaseCombineDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter/PurchaseCombineMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter/PurchaseCombineFilterMapper.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/purchase_combine_filter/DataTuples.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/DataTuples.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/purchase_combine_filter/PurchaseCombineFilterSparkDriverMy.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common_friends/CommonFriendsMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common_friends/CommonFriendsDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common_friends/CommonFriendsReducer.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/UserRecommendMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ValueCountReducer.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemRecommendMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/UserItemMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/FirstComparableTuple.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/TupleArray.java" />
         <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemRecommendDriver.java" />
         <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/Tuple.java" />
         <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemItemDriver.java" />
@@ -326,10 +338,25 @@
         <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserMapper.java" />
         <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserReducer.java" />
         <option value="$PROJECT_DIR$/spark-test/src/main/java/item_recommend/user_recommend/UserRecommendSparkDriver.java" />
-        <option value="$PROJECT_DIR$/spark-test/scripts.txt" />
         <option value="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommender.scala" />
         <option value="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java" />
+        <option value="$PROJECT_DIR$/spark-test/scripts.txt" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/Tuple1.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggDriver.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggMapper.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferMapper.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferReducer.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferDriver.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TextPair2.java" />
         <option value="$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala" />
+        <option value="$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansReducer.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansMapper.java" />
+        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansDriver.java" />
+        <option value="$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java" />
       </list>
     </option>
   </component>
@@ -379,10 +406,11 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=E:\apache-maven-3.3.3" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="808" />
+    <option name="height" value="804" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -460,7 +488,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -471,6 +499,82 @@
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="item_recommend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="markov" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="markov" type="462c0819:PsiDirectoryNode" />
+              <item name="stage2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
               <item name="spark-test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -501,25 +605,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common_friend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user_recommend" type="462c0819:PsiDirectoryNode" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
@@ -532,33 +618,59 @@
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="purchase_combine_filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao_item_recommend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-common:3.1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-common:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-common-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-common:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-common-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-common:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-common-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="fs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-hdfs-client:3.1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-hdfs-client:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-hdfs-client-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-hdfs-client:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-hdfs-client-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-hdfs-client:3.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-hdfs-client-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
@@ -700,7 +812,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -742,22 +854,22 @@
       <recent name="concurrent.myimpl" />
       <recent name="algorithm" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="jvm.codecheck" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="hadoop.item_recommend.user_recommend" />
-      <recent name="hadoop.item_recommend.stripes" />
-      <recent name="hadoop.item_recommend" />
-      <recent name="purchase_combine_filter" />
-      <recent name="hadoop.purchase.filter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter" />
       <recent name="$PROJECT_DIR$/hadoop_test/src/main/resources" />
       <recent name="$PROJECT_DIR$/spark-test/src/main/resources" />
       <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
       <recent name="D:\Users\guzy\IdeaProjects\practice-Code" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hadoop.markov.stage2" />
+      <recent name="hadoop.common" />
+      <recent name="hadoop.item_recommend.user_recommend" />
+      <recent name="hadoop.item_recommend.stripes" />
+      <recent name="hadoop.item_recommend" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jvm.codecheck" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -772,7 +884,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TaobaoItemRecommendDriver">
+  <component name="RunManager" selected="Application.KMeansSparkDriver">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -901,13 +1013,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataTuples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hadoop.common.DataTuples" />
+    <configuration name="CustomerTradeAggDriver" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.markov.stage1.CustomerTradeAggDriver" />
       <module name="hadoop_test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="markov_input.txt markov_output" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hadoop.common.*" />
+          <option name="PATTERN" value="hadoop.markov.stage1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -929,13 +1041,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Friends4UserMapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hadoop.item_recommend.user_recommend.Friends4UserMapper" />
+    <configuration name="HadoopFileReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.markov.stage2.HadoopFileReader" />
       <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hadoop.item_recommend.user_recommend.*" />
+          <option name="PATTERN" value="hadoop.markov.stage2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -957,6 +1069,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KMeansDriver" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.kmeans.KMeansDriver" />
+      <module name="hadoop_test" />
+      <option name="PROGRAM_PARAMETERS" value="kmeans_input.txt kmeans_output" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hadoop.kmeans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMeansSparkDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kmeans.KMeansSparkDriver" />
+      <module name="spark-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kmeans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeftJoinDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.leftjoin.LeftJoinDriver" />
       <module name="hadoop_test" />
@@ -964,6 +1104,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.leftjoin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarkovSparkDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="markov.MarkovSparkDriver" />
+      <module name="spark-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="markov.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -999,20 +1153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseCombineFilterSparkDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="purchase_combine_filter.PurchaseCombineFilterSparkDriver" />
-      <module name="spark-test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="purchase_combine_filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SecondSortDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.second_sort.SecondSortDriver" />
       <module name="hadoop_test" />
@@ -1034,6 +1174,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spark.second_sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatusTransferDriver" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.markov.stage2.StatusTransferDriver" />
+      <module name="hadoop_test" />
+      <option name="PROGRAM_PARAMETERS" value="markov_output markov_output1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hadoop.markov.stage2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1281,19 +1435,22 @@
       <item itemvalue="Application.CommonFriends1Driver" />
       <item itemvalue="Application.Friends4UserDriver" />
       <item itemvalue="Maven.MyTest [clean,install]" />
-      <item itemvalue="Application.DataTuples" />
-      <item itemvalue="Application.PurchaseCombineFilterSparkDriver" />
-      <item itemvalue="Application.Friends4UserMapper" />
       <item itemvalue="Application.UserRecommendSparkDriver" />
       <item itemvalue="Application.TaobaoItemRecommendDriver" />
+      <item itemvalue="Application.CustomerTradeAggDriver" />
+      <item itemvalue="Application.StatusTransferDriver" />
+      <item itemvalue="Application.HadoopFileReader" />
+      <item itemvalue="Application.MarkovSparkDriver" />
+      <item itemvalue="Application.KMeansDriver" />
+      <item itemvalue="Application.KMeansSparkDriver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KMeansSparkDriver" />
+        <item itemvalue="Application.MarkovSparkDriver" />
+        <item itemvalue="Application.HadoopFileReader" />
         <item itemvalue="Application.TaobaoItemRecommendDriver" />
         <item itemvalue="Application.UserRecommendSparkDriver" />
-        <item itemvalue="Application.Friends4UserMapper" />
-        <item itemvalue="Application.PurchaseCombineFilterSparkDriver" />
-        <item itemvalue="Application.DataTuples" />
       </list>
     </recent_temporary>
   </component>
@@ -1382,7 +1539,8 @@
       <workItem from="1545626576499" duration="44590000" />
       <workItem from="1546052073318" duration="20925000" />
       <workItem from="1546233748628" duration="12438000" />
-      <workItem from="1546263399686" duration="683000" />
+      <workItem from="1546263399686" duration="1527000" />
+      <workItem from="1546391603557" duration="28092000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
@@ -1448,14 +1606,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="897531000" />
+    <option name="totallyTimeSpent" value="926467000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <frame x="37" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88838613" visible="true" weight="0.25965664" />
-      <window_info id="Structure" order="1" sideWeight="0.11161388" side_tool="true" visible="true" weight="0.25965664" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71294117" visible="true" weight="0.3025751" />
+      <window_info id="Structure" order="1" sideWeight="0.28705883" side_tool="true" visible="true" weight="0.3025751" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="JRebel" order="4" side_tool="true" />
@@ -1464,11 +1622,11 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Image Layers" order="8" />
       <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5493562" weight="0.2286115" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5472103" weight="0.40730336" />
       <window_info anchor="bottom" id="JRebel Executor" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.3190272" side_tool="true" visible="true" weight="0.074022345" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.16809729" side_tool="true" visible="true" weight="0.40308988" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49356222" weight="0.32921812" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.45636624" weight="0.33941093" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.44849786" weight="0.33848315" />
       <window_info anchor="bottom" id="Application Servers" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -1476,8 +1634,8 @@
       <window_info anchor="bottom" id="Changes" order="9" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
       <window_info anchor="bottom" id="Find" order="11" sideWeight="0.5071531" weight="0.37307152" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.6809728" visible="true" weight="0.074022345" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.8369099" weight="0.37988827" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.6702432" weight="0.3272472" />
+      <window_info active="true" anchor="bottom" id="Debug" order="13" sideWeight="0.83190274" visible="true" weight="0.40308988" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
@@ -2407,10 +2565,58 @@
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java</url>
+          <line>28</line>
           <properties />
-          <option name="timeStamp" value="380" />
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="384" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="387" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="388" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="389" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="390" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="391" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -2501,102 +2707,174 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/CommonFriends1Reducer.java">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/input/SequenceFileInputFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+        <state relative-caret-position="135">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/conf/Configured.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserDriver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/conf/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="120">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/FileSystemStorageStatistics.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="1290">
+          <caret line="96" column="43" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/LocalFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/input/FileInputFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="2378" selection-start-line="2378" selection-end-line="2378" />
+        <state relative-caret-position="230">
+          <caret line="518" column="21" selection-start-line="518" selection-start-column="21" selection-end-line="518" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserReducer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/RemoteIterator.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/FileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="821" column="44" selection-start-line="821" selection-start-column="11" selection-end-line="821" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-hdfs-client/3.1.1/hadoop-hdfs-client-3.1.1.jar!/org/apache/hadoop/hdfs/DFSStripedInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/DataInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/FSDataInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/HarFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="669" column="29" selection-start-line="669" selection-start-column="29" selection-end-line="669" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/FSInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/RawLocalFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/3.1.1/hadoop-common-3.1.1.jar!/org/apache/hadoop/fs/BufferedFSInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/Tuple2.class">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FSInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="-7">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/Product2.class">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/HarFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="-7">
+          <caret line="910" column="25" selection-start-line="910" selection-start-column="25" selection-end-line="910" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaPairRDD.scala">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FSDataInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7785">
-          <caret line="558" column="6" selection-start-line="558" selection-start-column="6" selection-end-line="558" selection-end-column="6" />
+        <state relative-caret-position="-7">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/BufferedFSInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="70" selection-start-line="21" selection-start-column="8" selection-end-line="24" selection-end-column="70" />
+        <state relative-caret-position="182">
+          <caret line="48" column="57" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaRDDLike.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-hdfs-client/3.1.1/hadoop-hdfs-client-3.1.1.jar!/org/apache/hadoop/hdfs/DFSInputStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="141" column="6" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
+        <state relative-caret-position="330">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/item_recommend/user_recommend/UserRecommendSparkDriver.java">
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="45" column="92" selection-start-line="45" selection-start-column="92" selection-end-line="45" selection-end-column="92" />
+        <state relative-caret-position="101">
+          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2668#2669#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/common_friend/CommonFriendsSparkDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -2609,258 +2887,247 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/purchase_combine_filter/PurchaseCombineFilterSparkDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" selection-start-line="22" selection-start-column="8" selection-end-line="27" />
+        <state relative-caret-position="210">
+          <caret line="27" column="8" selection-start-line="22" selection-start-column="7" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/pom.xml">
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/TextPair2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="132">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/package.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/Tuple2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="195">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/SQLContext.scala">
+    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaRDD.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+        <state relative-caret-position="164">
+          <caret line="200" column="12" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/SparkSession.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/SparkContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="443" selection-start-line="443" selection-end-line="443" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/ui/SparkUI.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.jar!/org/spark_project/jetty/server/handler/ContextHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.jar!/org/spark_project/jetty/server/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.jar!/org/spark_project/jetty/util/Jetty.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/scripts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0.jar!/org/apache/spark/sql/expressions/UserDefinedFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/RelationalGroupedDataset.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="247" column="45" selection-start-line="247" selection-start-column="45" selection-end-line="247" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.jar!/org/apache/spark/sql/catalyst/expressions/aggregate/Average.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="148" selection-start-line="2" selection-start-column="148" selection-end-line="2" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.jar!/org/apache/spark/sql/catalyst/expressions/aggregate/AverageLike.class">
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.jar!/org/apache/spark/sql/catalyst/expressions/codegen/JavaCode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.jar!/org/apache/spark/sql/catalyst/expressions/Alias.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/Dataset.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="1504" column="6" selection-start-line="1504" selection-start-column="6" selection-end-line="1504" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/rdd/RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="381" column="45" selection-start-line="381" selection-start-column="38" selection-end-line="381" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/collection/Iterable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.jar!/org/apache/spark/sql/Row.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0-sources.jar!/org/apache/spark/sql/catalyst/expressions/namedExpressions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0-sources.jar!/org/apache/spark/sql/Row.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/package.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/collection/TraversableOnce.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/collection/mutable/ArrayBuffer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaSparkContext.scala">
+    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaPairRDD.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        <state relative-caret-position="164">
+          <caret line="677" column="6" selection-start-line="677" selection-start-column="6" selection-end-line="677" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/Function1.scala">
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        <state relative-caret-position="192">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/IndexedSeqOptimized.scala">
+    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/java/org/apache/spark/api/java/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+        <state relative-caret-position="180">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/IndexedSeqLike.scala">
+    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/api/java/JavaRDDLike.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+        <state relative-caret-position="174">
+          <caret line="397" column="6" selection-start-line="397" selection-start-column="6" selection-end-line="397" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/TraversableOnce.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/mutable/ArrayBuffer.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0-sources.jar!/org/apache/spark/sql/catalyst/expressions/aggregate/Sum.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="120">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/package.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/Iterable.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommender.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0-sources.jar!/org/apache/spark/sql/catalyst/expressions/arithmetic.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="88">
+          <caret line="155" column="11" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/SparkSession.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommend.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <element signature="e#31#47#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/StatusTransferDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/Tuple3.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/java/org/apache/spark/api/java/function/PairFlatMapFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/leftjoin/LeftJoinDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+          <folding>
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemItemDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1035" column="28" selection-start-line="1035" selection-start-column="28" selection-end-line="1035" selection-end-column="28" />
+          <folding>
+            <element signature="e#27270#27271#0" expanded="true" />
+            <element signature="e#27291#27292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" selection-start-line="21" selection-start-column="8" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/kmeans/KMeansDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="30" column="45" selection-start-line="28" selection-start-column="7" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
