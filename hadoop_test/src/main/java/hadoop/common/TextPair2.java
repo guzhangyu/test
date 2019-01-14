@@ -53,6 +53,8 @@ public class TextPair2 implements Writable, WritableComparable<TextPair2> {
         return t1;
     }
 
+
+
     public void setT1(Text t1) {
         this.t1 = t1;
     }

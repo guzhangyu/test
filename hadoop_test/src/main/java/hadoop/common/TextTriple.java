@@ -28,24 +28,36 @@ public class TextTriple implements Writable, WritableComparable<TextTriple> {
 
     @Override
     public int compareTo(TextTriple o) {
-        return t1.toString().compareTo(o.t1.toString());
+        int a= t1.toString().compareTo(o.t1.toString());
+        if(a!=0){
+            return a;
+        }
+
+        a=t2.toString().compareTo(o.t2.toString());
+        if(a!=0){
+            return a;
+        }
+
+        return t3.toString().compareTo(o.t3.toString());
     }
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
         t1.write(dataOutput);
         t2.write(dataOutput);
+        t3.write(dataOutput);
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
         t1.readFields(dataInput);
         t2.readFields(dataInput);
+        t3.readFields(dataInput);
     }
 
     @Override
     public String toString() {
-        return String.format("(%s,%s)",t1.toString(),t2.toString());
+        return String.format("(%s,%s,%s)",t1.toString(),t2.toString(),t3.toString());
     }
 
     public Text getT1() {
@@ -58,6 +70,14 @@ public class TextTriple implements Writable, WritableComparable<TextTriple> {
 
     public Text getT2() {
         return t2;
+    }
+
+    public Text getT3() {
+        return t3;
+    }
+
+    public void setT3(Text t3) {
+        this.t3 = t3;
     }
 
     public void setT2(Text t2) {
