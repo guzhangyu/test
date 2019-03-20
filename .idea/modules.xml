@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyTest.iml" filepath="$PROJECT_DIR$/MyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleApp/SimpleApp.iml" filepath="$PROJECT_DIR$/SimpleApp/SimpleApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop_test/hadoop_test.iml" filepath="$PROJECT_DIR$/hadoop_test/hadoop_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/practice-Code.iml" filepath="$PROJECT_DIR$/.idea/practice-Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-test/spark-test.iml" filepath="$PROJECT_DIR$/spark-test/spark-test.iml" />

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hadoop_test" />
+        <module name="SimpleApp" />
         <module name="spark-test" />
         <module name="testCode" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel target="8">
       <module name="hadoop_test" target="1.8" />
       <module name="practice-Code" target="1.8" />
+      <module name="SimpleApp" target="1.8" />
       <module name="spark-test" target="1.8" />
       <module name="testCode" target="1.6" />
     </bytecodeTargetLevel>

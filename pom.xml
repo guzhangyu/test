@@ -11,6 +11,7 @@
         <module>testCode</module>
         <module>hadoop_test</module>
         <module>spark-test</module>
+        <module>SimpleApp</module>
     </modules>
     <name>MyTest</name>
     <!--<modules>-->
