@@ -1,22 +1,32 @@
 import com.google.common.collect.Maps;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
 public class DecisionTree {
 
-//    private static Map<String,List<String>> valueMap=new HashMap<>();
+    private static Map<String,List<String>> valueMap=new HashMap<>();
 
-//    static {
-//        valueMap.put("色泽",Arrays.asList("青绿","乌黑","浅白"));
-//        valueMap.put("根蒂"  ,Arrays.asList("蜷缩","稍蜷","硬挺"));
-//        valueMap.put("敲声",Arrays.asList("浊响","沉闷","清脆"));
-//        valueMap.put("纹理"  ,Arrays.asList("清晰","稍糊","模糊"));
-//        valueMap.put("脐部",Arrays.asList("凹陷","稍凹","平坦"));
-//        valueMap.put("触感"  ,Arrays.asList("硬滑","软粘"));
-//    }
+    static {
+        valueMap.put("色泽",Arrays.asList("青绿","乌黑","浅白"));
+        valueMap.put("根蒂"  ,Arrays.asList("蜷缩","稍蜷","硬挺"));
+        valueMap.put("敲声",Arrays.asList("浊响","沉闷","清脆"));
+        valueMap.put("纹理"  ,Arrays.asList("清晰","稍糊","模糊"));
+        valueMap.put("脐部",Arrays.asList("凹陷","稍凹","平坦"));
+        valueMap.put("触感"  ,Arrays.asList("硬滑","软粘"));
+    }
 
-    //,String parentType
-    public DecisionTreeNode treeGenerate(List<Data> D,List<String> A,String attr,String attrV){
+    /**
+     * 根据数据以及属性集 产生 决策树
+     * @param D
+     * @param A
+     * @param testD
+     * @param attr
+     * @param attrV
+     * @return
+     */
+    public DecisionTreeNode treeGenerate(List<Data> D,List<String> A,List<Data> testD,String attr,String attrV,DecisionTreeNode parentNode){
         Data firstD=D.get(0);
         Boolean typeDiff=false;
         for(Data d:D){
@@ -26,6 +36,7 @@ public class DecisionTree {
         }
 
         DecisionTreeNode node=new DecisionTreeNode();
+        node.setParentNode(parentNode);
         node.setCount(D.size());
         if(attr!=null){
             node.setAttr(attr);
@@ -44,24 +55,61 @@ public class DecisionTree {
                 attrEqual=false;
             }
 
-            Integer cnt=typeCntMap.getOrDefault(d.getY(),0);
-            typeCntMap.put(d.getY(),cnt+1);
+            typeCntMap.put(d.getY(),typeCntMap.getOrDefault(d.getY(),0)+1);
         }
 
-        //子节点中出现最多的类别
-        String mostType=null;
-        Integer mostTypeCnt=0;
-        for(Map.Entry<String,Integer> typeCntEntry:typeCntMap.entrySet()){
-            if(mostTypeCnt<typeCntEntry.getValue()){
-                mostTypeCnt=typeCntEntry.getValue();
-                mostType=typeCntEntry.getKey();
-            }
-        }
+        String mostType = getMaxCountType(typeCntMap);
+        node.setType(mostType);
         if(attrEqual){//属性值都相同
-            node.setType(mostType);
             return node;
         }
+        chooseAttrAndDivide(D, A, testD, node,mostType);
 
+        //该判断分支下的测试数据集
+        DecisionTreeNode root=node;
+        Map<String,String> attrVMap=new HashMap<>();
+        while(root.getParentNode()!=null){
+            attrVMap.put(root.getAttr(),root.getAttrV());
+            root=root.getParentNode();
+        }
+        List<String> attrs=new ArrayList<>(attrVMap.keySet());
+
+        List<Data> testDatas=new ArrayList<>();
+        for(Data d:testD){
+            if(getSubMap(d.getAttrs(),attrs).equals(attrVMap)){
+                testDatas.add(d);
+            }
+        }
+
+        //预剪枝
+        Integer childPredictRightCount=0;
+        Integer parentPredictRightCount=0;
+        for(Data data:testDatas){
+            if(predictType(data, root).equals(data.getY())){
+                childPredictRightCount++;
+            }
+
+            if(mostType.equals(data.getY())){
+                parentPredictRightCount++;
+            }
+        }
+
+        if(childPredictRightCount<parentPredictRightCount){
+            node.setChildren(null);
+            node.setType(mostType);
+        }
+
+        return node;
+    }
+
+    /**
+     * 查找最优的属性，并继续划分决策树
+     * @param D
+     * @param A
+     * @param testD
+     * @param node
+     */
+    private void chooseAttrAndDivide(List<Data> D, List<String> A, List<Data> testD, DecisionTreeNode node,String mostType) {
         //从A中选择最优划分属性ax
         String bestAttrName=getAttrByInformationScala(D,A);
         List<String> leftAttrs=new ArrayList<>(A);//剩余的属性集
@@ -78,14 +126,54 @@ public class DecisionTree {
 
             datas.add(d);
         }
-
-        List<DecisionTreeNode> children=new ArrayList<>();
-        node.setChildren(children);
-        for(Map.Entry<String,List<Data>> entry:attrVDataMap.entrySet()){
-            children.add(treeGenerate(entry.getValue(),leftAttrs,bestAttrName,entry.getKey()));
+        for(String attr:valueMap.get(bestAttrName)){
+            if(attrVDataMap.containsKey(attr)){
+                node.addChild(treeGenerate(attrVDataMap.get(attr),leftAttrs,testD,bestAttrName,attr,node));
+            }else{
+                DecisionTreeNode emptyNode=new DecisionTreeNode();
+                emptyNode.setCount(0);
+                emptyNode.setType(mostType);
+                emptyNode.setAttr(bestAttrName);
+                emptyNode.setAttrV(attr);
+                node.addChild(emptyNode);
+            }
         }
+    }
 
-        return node;
+    /**
+     * 子节点中出现最多的类别
+     * @param typeCntMap 类别 数量 map
+     * @return
+     */
+    private String getMaxCountType(Map<String, Integer> typeCntMap) {
+        String mostType=null;
+        Integer mostTypeCnt=0;
+        for(Map.Entry<String,Integer> typeCntEntry:typeCntMap.entrySet()){
+            if(mostTypeCnt<typeCntEntry.getValue()){
+                mostTypeCnt=typeCntEntry.getValue();
+                mostType=typeCntEntry.getKey();
+            }
+        }
+        return mostType;
+    }
+
+    /**
+     * 预测data的分类
+     * @param data
+     * @param root
+     * @return
+     */
+    private String predictType(Data data, DecisionTreeNode root) {
+        DecisionTreeNode predictNode=root;
+        if(CollectionUtils.isNotEmpty(predictNode.getChildren())){
+            for(DecisionTreeNode n:predictNode.getChildren()){
+                if(data.getAttrs().get(n.getAttr()).equals(n.getAttrV())){
+                    predictNode=n;
+                    break;
+                }
+            }
+        }
+        return predictNode.getType();
     }
 
     /**
@@ -236,7 +324,19 @@ public class DecisionTree {
                 "纹理",
                 "脐部",
                 "触感");
-        DecisionTreeNode node=new PrePruningDecisionTree().treeGenerate(D,attrs,null,null);
+        int[][]trainTestArr=new int[][]{
+                {1,2,3,6,7,10,14,15,16,17},
+                {4,5,8,9,11,12,13}
+        };
+        List<Data> trainD=new ArrayList<>();
+        List<Data> testD=new ArrayList<>();
+        for(int i=0;i<trainTestArr[0].length;i++){
+            trainD.add(D.get(trainTestArr[0][i]-1));
+        }
+        for(int i=0;i<trainTestArr[1].length;i++){
+            testD.add(D.get(trainTestArr[1][i]-1));
+        }
+        DecisionTreeNode node=new DecisionTree().treeGenerate(trainD,attrs,testD,null,null,null);
         System.out.println(node);
 
 
@@ -258,16 +358,43 @@ public class DecisionTree {
     }
 }
 
+/**
+ * 决策树节点
+ */
 class DecisionTreeNode{
+
+    //父节点
+    private DecisionTreeNode parentNode;
+
+    //属性名
     private String attr;
 
+    //属性值
     private String attrV;
 
+    //所属分类
     private String type;
 
+    //该节点下的数量
     private Integer count;
 
     private List<DecisionTreeNode> children;
+
+    public void addChild(DecisionTreeNode child){
+        if(children==null){
+            children=new ArrayList<>();
+        }
+        children.add(child);
+        child.setParentNode(this);
+    }
+
+    public DecisionTreeNode getParentNode() {
+        return parentNode;
+    }
+
+    public void setParentNode(DecisionTreeNode parentNode) {
+        this.parentNode = parentNode;
+    }
 
     public Integer getCount() {
         return count;
