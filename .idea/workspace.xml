@@ -7,113 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/netty4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/TimeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/TimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubscribeReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubscribeResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/http/file/HttpFileServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/http/file/HttpFileServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommandDependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommandFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/RequestCacheCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DemoDatabaseShardingAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DemoTableShardingAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/service/DemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/live/item_recommend1/NeualNetworkLearning.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/live/item_recommend1/NeualNetworkLearningJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/mahout/LastFm.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview/CalcExpressionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview/CarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview/OptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/TestWeakReference1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/ThreadPoolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interview/OptionalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/BicycleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ClassInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/InterpreterPatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MyReadWriteLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MysqlXAConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ParentClassInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/RedisExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/RedisLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SemaphoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SteamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ThreadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RabbitmqListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestAopConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/db/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/db/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/discard/DiscardClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/discard/DiscardServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/portunification/PortUnificationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/portunification/PortUnificationServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/ReentrantLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/ReentrantReadWriteLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/CoderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CacheImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CacheManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CachingProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/redisson/RedissonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/resources/scripts/checkandset.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/main/resources/scripts/randomtest.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/src/test/java/jmocks/MockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/build.sbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/datamining/LnRateLinearRegression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/SimpleA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/datamining/WrongRateCompare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/scala/SimpleApp.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1266,7 +1161,7 @@
       <workItem from="1597294931916" duration="675000" />
       <workItem from="1597369733998" duration="1845000" />
       <workItem from="1597399373520" duration="761000" />
-      <workItem from="1598168435980" duration="1225000" />
+      <workItem from="1598168435980" duration="1996000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
