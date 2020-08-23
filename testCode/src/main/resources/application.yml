@@ -2,6 +2,37 @@ server:
   port: 9997
 
 spring:
+  redis:
+    host: 172.31.0.219
+    port: 6379
+    password: unitymob
+    pool:
+      max-idle: 8
+      min-idle: 1
+      max-active: 8
+      max-wait: -1
+    timeout: 300000
+
+  rabbitmq:
+    host: 172.31.0.74
+    port: 5672
+    username: unitymob
+    password: unitymob
+    publisher-confirms: true
+    virtual-host: unitymob
+    connection-timeout: 300000
+    cache:
+      channel:
+        checkout-timeout: 300000
+    template:
+      receive-timeout: 300000
+      reply-timeout: 300000
+    listener:
+      simple:
+        acknowledge-mode: none
+        concurrency: 3
+        max-concurrency: 3
+
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource

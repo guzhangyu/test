@@ -7,18 +7,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/BPNeuralNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/TimeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/TimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubReqServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubscribeReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/decode/SubscribeResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/http/file/HttpFileServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty4/src/main/java/netty4/http/file/HttpFileServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommandDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/HelloWorldCommandFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/RequestCacheCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DemoDatabaseShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/config/DemoTableShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc-test/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/live/item_recommend1/NeualNetworkLearning.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/live/item_recommend1/NeualNetworkLearningJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-test/src/main/java/mahout/LastFm.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview/CalcExpressionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview/OptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/TestWeakReference1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/ThreadPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interview/OptionalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/BicycleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ClassInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/InterpreterPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MyReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/MysqlXAConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ParentClassInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/RedisExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/RedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SemaphoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SteamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RabbitmqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RabbitmqListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestAopConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/db/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/db/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/discard/DiscardClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/discard/DiscardServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/portunification/PortUnificationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/portunification/PortUnificationServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatClientInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/netty/securechat/SecureChatServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/ReentrantLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/ReentrantReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/CoderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/jmocks/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CacheImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CacheManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/CachingProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/mycache/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/redisson/RedissonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/resources/scripts/checkandset.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/resources/scripts/randomtest.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/test/java/jmocks/MockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/datamining/LnRateLinearRegression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/SimpleA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/datamining/WrongRateCompare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleApp/src/main/scala/SimpleApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/JdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/src/main/resources/application.yml" afterDir="false" />
     </list>
-    <ignored path="MyTest.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <ignored path="$PROJECT_DIR$/testCode/target/" />
-    <ignored path="$PROJECT_DIR$/hadoop_test/target/" />
-    <ignored path="$PROJECT_DIR$/spark-test/target/" />
-    <ignored path="$PROJECT_DIR$/SimpleApp/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,372 +124,34 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1586267828">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="34" />
-          <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.166" value="1" />
-          <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.27" value="2" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.35" value="2" />
-          <entry key="project.open.time.39" value="2" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="2" />
-          <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.72" value="1" />
-          <entry key="project.open.time.76" value="1" />
-          <entry key="project.open.time.89" value="1" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="45" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="bark" value="11" />
-          <entry key="class" value="238" />
-          <entry key="gitignore" value="2" />
-          <entry key="h" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="858" />
-          <entry key="pom" value="3" />
-          <entry key="properties" value="9" />
-          <entry key="sbt" value="1" />
-          <entry key="scala" value="132" />
-          <entry key="timestamp" value="1" />
-          <entry key="txt" value="16" />
-          <entry key="xml" value="26" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C++" value="1" />
-          <entry key="CLASS" value="238" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="858" />
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Properties" value="9" />
-          <entry key="Scala" value="132" />
-          <entry key="XML" value="29" />
-          <entry key="YAML" value="1" />
-          <entry key="sbt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="17" />
-          <entry key="dummy" value="209" />
-          <entry key="gitignore" value="8" />
-          <entry key="java" value="72417" />
-          <entry key="pom" value="1" />
-          <entry key="properties" value="112" />
-          <entry key="sbt" value="129" />
-          <entry key="scala" value="7311" />
-          <entry key="txt" value="108" />
-          <entry key="xml" value="105" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="17" />
-          <entry key="JAVA" value="72417" />
-          <entry key="PLAIN_TEXT" value="325" />
-          <entry key="Properties" value="112" />
-          <entry key="Scala" value="7311" />
-          <entry key="XML" value="106" />
-          <entry key="sbt" value="129" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="MyTest" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrintTool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="59" column="34" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/security/action/GetPropertyAction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
-              <caret line="297" column="31" selection-start-line="297" selection-start-column="31" selection-end-line="297" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-              <folding>
-                <element signature="e#6390#6391#0" expanded="true" />
-                <element signature="e#6438#6439#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="yet_unknown" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print(</find>
-      <find>checkpointRDD</find>
-      <find>checkpointData</find>
-      <find>Seconds</find>
-      <find>training_test</find>
-      <find>queryid_tokensid</find>
-      <find>Array</find>
-      <find>+=</find>
-      <find>mutable</find>
-      <find>Test</find>
-      <find>meanAbsoluteError</find>
-      <find>Training</find>
-      <find>area</find>
-      <find>\t</find>
-      <find>untio</find>
-      <find>zone=</find>
-      <find>zone =</find>
-      <find>ALS(</find>
-      <find>def filter(</find>
-      <find>{0.697,0.46,1},</find>
-      <find>x[j]</find>
-      <find>getOrDefault</find>
-      <find>axvs</find>
-      <find>getSubMap</find>
-      <find>DecisionTreeNode</find>
-      <find>createData</find>
-      <find>getAttrByInformationScala</find>
-      <find>treeGenerate</find>
-      <find>predictType</find>
-      <find>chooseAttrAndDivide</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>addPoint(</replace>
-      <replace>.getPoint(</replace>
-      <replace />
-      <replace>Double</replace>
-      <replace>double[</replace>
-      <replace>\s</replace>
-      <replace>\\s</replace>
-      <replace>xj</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\Users\guzy\IdeaProjects\practice-Code\src\main\java</dir>
-      <dir>$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase</dir>
-      <dir>$PROJECT_DIR$/spark-test/src/main</dir>
-      <dir>$PROJECT_DIR$/spark-test/src/main/java</dir>
-      <dir>$PROJECT_DIR$/hadoop_test/src/main/java/hadoop</dir>
-      <dir>$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar</dir>
-      <dir>$PROJECT_DIR$/hadoop_test/src/main/java</dir>
-      <dir>$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.jar!/org/apache/spark</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/spark-test/src</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/fasta/FastaMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/fasta/FastaDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/fasta/FastaInputFormat.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaInputFormat.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaSparkDriver.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaLineRecordReader.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesReducer.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMerger.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/LongStringPair.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesRecordReader.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesFormatMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesFormatDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/StringLongPair.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesInputFormat.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/FilePos.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemReducer.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMapUsingDB.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomReducer.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomDriver.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomUseReducer.java" />
-        <option value="$PROJECT_DIR$/middle.txt" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomUseMapper.java" />
-        <option value="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/bloom/BloomUseDriver.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java" />
-        <option value="$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/Dataset.scala" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/TestScala1.scala" />
-        <option value="$PROJECT_DIR$/spark-test/pom.xml" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/MLLibTest.scala" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/LogisticRegressionExample.scala" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/TestScala.scala" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/TestScala2.scala" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/ALSTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/jvm/hotswap/Test.java" />
-        <option value="$PROJECT_DIR$/SimpleApp/pom.xml" />
-        <option value="$PROJECT_DIR$/SimpleApp/src/main/scala/SimpleApp.scala" />
-        <option value="$PROJECT_DIR$/SimpleApp/build.sbt" />
-        <option value="$PROJECT_DIR$/SimpleApp/src/main/java/SimpleA.java" />
-        <option value="$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java" />
-        <option value="$PROJECT_DIR$/SimpleApp/src/main/java/Data.java" />
-        <option value="$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/Data.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/PrePruningDecisionTree.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java" />
-        <option value="$PROJECT_DIR$/spark-test/src/main/java/BPNeuralNetwork.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settiings_lkwd.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SimpleApp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SimpleApp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=E:\apache-maven-3.3.3" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="37" />
-    <option name="width" value="1440" />
-    <option name="height" value="806" />
-  </component>
+  <component name="ProjectId" id="1eFhBNWeHueWqRgJyQ7Cq98c3H6" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -464,191 +222,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user_recommend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="protocol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:3.1.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:3.1.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="hadoop-mapreduce-client-core-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:3.1.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="hadoop-mapreduce-client-core-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:3.1.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="hadoop-mapreduce-client-core-3.1.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mapreduce" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
@@ -658,7 +231,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java&#10;Test&#9;FILE&#9;file:///Users/zhangyugu/IdeaProjects/practice-Code/src/main/java/jvm/hotswap/Test.java&#10;Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/Lock.java&#10;.xml&#9;FILE&#9;file://D:/Users/guzy/IdeaProjects/practice-Code/pom.xml&#10;Nio&#9;PSI&#9;JAVA://com.phei.netty.nio.NioTimeClient&#10;sort&#9;PSI&#9;JAVA://algorithm.tree.BalancedBinarySearchTree#sort&#10;.html&#9;FILE&#9;file:///Users/guzy/IdeaProjects/raycloud/myTest/src/main/WebSocketServer.html" />
+    <property name="SearchEverywhereHistoryKey" value="Executor&#9;PSI&#9;JAVA://java.util.concurrent.Executor&#10;QuickSort&#9;PSI&#9;JAVA://jvm.QuickSort&#10;poet.txt&#9;FILE&#9;file:///Users/zhangyugu/IdeaProjects/practice-Code/poet.txt&#10;ArchiveFilter&#9;PSI&#9;JAVA://org.apache.bcel.util.ClassPath#ARCHIVE_FILTER&#10;Test&#9;FILE&#9;file:///Users/zhangyugu/IdeaProjects/practice-Code/src/main/java/jvm/hotswap/Test.java&#10;Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/Lock.java&#10;.xml&#9;FILE&#9;file://D:/Users/guzy/IdeaProjects/practice-Code/pom.xml&#10;Nio&#9;PSI&#9;JAVA://com.phei.netty.nio.NioTimeClient&#10;sort&#9;PSI&#9;JAVA://algorithm.tree.BalancedBinarySearchTree#sort&#10;.html&#9;FILE&#9;file:///Users/guzy/IdeaProjects/raycloud/myTest/src/main/WebSocketServer.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543980297272" />
@@ -666,30 +239,43 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/hadoop_test/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28390804" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java.bark" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.phei.netty.rpc.RpcConstants" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="hadoop.second_sort" />
       <recent name="concurrent.cas.collections" />
       <recent name="concurrent" />
       <recent name="concurrent.myimpl" />
-      <recent name="algorithm" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="jvm.codecheck" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spark-test/src/main/java" />
+      <recent name="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter" />
+      <recent name="$PROJECT_DIR$/hadoop_test/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spark-test/src/main/resources" />
+      <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hadoop.bloom" />
@@ -698,12 +284,9 @@
       <recent name="hadoop.cochran_armitage" />
       <recent name="hadoop.triangle" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/spark-test/src/main/java" />
-      <recent name="$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/purchase/filter" />
-      <recent name="$PROJECT_DIR$/hadoop_test/src/main/resources" />
-      <recent name="$PROJECT_DIR$/spark-test/src/main/resources" />
-      <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.test.netty.portunification" />
+      <recent name="jvm.codecheck" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -718,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DecisionTree">
+  <component name="RunManager" selected="Application.Tests">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -760,7 +343,7 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -960,13 +543,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecisionTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DecisionTree" />
-      <module name="spark-test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FastaDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.fasta.FastaDriver" />
       <module name="hadoop_test" />
@@ -1033,14 +609,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LnRateLinearRegression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LnRateLinearRegression" />
-      <module name="SimpleApp" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1199,13 +767,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jvm.hotswap.Test" />
-      <module name="practice-Code" />
-      <option name="VM_PARAMETERS" value=" -Duser.timezone=GMT" />
+    <configuration name="SubReqClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="netty4.decode.SubReqClient" />
+      <module name="netty4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jvm.hotswap.*" />
+          <option name="PATTERN" value="netty4.decode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1213,10 +781,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestScala2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="TestScala2" />
-      <module name="spark-test" />
+    <configuration name="SubReqServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="netty4.decode.SubReqServer" />
+      <module name="netty4" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="netty4.decode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmocks.Tests" />
+      <module name="testCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmocks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1225,6 +813,20 @@
       <option name="MAIN_CLASS_NAME" value="ThreadTest" />
       <module name="MyTest" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="netty4.TimeClient" />
+      <module name="netty4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="netty4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1356,9 +958,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WrongRateCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WrongRateCompare" />
-      <module name="SimpleApp" />
+    <configuration name="WiresharkFileAnalyze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WiresharkFileAnalyze" />
+      <module name="practice-Code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1381,6 +983,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1414,7 +1017,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration name="spark-test [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+                <option value="-U" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/spark-test" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <properties />
       <listeners />
@@ -1422,7 +1052,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
@@ -1472,25 +1102,27 @@
       <item itemvalue="Application.LocalMemDriver" />
       <item itemvalue="Application.BloomDriver" />
       <item itemvalue="Application.BloomUseDriver" />
+      <item itemvalue="Application.TimeClient" />
+      <item itemvalue="Application.SubReqServer" />
+      <item itemvalue="Application.SubReqClient" />
+      <item itemvalue="Application.WiresharkFileAnalyze" />
+      <item itemvalue="Application.Tests" />
       <item itemvalue="Maven.MyTest [clean,install]" />
-      <item itemvalue="Application.TestScala2" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.LnRateLinearRegression" />
-      <item itemvalue="Application.WrongRateCompare" />
-      <item itemvalue="Application.DecisionTree" />
+      <item itemvalue="Maven.spark-test [package]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DecisionTree" />
-        <item itemvalue="Application.WrongRateCompare" />
-        <item itemvalue="Application.LnRateLinearRegression" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestScala2" />
+        <item itemvalue="Application.Tests" />
+        <item itemvalue="Application.WiresharkFileAnalyze" />
+        <item itemvalue="Application.SubReqClient" />
+        <item itemvalue="Application.SubReqServer" />
+        <item itemvalue="Application.TimeClient" />
       </list>
     </recent_temporary>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INTERFACES,SHOW_LAMBDA,SHOW_PROPERTIES" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1594,7 +1226,47 @@
       <workItem from="1552998938808" duration="31367000" />
       <workItem from="1553302199192" duration="2741000" />
       <workItem from="1553559851165" duration="2776000" />
-      <workItem from="1555061744572" duration="787000" />
+      <workItem from="1555061744572" duration="3751000" />
+      <workItem from="1556182266243" duration="6088000" />
+      <workItem from="1556239415078" duration="1196000" />
+      <workItem from="1556842024627" duration="456000" />
+      <workItem from="1557993183953" duration="3746000" />
+      <workItem from="1558329768041" duration="406000" />
+      <workItem from="1559092916997" duration="7629000" />
+      <workItem from="1559179109102" duration="75675000" />
+      <workItem from="1560761953063" duration="8866000" />
+      <workItem from="1561084968972" duration="4127000" />
+      <workItem from="1561686021759" duration="3896000" />
+      <workItem from="1562541638135" duration="6804000" />
+      <workItem from="1562639576416" duration="39131000" />
+      <workItem from="1563514969276" duration="2366000" />
+      <workItem from="1563527828325" duration="19930000" />
+      <workItem from="1563779418716" duration="2436000" />
+      <workItem from="1563879892809" duration="2207000" />
+      <workItem from="1563922079291" duration="19952000" />
+      <workItem from="1564574070796" duration="5000" />
+      <workItem from="1565160519382" duration="1267000" />
+      <workItem from="1566174601686" duration="1461000" />
+      <workItem from="1566184936184" duration="10743000" />
+      <workItem from="1567062766832" duration="3963000" />
+      <workItem from="1569375231346" duration="592000" />
+      <workItem from="1571046824217" duration="589000" />
+      <workItem from="1571294815834" duration="44858000" />
+      <workItem from="1574742113939" duration="3042000" />
+      <workItem from="1575946318719" duration="12850000" />
+      <workItem from="1581997082310" duration="10326000" />
+      <workItem from="1582865599720" duration="19661000" />
+      <workItem from="1584432957386" duration="4016000" />
+      <workItem from="1586937229499" duration="277000" />
+      <workItem from="1589444854241" duration="191000" />
+      <workItem from="1589445155271" duration="589000" />
+      <workItem from="1591155161227" duration="18061000" />
+      <workItem from="1592122837002" duration="2189000" />
+      <workItem from="1593923115697" duration="1465000" />
+      <workItem from="1597294931916" duration="675000" />
+      <workItem from="1597369733998" duration="1845000" />
+      <workItem from="1597399373520" duration="761000" />
+      <workItem from="1598168435980" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
@@ -1628,15 +1300,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ByteBufTest_getL - 2018.09.30 at 10h 06m 54s.xml">
-      <configuration name="ByteBufTest.getL" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ByteBufTest_getL - 2018.09.30 at 10h 11m 45s.xml">
-      <configuration name="ByteBufTest.getL" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ByteBufTest_getL - 2018.09.30 at 10h 12m 40s.xml">
-      <configuration name="ByteBufTest.getL" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ByteBufTest_putL - 2018.09.30 at 10h 15m 06s.xml">
       <configuration name="ByteBufTest.putL" configurationId="JUnit" />
     </history-entry>
@@ -1658,59 +1321,31 @@
     <history-entry file="ByteBufTest_putByteBuffer - 2018.09.30 at 10h 20m 42s.xml">
       <configuration name="ByteBufTest.putByteBuffer" configurationId="JUnit" />
     </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1149814000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7629108" visible="true" weight="0.2074392" />
-      <window_info id="Structure" order="1" sideWeight="0.2370892" side_tool="true" weight="0.2360515" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Web" order="3" side_tool="true" />
-      <window_info id="JRebel" order="4" side_tool="true" />
-      <window_info id="Favorites" order="5" sideWeight="0.2106383" side_tool="true" weight="0.24717286" />
-      <window_info id="Palette&#9;" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Image Layers" order="8" />
-      <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.66523606" weight="0.30452675" />
-      <window_info anchor="bottom" id="JRebel Executor" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.20457797" side_tool="true" visible="true" weight="0.19505495" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49356222" weight="0.32921812" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.4055794" weight="0.2967033" />
-      <window_info anchor="bottom" id="Application Servers" order="5" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Changes" order="9" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
-      <window_info anchor="bottom" id="Find" order="11" weight="0.29492456" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.6309013" weight="0.30041152" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.795422" weight="0.40466392" />
-      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
-      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
-      <window_info anchor="bottom" id="TODO" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="18" />
-      <window_info anchor="bottom" id="Database Changes" order="19" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.22844176" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.20386267" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
-      <window_info anchor="right" id="Designer" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="IDEtalk" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
+    <history-entry file="MockTest_testInstance - 2019.05.16 at 16h 54m 22s.xml">
+      <configuration name="MockTest.testInstance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MockTest_testInstance - 2019.05.16 at 17h 04m 01s.xml">
+      <configuration name="MockTest.testInstance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MockTest_partiallyMock - 2019.05.16 at 17h 08m 52s.xml">
+      <configuration name="MockTest.partiallyMock" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1719,9 +1354,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="树遍历" />
@@ -1736,608 +1368,507 @@
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jvm/hotswap/JavaClassExecutor.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jvm/hotswap/JavaClassExecutor.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GetMaxSubStrLen.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/ReentrantLockPseudoRandom.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/CasDeque.java</url>
           <line>132</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/CasDeque.java</url>
           <line>153</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/websocket/WebSocketServerHandler.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/udp/ChineseProverbClient.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/file/FileServerHandler.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/dataformat/NettyMessageEncoder.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/dataformat/NettyMessageDecoder.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/dataformat/NettyMessageDecoder.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/MessageToMessageEncoder.java</url>
           <line>106</line>
-          <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyClient.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyClient.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/dataformat/NettyMessageDecoder.java</url>
           <line>40</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java</url>
           <line>141</line>
-          <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/dataformat/NettyMessageDecoder.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/TestOrder.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java</url>
           <line>216</line>
-          <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java</url>
           <line>214</line>
-          <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>101</line>
-          <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>271</line>
-          <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>269</line>
-          <properties />
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>267</line>
-          <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>155</line>
-          <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>281</line>
-          <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>129</line>
-          <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>257</line>
-          <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java</url>
           <line>131</line>
-          <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/b/BMinusTree.java</url>
           <line>228</line>
-          <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcConsumerHandler.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcConsumerHandler.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcConsumer.java</url>
           <line>74</line>
-          <properties />
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/XmlClient.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/XmlEncoder.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/handler/HttpXmlServerHandler1.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/handler/HttpXmlServerHandler1.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/handler/HttpXmlClientHandler.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/handler/HttpXmlClientHandler.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/HttpXmlRequestEncoder.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/HttpXmlResponseDecoder.java</url>
           <line>15</line>
-          <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/XmlDecoder.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/XmlEncoder.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/MessageToMessageEncoder.java</url>
           <line>81</line>
-          <properties />
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/util/internal/TypeParameterMatcher.java</url>
           <line>185</line>
-          <properties />
           <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/http/HttpRequestDecoder.java</url>
           <line>79</line>
-          <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/HttpXmlRequestDecoder.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/MessageToMessageDecoder.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/HttpXmlRequestEncoder.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/xml/codec/XmlDecoder.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java</url>
           <line>118</line>
-          <properties />
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java</url>
           <line>161</line>
-          <properties />
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java</url>
           <line>138</line>
-          <properties />
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/nio/NioTimeServer.java</url>
           <line>99</line>
-          <properties />
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.2.0/amqp-client-5.2.0-sources.jar!/com/rabbitmq/client/impl/ChannelN.java</url>
           <line>1344</line>
-          <properties />
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>967</line>
-          <properties />
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/concurrent/myimpl/MyReadWriteLockTest.java</url>
           <line>239</line>
-          <properties />
           <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>743</line>
-          <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>869</line>
-          <properties />
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>948</line>
-          <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1282</line>
-          <properties />
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>888</line>
-          <properties />
           <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>660</line>
-          <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>643</line>
-          <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1261</line>
-          <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1260</line>
-          <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1263</line>
-          <properties />
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>605</line>
-          <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1340</line>
-          <properties />
           <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyReadWriteLock.java</url>
           <line>86</line>
-          <properties />
           <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/myimpl/MyReadWriteLock.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/interview/CurlTest.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/nio/NioTimeServer.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>1631</line>
-          <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/HibernateTest.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="225" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/ConnectionImpl.class</url>
           <line>618</line>
-          <properties />
           <option name="timeStamp" value="226" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/com/mysql/jdbc/ConnectionImpl.class</url>
           <line>599</line>
-          <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>68</line>
-          <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java</url>
           <line>287</line>
-          <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11-sources.jar!/ch/qos/logback/core/joran/util/PropertySetter.java</url>
           <line>281</line>
-          <properties />
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11-sources.jar!/ch/qos/logback/core/joran/util/PropertySetter.java</url>
           <line>280</line>
-          <properties />
           <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcConsumerHandler.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/BaseChannelHandlerAdapter.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcProviderHandler.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcConsumerHandler.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="251" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/BaseChannelHandlerAdapter.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/handler/RpcInfoSerializeHandler.java</url>
           <line>73</line>
-          <properties />
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/second_sort/SecondSortReducer.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="263" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/second_sort/DateTemperaturePair.java</url>
           <line>34</line>
-          <properties />
           <option name="timeStamp" value="265" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/Reducer.class</url>
           <option name="group" value="mapreduce" />
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="286" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2345,7 +1876,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/task/ReduceContextImpl.class</url>
           <option name="group" value="mapreduce" />
           <line>269</line>
-          <properties />
           <option name="timeStamp" value="289" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2353,7 +1883,6 @@
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <option name="group" value="mapreduce" />
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="291" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2361,7 +1890,6 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/Reducer.java</url>
           <option name="group" value="mapreduce" />
           <line>174</line>
-          <properties />
           <option name="timeStamp" value="292" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2369,7 +1897,6 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/Reducer.java</url>
           <option name="group" value="mapreduce" />
           <line>170</line>
-          <properties />
           <option name="timeStamp" value="293" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2377,7 +1904,6 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/ReduceContextImpl.java</url>
           <option name="group" value="mapreduce" />
           <line>113</line>
-          <properties />
           <option name="timeStamp" value="295" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2385,7 +1911,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/task/ReduceContextImpl.class</url>
           <option name="group" value="mapreduce" />
           <line>94</line>
-          <properties />
           <option name="timeStamp" value="301" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2393,7 +1918,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/task/ReduceContextImpl.class</url>
           <option name="group" value="mapreduce" />
           <line>104</line>
-          <properties />
           <option name="timeStamp" value="302" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2401,7 +1925,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/task/ReduceContextImpl.class</url>
           <option name="group" value="mapreduce" />
           <line>100</line>
-          <properties />
           <option name="timeStamp" value="303" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2409,7 +1932,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/task/ReduceContextImpl.class</url>
           <option name="group" value="mapreduce" />
           <line>203</line>
-          <properties />
           <option name="timeStamp" value="304" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2417,7 +1939,6 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/ReduceContextImpl.java</url>
           <option name="group" value="mapreduce" />
           <line>145</line>
-          <properties />
           <option name="timeStamp" value="305" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2425,7 +1946,6 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/ReduceContextImpl.java</url>
           <option name="group" value="mapreduce" />
           <line>154</line>
-          <properties />
           <option name="timeStamp" value="306" />
           <group>mapreduce</group>
         </line-breakpoint>
@@ -2433,587 +1953,706 @@
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/ReduceContextImpl.java</url>
           <option name="group" value="mapreduce" />
           <line>137</line>
-          <properties />
           <option name="timeStamp" value="307" />
           <group>mapreduce</group>
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="312" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <line>34</line>
-          <properties />
           <option name="timeStamp" value="315" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10GroupingComparator.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="316" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10/Top10Reducer.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="317" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1Reducer.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="318" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1Mapper.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="321" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1Reducer.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="326" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1Reducer.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="327" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1UnUniqReducer.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1UnUniqReducer.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="331" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/top10_1/Top10_1UnUniqReducer.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/top10/Top10SparkDriver.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="334" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/top10/Top10SparkDriver.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="335" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/top10/Top10SparkDriver.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/leftjoin/LeftJoinSparkDriver.java</url>
-          <line>157</line>
-          <properties />
+          <line>158</line>
           <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/moving_average/MovingAverageGroupingComparator.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="338" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common/DataTuples.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <condition expression="sets[1]==null" language="JAVA" />
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/common_friends/CommonFriendsReducer.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemItemReducer.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/ItemItemReducer.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserReducer.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserMapper.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="369" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/CommonFriends1Reducer.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="370" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/item_recommend/user_recommend/Friends4UserReducer.java</url>
           <line>40</line>
-          <properties />
           <option name="timeStamp" value="374" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/item_recommend/user_recommend/UserRecommendSparkDriver.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="375" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/item_recommend/user_recommend/UserRecommendSparkDriver.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="378" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/taobao_item_recommend/TaobaoItemRecommendDriver.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="382" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggReducer.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="383" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage1/CustomerTradeAggGroupingComparator.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="385" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="387" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="388" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/markov/stage2/HadoopFileReader.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="389" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/markov/MarkovSparkDriver.java</url>
           <line>68</line>
-          <properties />
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/kmeans/KMeansSparkDriver.java</url>
           <line>89</line>
-          <properties />
           <option name="timeStamp" value="391" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/knn/KNNSparkDriver.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/knn/KMeansSparkDriver.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="406" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/knn/KNNSparkDriver1.java</url>
           <line>95</line>
-          <properties />
           <option name="timeStamp" value="407" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/naive_bayes_category/NaiveBayesCategoryDriver.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="409" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/triangle/TriangleReducer.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="410" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/triangle/TriangleMapper.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="411" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/triangle/TriangleSparkDriver.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="412" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/cochran_armitage/CochranArmitage.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="413" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/cochran_armitage/CochranArmitage.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="416" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/cochran_armitage/CochranArmitage2_1Reducer.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="417" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/cochran_armitage/CochranArmitage2_1Reducer.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="418" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/cochran_armitage/CochranArmitage2_1GroupingComparator.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="422" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/ttest/TTestReducer.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="423" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/fasta/FastaMapper.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="424" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/input/NLineInputFormat.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="425" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/input/NLineInputFormat.java</url>
           <line>104</line>
-          <properties />
           <option name="timeStamp" value="427" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-common/3.1.1/hadoop-mapreduce-client-common-3.1.1.jar!/org/apache/hadoop/mapred/LocalJobRunner.class</url>
           <line>367</line>
-          <properties />
           <option name="timeStamp" value="431" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaSparkDriver.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="435" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaLineRecordReader.java</url>
           <line>173</line>
-          <properties />
           <option name="timeStamp" value="444" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaLineRecordReader.java</url>
           <line>140</line>
-          <properties />
           <option name="timeStamp" value="445" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/fasta/FastaLineRecordReader.java</url>
           <line>161</line>
-          <properties />
           <option name="timeStamp" value="446" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMerger.java</url>
           <line>86</line>
-          <properties />
           <option name="timeStamp" value="449" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMerger.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="451" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMerger.java</url>
           <line>79</line>
-          <properties />
           <option name="timeStamp" value="452" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMapper.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="453" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesMapper.java</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="454" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesFormatMapper.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="455" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/small_files/SmallFilesFormatMapper.java</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="456" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemMapper.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="457" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="458" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="459" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="460" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="461" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/hadoop_test/src/main/java/hadoop/local_mem/LocalMemLRUMap.java</url>
           <line>68</line>
-          <properties />
           <option name="timeStamp" value="462" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <condition expression="theClass.toString().contains(&quot;WebIpInputFormat1&quot;)" language="JAVA" />
           <url>file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/ReflectionUtils.java</url>
           <line>126</line>
-          <properties />
           <option name="timeStamp" value="480" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java</url>
-          <line>104</line>
-          <properties />
-          <option name="timeStamp" value="484" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java</url>
-          <line>55</line>
-          <properties />
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/datamining/WrongRateCompare.java</url>
+          <line>63</line>
           <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java</url>
-          <line>97</line>
-          <properties />
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/datamining/LnRateLinearRegression.java</url>
+          <line>83</line>
           <option name="timeStamp" value="488" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java</url>
-          <line>86</line>
-          <properties />
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/datamining/LnRateLinearRegression.java</url>
+          <line>72</line>
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>298</line>
-          <properties />
           <option name="timeStamp" value="490" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="506" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="507" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="508" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>62</line>
-          <properties />
           <option name="timeStamp" value="509" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>113</line>
-          <properties />
           <option name="timeStamp" value="510" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="predictNode.getType()==null" language="JAVA" />
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>175</line>
-          <properties />
           <option name="timeStamp" value="520" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java</url>
           <line>339</line>
-          <properties />
           <option name="timeStamp" value="521" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/util/collection/ExternalSorter.scala</url>
-          <line>421</line>
-          <properties />
-          <option name="timeStamp" value="402" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/TestScala.scala</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="463" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/execution/datasources/csv/CSVUtils.scala</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="464" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/TestScala.scala</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="465" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/TestScala1.scala</url>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sharding-jdbc-test/src/main/java/com/raycloud/dmj/DemoApplication.java</url>
           <line>25</line>
-          <properties />
-          <option name="timeStamp" value="472" />
+          <option name="timeStamp" value="523" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/TestScala1.scala</url>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/SteamTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jvm/QuickSort.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jvm/QuickSort.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jvm/QuickSort.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/RedisExample.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="531" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/TestAopConfig.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="533" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="534" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/config/DataSourceConfig.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="535" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/SpringAssembly.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="537" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <option name="group" value="origin_source" />
+          <line>661</line>
+          <option name="timeStamp" value="540" />
+          <group>origin_source</group>
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <option name="group" value="origin_source" />
+          <line>709</line>
+          <option name="timeStamp" value="541" />
+          <group>origin_source</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <option name="group" value="origin_source" />
+          <line>663</line>
+          <option name="timeStamp" value="545" />
+          <group>origin_source</group>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyReadWriteLock.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="552" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyReadWriteLock.java</url>
+          <line>252</line>
+          <option name="timeStamp" value="556" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <option name="group" value="origin_source" />
+          <line>726</line>
+          <option name="timeStamp" value="557" />
+          <group>origin_source</group>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <line>715</line>
+          <option name="timeStamp" value="560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <line>736</line>
+          <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <line>697</line>
+          <option name="timeStamp" value="562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <line>687</line>
+          <option name="timeStamp" value="563" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer1.java</url>
+          <line>692</line>
+          <option name="timeStamp" value="564" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>661</line>
+          <option name="timeStamp" value="565" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>694</line>
+          <option name="timeStamp" value="566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>726</line>
+          <option name="timeStamp" value="567" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>709</line>
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>694</line>
+          <option name="timeStamp" value="571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>685</line>
+          <option name="timeStamp" value="573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyReadWriteLock.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>690</line>
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interview/CalcExpressionTest.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java</url>
+          <line>914</line>
+          <option name="timeStamp" value="583" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java</url>
+          <line>915</line>
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java</url>
+          <line>917</line>
+          <option name="timeStamp" value="586" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClientHandler.java</url>
           <line>26</line>
-          <properties />
-          <option name="timeStamp" value="473" />
+          <option name="timeStamp" value="587" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/TestScala1.scala</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="477" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServerHandler.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="588" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/LogisticRegressionExample.scala</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="482" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServerHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="589" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/spark-test/src/main/java/LogisticRegressionExample.scala</url>
-          <line>148</line>
-          <properties />
-          <option name="timeStamp" value="483" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClientHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="590" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoClient.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="591" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/netty/echo/EchoServer.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="592" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/BicycleFactory.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="593" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/BicycleFactory.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="594" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/BicycleFactory.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="595" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="596" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="598" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="599" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/MyClassLoaderTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="600" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/ThreeSum.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="601" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/ThreeSum.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="604" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <condition expression="i ==3 &amp;&amp; j ==5" language="JAVA" />
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/ThreeSum.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="605" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.4.3/mongodb-driver-3.4.3.jar!/com/mongodb/Mongo.class</url>
+          <line>66</line>
+          <properties field="credentialsList" class="com.mongodb.Mongo" />
+          <option name="timeStamp" value="536" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
+      <breakpoints-defaults>
+        <breakpoint suspend="THREAD" type="java-line" />
+      </breakpoints-defaults>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -3023,52 +2662,62 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>i*Math.log(D.size()/i.doubleValue())/D.size()</expression-string>
+        <expression-string>new String(bytes, &quot;utf_16&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new DecisionTree().treeGenerate(D,attrs)</expression-string>
+        <expression-string>new String(bytes, &quot;ascii&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>num_training</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>new String(bytes)</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test_set.collect()</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>new String(bytes, &quot;iso-8859-1&quot;)</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>score_and_labels.collect()</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>new String(bytes, &quot;gbk&quot;)</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>score_and_labels.collect().iterator.next()</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>new String(bytes, &quot;utf-8&quot;)</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>training_data_expanded.collect()</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>j</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>train_instance_flat.collect()</expression-string>
-        <language-id>Scala</language-id>
+        <expression-string>this.getId()</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>meth</expression-string>
+        <expression-string>Thread.currentThread().getId()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i ==3 &amp;&amp; j ==5</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 3 &amp;&amp; j == 5</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>predictNode.getType()==null</expression-string>
         <language-id>JAVA</language-id>
@@ -3107,482 +2756,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/mutable/ArrayBuilder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="358" column="24" selection-start-line="358" selection-start-column="24" selection-end-line="358" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/linalg/Vectors.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="317" column="6" selection-start-line="317" selection-start-column="6" selection-end-line="317" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/TraversableOnce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/Array.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/regression/GeneralizedLinearAlgorithm.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/classification/LogisticRegression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="405" column="15" selection-start-line="405" selection-start-column="15" selection-end-line="405" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/scala/org/apache/spark/ui/SparkUI.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/core/src/main/java/org/apache/spark/shuffle/sort/BypassMergeSortShuffleWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/evaluation/RegressionMetrics.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/optimization/GradientDescent.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="257" column="35" selection-start-line="257" selection-start-column="35" selection-end-line="257" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/hadoop-3.1.1-src/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/input/LineRecordReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/TestScala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="65" selection-start-line="65" selection-end-line="85" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/TestScala1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#248#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/LogisticRegressionExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="21" column="88" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/TestScala2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4650">
-          <caret line="352" column="47" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7965">
-          <caret line="573" column="31" selection-start-line="573" selection-start-column="31" selection-end-line="573" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21105">
-          <caret line="1465" column="35" selection-start-line="1465" selection-start-column="35" selection-end-line="1465" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/TimeZone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8940">
-          <caret line="654" column="36" selection-start-line="654" selection-start-column="36" selection-end-line="654" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/MLLibTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/ALSTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/DataFrameReader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10350">
-          <caret line="729" column="34" selection-start-line="729" selection-start-column="34" selection-end-line="729" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/sql/core/src/main/scala/org/apache/spark/sql/Dataset.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36765">
-          <caret line="2506" column="15" selection-start-line="2506" selection-start-column="15" selection-end-line="2506" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/recommendation/MatrixFactorizationModel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spark-master/mllib/src/main/scala/org/apache/spark/mllib/recommendation/ALS.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5040">
-          <caret line="356" column="6" selection-start-line="356" selection-start-column="6" selection-end-line="356" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jvm/hotswap/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/App.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/src/main/scala/SimpleApp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/src/main/java/SimpleA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/src/main/java/WrongRateCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/src/main/java/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="21" selection-start-line="23" selection-start-column="7" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleApp/src/main/java/LnRateLinearRegression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/DecisionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="323" column="21" lean-forward="true" selection-start-line="323" selection-start-column="21" selection-end-line="323" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/BPNeuralNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/PrePruningDecisionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="101" column="24" selection-end-line="260" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="291" column="25" selection-start-line="291" selection-start-column="25" selection-end-line="291" selection-end-column="25" />
-          <folding>
-            <element signature="e#11119#11120#0" expanded="true" />
-            <element signature="e#11200#11201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4995">
-          <caret line="359" column="25" selection-start-line="359" selection-start-column="25" selection-end-line="359" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark-test/src/main/java/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/security/action/GetPropertyAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4080">
-          <caret line="297" column="31" selection-start-line="297" selection-start-column="31" selection-end-line="297" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-          <folding>
-            <element signature="e#6390#6391#0" expanded="true" />
-            <element signature="e#6438#6439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/phei/netty/netty/protocol/NettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BalancedBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/RedBlackTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/tree/TreePrintTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>spark-test:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SimpleApp</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ant:ant:1.6.5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.28390804" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

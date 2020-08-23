@@ -21,8 +21,8 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.24</version>
-            <scope>runtime</scope>
+            <version>5.1.47</version>
+            <!--<scope>runtime</scope>-->
         </dependency>
 
         <dependency>
@@ -35,6 +35,23 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>1.5.14.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>1.5.14.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <dependency>
@@ -52,7 +69,23 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
             <version>3.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-all</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.redisson</groupId>-->
+            <!--<artifactId>redisson</artifactId>-->
+            <!--<version>3.5.4</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.hadoop</groupId>
@@ -72,6 +105,45 @@
             <version>3.1.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>1.30</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ampq 依赖包 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>com.atlassian.hibernate</groupId>-->
             <!--<artifactId>atlassian-hibernate-extras</artifactId>-->
@@ -82,6 +154,12 @@
             <!--<groupId>com.atlassian.hibernate</groupId>-->
             <!--<artifactId>hibernate.adapter</artifactId>-->
             <!--<version>0.101</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+        <!--<groupId>io.shardingjdbc</groupId>-->
+        <!--<artifactId>sharding-jdbc-core</artifactId>-->
+        <!--<version>2.0.3</version>-->
         <!--</dependency>-->
     </dependencies>
 

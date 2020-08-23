@@ -11,7 +11,8 @@
         <module>testCode</module>
         <module>hadoop_test</module>
         <module>spark-test</module>
-        <module>SimpleApp</module>
+        <module>sharding-jdbc-test</module>
+        <module>netty4</module>
     </modules>
     <name>MyTest</name>
     <!--<modules>-->
@@ -41,12 +42,13 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>5.2.0</version>
+            <version>5.4.0</version>
         </dependency>
 
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
+            <!--<version>4.1.50.Final</version>-->
             <version>5.0.0.Alpha1</version>
         </dependency>
 

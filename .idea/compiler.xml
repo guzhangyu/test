@@ -7,18 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hadoop_test" />
-        <module name="SimpleApp" />
+        <module name="netty4" />
         <module name="spark-test" />
+        <module name="sharding-jdbc-test" />
         <module name="testCode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="hadoop_test" target="1.8" />
+      <module name="netty4" target="1.5" />
       <module name="practice-Code" target="1.8" />
-      <module name="SimpleApp" target="1.8" />
+      <module name="sharding-jdbc-test" target="1.8" />
       <module name="spark-test" target="1.8" />
       <module name="testCode" target="1.6" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sharding-jdbc-test" options="-parameters" />
+    </option>
   </component>
 </project>

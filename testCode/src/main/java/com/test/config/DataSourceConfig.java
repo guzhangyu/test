@@ -1,15 +1,28 @@
 package com.test.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.mongodb.Mongo;
+import com.mongodb.MongoCredential;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.mongodb.core.MongoClientFactoryBean;
+import org.springframework.data.mongodb.core.MongoFactoryBean;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
+@EnableMongoRepositories(basePackages = "com.test.db")
+@EnableAspectJAutoProxy
 @Configuration
 public class DataSourceConfig {
 
@@ -52,6 +65,31 @@ public class DataSourceConfig {
 
     @Value("${spring.datasource.useGlobalDataSourceStat}")
     private boolean useGlobalDataSourceStat;
+
+//    @Bean
+//    public RedisConnectionFactory redisCF(){
+//        return new JedisConnectionFactory();
+//    }
+//
+//    @Bean
+//    public RedisTemplate<String,String> redisTemplate(RedisConnectionFactory cf){
+//        RedisTemplate<String,String> redis=new RedisTemplate<>();
+//        redis.setConnectionFactory(cf);
+//        return redis;
+//    }
+
+//    @Bean
+//    public MongoClientFactoryBean mongo(){
+//        MongoClientFactoryBean mongo=new MongoClientFactoryBean();
+//        mongo.setHost("localhost");
+//        mongo.setCredentials(new MongoCredential[]{MongoCredential.createMongoCRCredential("admin","OrdersDB","gzy".toCharArray())});
+//        return mongo;
+//    }
+//
+//    @Bean
+//    public MongoOperations mongoTemplate(MongoClientFactoryBean mongo) throws Exception{
+//        return new MongoTemplate(mongo.getObject(),"OrdersDB");
+//    }
 
     @Bean     //声明其为Bean实例
     @Primary  //在同样的DataSource中，首先使用被标注的DataSource

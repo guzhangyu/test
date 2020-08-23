@@ -3,5 +3,6 @@
   <component name="ExcludeFromValidation">
     <file url="file://$PROJECT_DIR$/src/main/java/jvm/MethodHandleTest.java" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/phei/netty/rpc/RpcChannel.java" />
+    <file url="file://$PROJECT_DIR$/spark-test/src/main/java/mahout/LastFm.scala" />
   </component>
 </project>
