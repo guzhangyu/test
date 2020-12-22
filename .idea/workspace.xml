@@ -5,12 +5,23 @@
       <artifact name="spark-test:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="27a7973c-11f4-403c-9781-fa9544314ca1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/WordExcelParse/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WordExcelParse/src/main/java/ParseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WordExcelParse/src/main/java/ParseWordQuestions1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/DistributeOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/src/main/java/com/test/FindMinRadius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +29,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MyTest" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,10 +45,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenRunner">
@@ -117,6 +125,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
@@ -143,12 +155,12 @@
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28390804" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/concurrent/cas/collections/MyConcurrentLinkedQueue.java.bark" />
   </component>
   <component name="RecentsManager">
@@ -173,30 +185,18 @@
       <recent name="D:\Users\guzy\IdeaProjects\practice-Code\testCode\src\main\java\com\test\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="hadoop.bloom" />
       <recent name="hadoop.small_files" />
       <recent name="fasta" />
       <recent name="hadoop.cochran_armitage" />
-      <recent name="hadoop.triangle" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.test.netty.portunification" />
       <recent name="jvm.codecheck" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Tests">
+  <component name="RunManager" selected="Application.ParseWordQuestions1">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -243,6 +243,26 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
     </configuration>
     <configuration name="AlleleFreqDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.allele_freq.AlleleFreqDriver" />
@@ -438,6 +458,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DistributeOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.DistributeOnes" />
+      <module name="testCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FastaDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.fasta.FastaDriver" />
       <module name="hadoop_test" />
@@ -445,6 +479,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.fasta.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMinRadius" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.FindMinRadius" />
+      <module name="testCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -546,6 +594,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ParseTest" />
+      <module name="WordExcelParse" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseWordQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ParseWordQuestions" />
+      <module name="WordExcelParse" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseWordQuestions1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ParseWordQuestions1" />
+      <module name="WordExcelParse" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -662,66 +734,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubReqClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="netty4.decode.SubReqClient" />
-      <module name="netty4" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="netty4.decode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubReqServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="netty4.decode.SubReqServer" />
-      <module name="netty4" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="netty4.decode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jmocks.Tests" />
-      <module name="testCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jmocks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ThreadTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ThreadTest" />
       <module name="MyTest" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="netty4.TimeClient" />
-      <module name="netty4" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="netty4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -853,29 +869,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WiresharkFileAnalyze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WiresharkFileAnalyze" />
-      <module name="practice-Code" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="false" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -947,15 +945,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.SecondSortSparkDriver" />
       <item itemvalue="Application.BindGen" />
@@ -997,28 +986,25 @@
       <item itemvalue="Application.LocalMemDriver" />
       <item itemvalue="Application.BloomDriver" />
       <item itemvalue="Application.BloomUseDriver" />
-      <item itemvalue="Application.TimeClient" />
-      <item itemvalue="Application.SubReqServer" />
-      <item itemvalue="Application.SubReqClient" />
-      <item itemvalue="Application.WiresharkFileAnalyze" />
-      <item itemvalue="Application.Tests" />
+      <item itemvalue="Application.DistributeOnes" />
+      <item itemvalue="Application.FindMinRadius" />
       <item itemvalue="Maven.MyTest [clean,install]" />
       <item itemvalue="Maven.spark-test [package]" />
+      <item itemvalue="Application.ParseTest" />
+      <item itemvalue="Application.ParseWordQuestions" />
+      <item itemvalue="Application.ParseWordQuestions1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tests" />
-        <item itemvalue="Application.WiresharkFileAnalyze" />
-        <item itemvalue="Application.SubReqClient" />
-        <item itemvalue="Application.SubReqServer" />
-        <item itemvalue="Application.TimeClient" />
+        <item itemvalue="Application.ParseWordQuestions1" />
+        <item itemvalue="Application.ParseTest" />
+        <item itemvalue="Application.ParseWordQuestions" />
+        <item itemvalue="Application.FindMinRadius" />
+        <item itemvalue="Application.DistributeOnes" />
       </list>
     </recent_temporary>
   </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
-    <option name="ACTIVE_ACTIONS" value=",SHOW_INTERFACES,SHOW_LAMBDA,SHOW_PROPERTIES" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1161,7 +1147,11 @@
       <workItem from="1597294931916" duration="675000" />
       <workItem from="1597369733998" duration="1845000" />
       <workItem from="1597399373520" duration="761000" />
-      <workItem from="1598168435980" duration="1996000" />
+      <workItem from="1598168435980" duration="3463000" />
+      <workItem from="1602134337332" duration="6018000" />
+      <workItem from="1602311320886" duration="694000" />
+      <workItem from="1602481308418" duration="2413000" />
+      <workItem from="1608284097586" duration="34425000" />
     </task>
     <task id="LOCAL-00001" summary="树遍历">
       <created>1524375811207</created>
@@ -1227,20 +1217,19 @@
     </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1256,6 +1245,126 @@
     <MESSAGE value="代码 clean" />
     <MESSAGE value="1、并发相关的代码：读写锁、CountDownLatch&#10;2、rabbitMq抽取" />
     <option name="LAST_COMMIT_MESSAGE" value="1、并发相关的代码：读写锁、CountDownLatch&#10;2、rabbitMq抽取" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="23" width="1024" height="826" key="#Project_Structure" timestamp="1608371057365">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="208" y="23" width="1024" height="822" key="#Project_Structure/0.23.1440.822@0.23.1440.822" timestamp="1602134846070" />
+    <state x="208" y="23" width="1024" height="826" key="#Project_Structure/0.23.1440.826@0.23.1440.826" timestamp="1608371057365" />
+    <state x="533" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1608286946520">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="533" y="125" key="#com.intellij.ide.util.MemberChooser/0.23.1440.822@0.23.1440.822" timestamp="1608286946520" />
+    <state x="486" y="309" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608370575486">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="486" y="309" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.826@0.23.1440.826" timestamp="1608370575486" />
+    <state x="644" y="278" key="#xdebugger.evaluate" timestamp="1608434006658">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="644" y="278" key="#xdebugger.evaluate/0.23.1440.826@0.23.1440.826" timestamp="1608433297386" />
+    <state x="644" y="278" key="#xdebugger.evaluate/0.23.1440.827@0.23.1440.827" timestamp="1608434006658" />
+    <state width="1398" height="352" key="GridCell.Tab.0.bottom" timestamp="1608548878096">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="263" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1602292439412" />
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1608287775133" />
+    <state width="1398" height="233" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1608369733044" />
+    <state width="1398" height="330" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1608430047915" />
+    <state width="1398" height="356" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1608434267759" />
+    <state width="1398" height="319" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1608522995981" />
+    <state width="1398" height="352" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1608548500045" />
+    <state width="1398" height="352" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1608548878096" />
+    <state width="1398" height="352" key="GridCell.Tab.0.center" timestamp="1608548878093">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="263" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1602292439410" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1608287775132" />
+    <state width="1398" height="233" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1608369733043" />
+    <state width="1398" height="330" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1608430047914" />
+    <state width="1398" height="356" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1608434267759" />
+    <state width="1398" height="319" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1608522995980" />
+    <state width="1398" height="352" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1608548500044" />
+    <state width="1398" height="352" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1608548878093" />
+    <state width="1398" height="352" key="GridCell.Tab.0.left" timestamp="1608548878091">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="263" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1602292439410" />
+    <state width="1398" height="203" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1608287775132" />
+    <state width="1398" height="233" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1608369733042" />
+    <state width="1398" height="330" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1608430047914" />
+    <state width="1398" height="356" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1608434267758" />
+    <state width="1398" height="319" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1608522995979" />
+    <state width="1398" height="352" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1608548500043" />
+    <state width="1398" height="352" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1608548878091" />
+    <state width="1398" height="352" key="GridCell.Tab.0.right" timestamp="1608548878094">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="263" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1602292439411" />
+    <state width="1398" height="203" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1608287775133" />
+    <state width="1398" height="233" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1608369733044" />
+    <state width="1398" height="330" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1608430047914" />
+    <state width="1398" height="356" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1608434267759" />
+    <state width="1398" height="319" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1608522995981" />
+    <state width="1398" height="352" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1608548500044" />
+    <state width="1398" height="352" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1608548878094" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1608434109782">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.809@0.23.1440.809" timestamp="1602291290570" />
+    <state width="1398" height="407" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1608429727330" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1608434109782" />
+    <state width="1398" height="369" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1608434021923" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center" timestamp="1608434109781">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.809@0.23.1440.809" timestamp="1602291290569" />
+    <state width="1398" height="407" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1608429727329" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1608434109781" />
+    <state width="1398" height="369" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1608434021922" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left" timestamp="1608434109781">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.809@0.23.1440.809" timestamp="1602291290569" />
+    <state width="1398" height="407" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1608429727329" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1608434109781" />
+    <state width="1398" height="369" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1608434021922" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right" timestamp="1608434109781">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.809@0.23.1440.809" timestamp="1602291290570" />
+    <state width="1398" height="407" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1608429727330" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1608434109781" />
+    <state width="1398" height="369" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1608434021923" />
+    <state x="229" y="73" key="SettingsEditor" timestamp="1608371045454">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="229" y="73" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1602134885358" />
+    <state x="229" y="73" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1608371045454" />
+    <state width="720" height="412" key="XDebugger.FullValuePopup" timestamp="1608428460404">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="720" height="412" key="XDebugger.FullValuePopup/0.23.1440.825@0.23.1440.825" timestamp="1608428460404" />
+    <state x="207" y="177" width="1026" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608422496512">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="207" y="177" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.825@0.23.1440.825" timestamp="1608422496512" />
+    <state x="207" y="177" width="1026" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.826@0.23.1440.826" timestamp="1608369867429" />
+    <state x="461" y="189" key="extract.method.dialog" timestamp="1608429315178">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="461" y="189" key="extract.method.dialog/0.23.1440.823@0.23.1440.823" timestamp="1608340874106" />
+    <state x="461" y="189" key="extract.method.dialog/0.23.1440.825@0.23.1440.825" timestamp="1608429315178" />
+    <state x="360" y="100" key="new project wizard" timestamp="1608370317638">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="360" y="100" key="new project wizard/0.23.1440.826@0.23.1440.826" timestamp="1608370317638" />
+    <state x="388" y="170" width="670" height="676" key="search.everywhere.popup" timestamp="1608369892821">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="388" y="169" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1608288872320" />
+    <state x="388" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1608369892821" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2538,12 +2647,45 @@
           <line>14</line>
           <option name="timeStamp" value="605" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/FindMinRadius.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="608" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/testCode/src/main/java/com/test/FindMinRadius.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="609" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/WordExcelParse/src/main/java/ParseWordQuestions1.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="614" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/WordExcelParse/src/main/java/ParseWordQuestions1.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="615" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/WordExcelParse/src/main/java/ParseWordQuestions1.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="616" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.4.3/mongodb-driver-3.4.3.jar!/com/mongodb/Mongo.class</url>
           <line>66</line>
           <properties field="credentialsList" class="com.mongodb.Mongo" />
           <option name="timeStamp" value="536" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="610" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="611" />
+        </breakpoint>
       </breakpoints>
       <breakpoints-defaults>
         <breakpoint suspend="THREAD" type="java-line" />
@@ -2553,103 +2695,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>new String(bytes, &quot;utf_16&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(bytes, &quot;ascii&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(bytes)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(bytes, &quot;iso-8859-1&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(bytes, &quot;gbk&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(bytes, &quot;utf-8&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>j</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Thread.currentThread().getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>i ==3 &amp;&amp; j ==5</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>i == 3 &amp;&amp; j == 5</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>predictNode.getType()==null</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>theClass.toString().contains(&quot;WebIpInputFormat1&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sets[1]==null</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a==null</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.key.equals(&quot;dx&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getCurrentKey().equals(&quot;dx&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>new String(bytes,offset,bytes.length-offset)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>

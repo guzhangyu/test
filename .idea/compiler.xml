@@ -8,9 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty4" />
-        <module name="spark-test" />
-        <module name="sharding-jdbc-test" />
         <module name="testCode" />
+        <module name="WordExcelParse" />
+        <module name="sharding-jdbc-test" />
+        <module name="spark-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -19,6 +20,7 @@
       <module name="sharding-jdbc-test" target="1.8" />
       <module name="spark-test" target="1.8" />
       <module name="testCode" target="1.6" />
+      <module name="WordExcelParse" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyTest.iml" filepath="$PROJECT_DIR$/MyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordExcelParse/WordExcelParse.iml" filepath="$PROJECT_DIR$/WordExcelParse/WordExcelParse.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty4/netty4.iml" filepath="$PROJECT_DIR$/netty4/netty4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/practice-Code.iml" filepath="$PROJECT_DIR$/.idea/practice-Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-test/sharding-jdbc-test.iml" filepath="$PROJECT_DIR$/sharding-jdbc-test/sharding-jdbc-test.iml" />

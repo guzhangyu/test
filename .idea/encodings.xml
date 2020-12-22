@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-jdbc-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-jdbc-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testCode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testCode/src/main/java" charset="UTF-8" />
   </component>
 </project>
